@@ -1,0 +1,603 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		313BF4FE28272009004CE901 /* FifaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313BF4FC28272009004CE901 /* FifaTableViewCell.swift */; };
+		313BF4FF28272009004CE901 /* FifaTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 313BF4FD28272009004CE901 /* FifaTableViewCell.xib */; };
+		313BF501282721F4004CE901 /* Datum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313BF500282721F4004CE901 /* Datum.swift */; };
+		313BF50328274967004CE901 /* InfoTeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313BF50228274967004CE901 /* InfoTeamViewController.swift */; };
+		313BF52528288D0B004CE901 /* CountDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313BF52428288D0B004CE901 /* CountDown.swift */; };
+		31475067282306EB00EB1A48 /* Matchs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31475066282306EB00EB1A48 /* Matchs.swift */; };
+		3147506A2823082C00EB1A48 /* MatchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314750682823082C00EB1A48 /* MatchTableViewCell.swift */; };
+		3147506B2823082C00EB1A48 /* MatchTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 314750692823082C00EB1A48 /* MatchTableViewCell.xib */; };
+		3147506D2824106400EB1A48 /* Matches.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3147506C2824106400EB1A48 /* Matches.swift */; };
+		3148719B2820367C0021B553 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3148719A2820367C0021B553 /* AppDelegate.swift */; };
+		3148719D2820367C0021B553 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3148719C2820367C0021B553 /* SceneDelegate.swift */; };
+		3148719F2820367C0021B553 /* Stadium.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3148719E2820367C0021B553 /* Stadium.swift */; };
+		314871A22820367C0021B553 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 314871A02820367C0021B553 /* Main.storyboard */; };
+		314871A42820367E0021B553 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 314871A32820367E0021B553 /* Assets.xcassets */; };
+		314871A72820367E0021B553 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 314871A52820367E0021B553 /* LaunchScreen.storyboard */; };
+		314871B028203AF70021B553 /* RankingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314871AF28203AF70021B553 /* RankingViewController.swift */; };
+		314871B228203B3B0021B553 /* Groups.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314871B128203B3B0021B553 /* Groups.swift */; };
+		314871B628203F140021B553 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314871B528203F140021B553 /* Group.swift */; };
+		314871BA282051560021B553 /* GroupsCustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314871B8282051560021B553 /* GroupsCustomTableViewCell.swift */; };
+		314871BB282051560021B553 /* GroupsCustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 314871B9282051560021B553 /* GroupsCustomTableViewCell.xib */; };
+		314871C22820A63B0021B553 /* StadiumTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314871C02820A63B0021B553 /* StadiumTableViewCell.swift */; };
+		314871C32820A63B0021B553 /* StadiumTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 314871C12820A63B0021B553 /* StadiumTableViewCell.xib */; };
+		314871C72820A9480021B553 /* StadiumNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314871C62820A9480021B553 /* StadiumNames.swift */; };
+		3148FC0D282ACBAE00D24AEE /* infoTeam.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3148FC0C282ACBAE00D24AEE /* infoTeam.swift */; };
+		3148FC11282B0A7600D24AEE /* ModalStadiumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3148FC10282B0A7600D24AEE /* ModalStadiumViewController.swift */; };
+		31545FE2282C7EC00038DF62 /* InfoTeamTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31545FE0282C7EC00038DF62 /* InfoTeamTableViewCell.swift */; };
+		31545FE3282C7EC00038DF62 /* InfoTeamTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31545FE1282C7EC00038DF62 /* InfoTeamTableViewCell.xib */; };
+		3189B9BA282571C6002BFFD1 /* TopGoal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3189B9B9282571C6002BFFD1 /* TopGoal.swift */; };
+		3189B9BD28257A9B002BFFD1 /* TopGoalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3189B9BB28257A9B002BFFD1 /* TopGoalTableViewCell.swift */; };
+		3189B9BE28257A9B002BFFD1 /* TopGoalTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3189B9BC28257A9B002BFFD1 /* TopGoalTableViewCell.xib */; };
+		3189B9C1282623AD002BFFD1 /* PlayersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3189B9BF282623AD002BFFD1 /* PlayersTableViewCell.swift */; };
+		3189B9C2282623AD002BFFD1 /* PlayersTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3189B9C0282623AD002BFFD1 /* PlayersTableViewCell.xib */; };
+		3189B9C62826298E002BFFD1 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3189B9C52826298E002BFFD1 /* Player.swift */; };
+		31A4764F2846A07D0011999F /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A4764E2846A07D0011999F /* Service.swift */; };
+		31A476512846A8980011999F /* GenericService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A476502846A8980011999F /* GenericService.swift */; };
+		31F3B39628219EB100821127 /* RankingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F3B39428219EB100821127 /* RankingTableViewCell.swift */; };
+		31F3B39728219EB100821127 /* RankingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31F3B39528219EB100821127 /* RankingTableViewCell.xib */; };
+		31F3B39928219FFE00821127 /* Medal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F3B39828219FFE00821127 /* Medal.swift */; };
+		43C0A1489ABE26A622ABD2CE /* Pods_Marcelo_WorldCupSounds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B03EC9C1AB5BB49836EEA884 /* Pods_Marcelo_WorldCupSounds.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		313BF4FC28272009004CE901 /* FifaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FifaTableViewCell.swift; sourceTree = "<group>"; };
+		313BF4FD28272009004CE901 /* FifaTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FifaTableViewCell.xib; sourceTree = "<group>"; };
+		313BF500282721F4004CE901 /* Datum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Datum.swift; sourceTree = "<group>"; };
+		313BF50228274967004CE901 /* InfoTeamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoTeamViewController.swift; sourceTree = "<group>"; };
+		313BF52428288D0B004CE901 /* CountDown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountDown.swift; sourceTree = "<group>"; };
+		31475066282306EB00EB1A48 /* Matchs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Matchs.swift; sourceTree = "<group>"; };
+		314750682823082C00EB1A48 /* MatchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchTableViewCell.swift; sourceTree = "<group>"; };
+		314750692823082C00EB1A48 /* MatchTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MatchTableViewCell.xib; sourceTree = "<group>"; };
+		3147506C2824106400EB1A48 /* Matches.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Matches.swift; sourceTree = "<group>"; };
+		314871972820367C0021B553 /* Marcelo.WorldCupSounds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Marcelo.WorldCupSounds.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3148719A2820367C0021B553 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3148719C2820367C0021B553 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3148719E2820367C0021B553 /* Stadium.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stadium.swift; sourceTree = "<group>"; };
+		314871A12820367C0021B553 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		314871A32820367E0021B553 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		314871A62820367E0021B553 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		314871A82820367E0021B553 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		314871AF28203AF70021B553 /* RankingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingViewController.swift; sourceTree = "<group>"; };
+		314871B128203B3B0021B553 /* Groups.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Groups.swift; sourceTree = "<group>"; };
+		314871B528203F140021B553 /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
+		314871B8282051560021B553 /* GroupsCustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsCustomTableViewCell.swift; sourceTree = "<group>"; };
+		314871B9282051560021B553 /* GroupsCustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GroupsCustomTableViewCell.xib; sourceTree = "<group>"; };
+		314871C02820A63B0021B553 /* StadiumTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StadiumTableViewCell.swift; sourceTree = "<group>"; };
+		314871C12820A63B0021B553 /* StadiumTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StadiumTableViewCell.xib; sourceTree = "<group>"; };
+		314871C62820A9480021B553 /* StadiumNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StadiumNames.swift; sourceTree = "<group>"; };
+		3148FC0C282ACBAE00D24AEE /* infoTeam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = infoTeam.swift; sourceTree = "<group>"; };
+		3148FC10282B0A7600D24AEE /* ModalStadiumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalStadiumViewController.swift; sourceTree = "<group>"; };
+		31545FE0282C7EC00038DF62 /* InfoTeamTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoTeamTableViewCell.swift; sourceTree = "<group>"; };
+		31545FE1282C7EC00038DF62 /* InfoTeamTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InfoTeamTableViewCell.xib; sourceTree = "<group>"; };
+		3189B9B9282571C6002BFFD1 /* TopGoal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopGoal.swift; sourceTree = "<group>"; };
+		3189B9BB28257A9B002BFFD1 /* TopGoalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopGoalTableViewCell.swift; sourceTree = "<group>"; };
+		3189B9BC28257A9B002BFFD1 /* TopGoalTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopGoalTableViewCell.xib; sourceTree = "<group>"; };
+		3189B9BF282623AD002BFFD1 /* PlayersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersTableViewCell.swift; sourceTree = "<group>"; };
+		3189B9C0282623AD002BFFD1 /* PlayersTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlayersTableViewCell.xib; sourceTree = "<group>"; };
+		3189B9C52826298E002BFFD1 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		31A4764E2846A07D0011999F /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		31A476502846A8980011999F /* GenericService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericService.swift; sourceTree = "<group>"; };
+		31F3B39428219EB100821127 /* RankingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingTableViewCell.swift; sourceTree = "<group>"; };
+		31F3B39528219EB100821127 /* RankingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RankingTableViewCell.xib; sourceTree = "<group>"; };
+		31F3B39828219FFE00821127 /* Medal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Medal.swift; sourceTree = "<group>"; };
+		5634AB95F94B6B3CD6E5E0A6 /* Pods-Marcelo.WorldCupSounds.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Marcelo.WorldCupSounds.debug.xcconfig"; path = "Target Support Files/Pods-Marcelo.WorldCupSounds/Pods-Marcelo.WorldCupSounds.debug.xcconfig"; sourceTree = "<group>"; };
+		99E50FBE4C145F3AD4281170 /* Pods-Marcelo.WorldCupSounds.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Marcelo.WorldCupSounds.release.xcconfig"; path = "Target Support Files/Pods-Marcelo.WorldCupSounds/Pods-Marcelo.WorldCupSounds.release.xcconfig"; sourceTree = "<group>"; };
+		B03EC9C1AB5BB49836EEA884 /* Pods_Marcelo_WorldCupSounds.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Marcelo_WorldCupSounds.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		314871942820367C0021B553 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43C0A1489ABE26A622ABD2CE /* Pods_Marcelo_WorldCupSounds.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		23D14957715974492A9A2007 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5634AB95F94B6B3CD6E5E0A6 /* Pods-Marcelo.WorldCupSounds.debug.xcconfig */,
+				99E50FBE4C145F3AD4281170 /* Pods-Marcelo.WorldCupSounds.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		3148718E2820367C0021B553 = {
+			isa = PBXGroup;
+			children = (
+				314871992820367C0021B553 /* Marcelo.WorldCupSounds */,
+				314871982820367C0021B553 /* Products */,
+				23D14957715974492A9A2007 /* Pods */,
+				AD78C58D8007F733E20A4035 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		314871982820367C0021B553 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				314871972820367C0021B553 /* Marcelo.WorldCupSounds.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		314871992820367C0021B553 /* Marcelo.WorldCupSounds */ = {
+			isa = PBXGroup;
+			children = (
+				31A4764D2846A03F0011999F /* Service */,
+				314871B7282051100021B553 /* Cell */,
+				314871B428203B8C0021B553 /* Model */,
+				314871B328203B5F0021B553 /* View */,
+				314871AE28203A940021B553 /* Controller */,
+				3148719A2820367C0021B553 /* AppDelegate.swift */,
+				3148719C2820367C0021B553 /* SceneDelegate.swift */,
+				314871A32820367E0021B553 /* Assets.xcassets */,
+				314871A52820367E0021B553 /* LaunchScreen.storyboard */,
+				314871A82820367E0021B553 /* Info.plist */,
+			);
+			path = Marcelo.WorldCupSounds;
+			sourceTree = "<group>";
+		};
+		314871AE28203A940021B553 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3148719E2820367C0021B553 /* Stadium.swift */,
+				314871AF28203AF70021B553 /* RankingViewController.swift */,
+				314871B128203B3B0021B553 /* Groups.swift */,
+				31475066282306EB00EB1A48 /* Matchs.swift */,
+				313BF50228274967004CE901 /* InfoTeamViewController.swift */,
+				313BF52428288D0B004CE901 /* CountDown.swift */,
+				3148FC10282B0A7600D24AEE /* ModalStadiumViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		314871B328203B5F0021B553 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				314871A02820367C0021B553 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		314871B428203B8C0021B553 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				314871B528203F140021B553 /* Group.swift */,
+				314871C62820A9480021B553 /* StadiumNames.swift */,
+				31F3B39828219FFE00821127 /* Medal.swift */,
+				3147506C2824106400EB1A48 /* Matches.swift */,
+				3189B9B9282571C6002BFFD1 /* TopGoal.swift */,
+				3189B9C52826298E002BFFD1 /* Player.swift */,
+				313BF500282721F4004CE901 /* Datum.swift */,
+				3148FC0C282ACBAE00D24AEE /* infoTeam.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		314871B7282051100021B553 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				314871B8282051560021B553 /* GroupsCustomTableViewCell.swift */,
+				314871B9282051560021B553 /* GroupsCustomTableViewCell.xib */,
+				314871C02820A63B0021B553 /* StadiumTableViewCell.swift */,
+				314871C12820A63B0021B553 /* StadiumTableViewCell.xib */,
+				31F3B39428219EB100821127 /* RankingTableViewCell.swift */,
+				31F3B39528219EB100821127 /* RankingTableViewCell.xib */,
+				314750682823082C00EB1A48 /* MatchTableViewCell.swift */,
+				314750692823082C00EB1A48 /* MatchTableViewCell.xib */,
+				3189B9BB28257A9B002BFFD1 /* TopGoalTableViewCell.swift */,
+				3189B9BC28257A9B002BFFD1 /* TopGoalTableViewCell.xib */,
+				3189B9BF282623AD002BFFD1 /* PlayersTableViewCell.swift */,
+				3189B9C0282623AD002BFFD1 /* PlayersTableViewCell.xib */,
+				313BF4FC28272009004CE901 /* FifaTableViewCell.swift */,
+				313BF4FD28272009004CE901 /* FifaTableViewCell.xib */,
+				31545FE0282C7EC00038DF62 /* InfoTeamTableViewCell.swift */,
+				31545FE1282C7EC00038DF62 /* InfoTeamTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		31A4764D2846A03F0011999F /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				31A4764E2846A07D0011999F /* Service.swift */,
+				31A476502846A8980011999F /* GenericService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		AD78C58D8007F733E20A4035 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B03EC9C1AB5BB49836EEA884 /* Pods_Marcelo_WorldCupSounds.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		314871962820367C0021B553 /* Marcelo.WorldCupSounds */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 314871AB2820367E0021B553 /* Build configuration list for PBXNativeTarget "Marcelo.WorldCupSounds" */;
+			buildPhases = (
+				527FD301A1DB5328B3FE2CBD /* [CP] Check Pods Manifest.lock */,
+				314871932820367C0021B553 /* Sources */,
+				314871942820367C0021B553 /* Frameworks */,
+				314871952820367C0021B553 /* Resources */,
+				B71E5CA04ED8ABBC7BFA6B6C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Marcelo.WorldCupSounds;
+			productName = Marcelo.WorldCupSounds;
+			productReference = 314871972820367C0021B553 /* Marcelo.WorldCupSounds.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3148718F2820367C0021B553 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					314871962820367C0021B553 = {
+						CreatedOnToolsVersion = 13.3;
+					};
+				};
+			};
+			buildConfigurationList = 314871922820367C0021B553 /* Build configuration list for PBXProject "Marcelo.WorldCupSounds" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3148718E2820367C0021B553;
+			productRefGroup = 314871982820367C0021B553 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				314871962820367C0021B553 /* Marcelo.WorldCupSounds */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		314871952820367C0021B553 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				314871BB282051560021B553 /* GroupsCustomTableViewCell.xib in Resources */,
+				3189B9C2282623AD002BFFD1 /* PlayersTableViewCell.xib in Resources */,
+				314871A72820367E0021B553 /* LaunchScreen.storyboard in Resources */,
+				31545FE3282C7EC00038DF62 /* InfoTeamTableViewCell.xib in Resources */,
+				3189B9BE28257A9B002BFFD1 /* TopGoalTableViewCell.xib in Resources */,
+				3147506B2823082C00EB1A48 /* MatchTableViewCell.xib in Resources */,
+				314871A42820367E0021B553 /* Assets.xcassets in Resources */,
+				314871C32820A63B0021B553 /* StadiumTableViewCell.xib in Resources */,
+				313BF4FF28272009004CE901 /* FifaTableViewCell.xib in Resources */,
+				31F3B39728219EB100821127 /* RankingTableViewCell.xib in Resources */,
+				314871A22820367C0021B553 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		527FD301A1DB5328B3FE2CBD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Marcelo.WorldCupSounds-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B71E5CA04ED8ABBC7BFA6B6C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Marcelo.WorldCupSounds/Pods-Marcelo.WorldCupSounds-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Marcelo.WorldCupSounds/Pods-Marcelo.WorldCupSounds-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Marcelo.WorldCupSounds/Pods-Marcelo.WorldCupSounds-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		314871932820367C0021B553 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3148719F2820367C0021B553 /* Stadium.swift in Sources */,
+				31A4764F2846A07D0011999F /* Service.swift in Sources */,
+				3148719B2820367C0021B553 /* AppDelegate.swift in Sources */,
+				314871B028203AF70021B553 /* RankingViewController.swift in Sources */,
+				31475067282306EB00EB1A48 /* Matchs.swift in Sources */,
+				3148FC11282B0A7600D24AEE /* ModalStadiumViewController.swift in Sources */,
+				313BF52528288D0B004CE901 /* CountDown.swift in Sources */,
+				3189B9BD28257A9B002BFFD1 /* TopGoalTableViewCell.swift in Sources */,
+				314871BA282051560021B553 /* GroupsCustomTableViewCell.swift in Sources */,
+				31F3B39928219FFE00821127 /* Medal.swift in Sources */,
+				313BF501282721F4004CE901 /* Datum.swift in Sources */,
+				31A476512846A8980011999F /* GenericService.swift in Sources */,
+				3189B9C1282623AD002BFFD1 /* PlayersTableViewCell.swift in Sources */,
+				3147506A2823082C00EB1A48 /* MatchTableViewCell.swift in Sources */,
+				314871C72820A9480021B553 /* StadiumNames.swift in Sources */,
+				313BF4FE28272009004CE901 /* FifaTableViewCell.swift in Sources */,
+				313BF50328274967004CE901 /* InfoTeamViewController.swift in Sources */,
+				314871B228203B3B0021B553 /* Groups.swift in Sources */,
+				3148719D2820367C0021B553 /* SceneDelegate.swift in Sources */,
+				3148FC0D282ACBAE00D24AEE /* infoTeam.swift in Sources */,
+				314871B628203F140021B553 /* Group.swift in Sources */,
+				31F3B39628219EB100821127 /* RankingTableViewCell.swift in Sources */,
+				3147506D2824106400EB1A48 /* Matches.swift in Sources */,
+				3189B9C62826298E002BFFD1 /* Player.swift in Sources */,
+				31545FE2282C7EC00038DF62 /* InfoTeamTableViewCell.swift in Sources */,
+				3189B9BA282571C6002BFFD1 /* TopGoal.swift in Sources */,
+				314871C22820A63B0021B553 /* StadiumTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		314871A02820367C0021B553 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				314871A12820367C0021B553 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		314871A52820367E0021B553 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				314871A62820367E0021B553 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		314871A92820367E0021B553 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		314871AA2820367E0021B553 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		314871AC2820367E0021B553 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5634AB95F94B6B3CD6E5E0A6 /* Pods-Marcelo.WorldCupSounds.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RVDHB2VBB6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Marcelo.WorldCupSounds/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "backfront.Marcelo-WorldCupSounds";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		314871AD2820367E0021B553 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99E50FBE4C145F3AD4281170 /* Pods-Marcelo.WorldCupSounds.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RVDHB2VBB6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Marcelo.WorldCupSounds/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "backfront.Marcelo-WorldCupSounds";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		314871922820367C0021B553 /* Build configuration list for PBXProject "Marcelo.WorldCupSounds" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				314871A92820367E0021B553 /* Debug */,
+				314871AA2820367E0021B553 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		314871AB2820367E0021B553 /* Build configuration list for PBXNativeTarget "Marcelo.WorldCupSounds" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				314871AC2820367E0021B553 /* Debug */,
+				314871AD2820367E0021B553 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3148718F2820367C0021B553 /* Project object */;
+}
