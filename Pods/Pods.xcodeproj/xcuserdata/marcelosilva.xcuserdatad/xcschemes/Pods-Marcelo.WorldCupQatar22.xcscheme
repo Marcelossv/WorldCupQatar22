@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1330"
+   LastUpgradeVersion = "1340"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2A73236B74CD8C22953CF1C3296EEBC5"
-               BuildableName = "Pods_Marcelo_WorldCupSounds.framework"
-               BlueprintName = "Pods-Marcelo.WorldCupSounds"
+               BlueprintIdentifier = "C32C701C2EDDD132B16BAAA6503D9415"
+               BuildableName = "Pods_Marcelo_WorldCupQatar22.framework"
+               BlueprintName = "Pods-Marcelo.WorldCupQatar22"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

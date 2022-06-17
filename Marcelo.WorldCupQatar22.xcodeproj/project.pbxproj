@@ -7,45 +7,45 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		311A49D8285D097F003E3B0E /* GroupsCustomTableViewCell.xib in Sources */ = {isa = PBXBuildFile; fileRef = 314871B9282051560021B553 /* GroupsCustomTableViewCell.xib */; };
+		311A49D9285D097F003E3B0E /* StadiumTableViewCell.xib in Sources */ = {isa = PBXBuildFile; fileRef = 314871C12820A63B0021B553 /* StadiumTableViewCell.xib */; };
+		311A49DA285D097F003E3B0E /* RankingTableViewCell.xib in Sources */ = {isa = PBXBuildFile; fileRef = 31F3B39528219EB100821127 /* RankingTableViewCell.xib */; };
+		311A49DB285D097F003E3B0E /* MatchTableViewCell.xib in Sources */ = {isa = PBXBuildFile; fileRef = 314750692823082C00EB1A48 /* MatchTableViewCell.xib */; };
+		311A49DC285D097F003E3B0E /* TopGoalTableViewCell.xib in Sources */ = {isa = PBXBuildFile; fileRef = 3189B9BC28257A9B002BFFD1 /* TopGoalTableViewCell.xib */; };
+		311A49DD285D097F003E3B0E /* PlayersTableViewCell.xib in Sources */ = {isa = PBXBuildFile; fileRef = 3189B9C0282623AD002BFFD1 /* PlayersTableViewCell.xib */; };
+		311A49DE285D097F003E3B0E /* FifaTableViewCell.xib in Sources */ = {isa = PBXBuildFile; fileRef = 313BF4FD28272009004CE901 /* FifaTableViewCell.xib */; };
+		311A49DF285D097F003E3B0E /* InfoTeamTableViewCell.xib in Sources */ = {isa = PBXBuildFile; fileRef = 31545FE1282C7EC00038DF62 /* InfoTeamTableViewCell.xib */; };
+		311A49E9285D1122003E3B0E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 314871A32820367E0021B553 /* Assets.xcassets */; };
 		313BF4FE28272009004CE901 /* FifaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313BF4FC28272009004CE901 /* FifaTableViewCell.swift */; };
-		313BF4FF28272009004CE901 /* FifaTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 313BF4FD28272009004CE901 /* FifaTableViewCell.xib */; };
 		313BF501282721F4004CE901 /* Datum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313BF500282721F4004CE901 /* Datum.swift */; };
 		313BF50328274967004CE901 /* InfoTeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313BF50228274967004CE901 /* InfoTeamViewController.swift */; };
 		313BF52528288D0B004CE901 /* CountDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313BF52428288D0B004CE901 /* CountDown.swift */; };
 		31475067282306EB00EB1A48 /* Matchs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31475066282306EB00EB1A48 /* Matchs.swift */; };
 		3147506A2823082C00EB1A48 /* MatchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314750682823082C00EB1A48 /* MatchTableViewCell.swift */; };
-		3147506B2823082C00EB1A48 /* MatchTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 314750692823082C00EB1A48 /* MatchTableViewCell.xib */; };
 		3147506D2824106400EB1A48 /* Matches.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3147506C2824106400EB1A48 /* Matches.swift */; };
 		3148719B2820367C0021B553 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3148719A2820367C0021B553 /* AppDelegate.swift */; };
 		3148719D2820367C0021B553 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3148719C2820367C0021B553 /* SceneDelegate.swift */; };
 		3148719F2820367C0021B553 /* Stadium.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3148719E2820367C0021B553 /* Stadium.swift */; };
 		314871A22820367C0021B553 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 314871A02820367C0021B553 /* Main.storyboard */; };
-		314871A42820367E0021B553 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 314871A32820367E0021B553 /* Assets.xcassets */; };
 		314871A72820367E0021B553 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 314871A52820367E0021B553 /* LaunchScreen.storyboard */; };
 		314871B028203AF70021B553 /* RankingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314871AF28203AF70021B553 /* RankingViewController.swift */; };
 		314871B228203B3B0021B553 /* Groups.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314871B128203B3B0021B553 /* Groups.swift */; };
 		314871B628203F140021B553 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314871B528203F140021B553 /* Group.swift */; };
 		314871BA282051560021B553 /* GroupsCustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314871B8282051560021B553 /* GroupsCustomTableViewCell.swift */; };
-		314871BB282051560021B553 /* GroupsCustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 314871B9282051560021B553 /* GroupsCustomTableViewCell.xib */; };
 		314871C22820A63B0021B553 /* StadiumTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314871C02820A63B0021B553 /* StadiumTableViewCell.swift */; };
-		314871C32820A63B0021B553 /* StadiumTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 314871C12820A63B0021B553 /* StadiumTableViewCell.xib */; };
 		314871C72820A9480021B553 /* StadiumNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314871C62820A9480021B553 /* StadiumNames.swift */; };
 		3148FC0D282ACBAE00D24AEE /* infoTeam.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3148FC0C282ACBAE00D24AEE /* infoTeam.swift */; };
 		3148FC11282B0A7600D24AEE /* ModalStadiumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3148FC10282B0A7600D24AEE /* ModalStadiumViewController.swift */; };
 		31545FE2282C7EC00038DF62 /* InfoTeamTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31545FE0282C7EC00038DF62 /* InfoTeamTableViewCell.swift */; };
-		31545FE3282C7EC00038DF62 /* InfoTeamTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31545FE1282C7EC00038DF62 /* InfoTeamTableViewCell.xib */; };
 		3189B9BA282571C6002BFFD1 /* TopGoal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3189B9B9282571C6002BFFD1 /* TopGoal.swift */; };
 		3189B9BD28257A9B002BFFD1 /* TopGoalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3189B9BB28257A9B002BFFD1 /* TopGoalTableViewCell.swift */; };
-		3189B9BE28257A9B002BFFD1 /* TopGoalTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3189B9BC28257A9B002BFFD1 /* TopGoalTableViewCell.xib */; };
 		3189B9C1282623AD002BFFD1 /* PlayersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3189B9BF282623AD002BFFD1 /* PlayersTableViewCell.swift */; };
-		3189B9C2282623AD002BFFD1 /* PlayersTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3189B9C0282623AD002BFFD1 /* PlayersTableViewCell.xib */; };
 		3189B9C62826298E002BFFD1 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3189B9C52826298E002BFFD1 /* Player.swift */; };
 		31A4764F2846A07D0011999F /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A4764E2846A07D0011999F /* Service.swift */; };
 		31A476512846A8980011999F /* GenericService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A476502846A8980011999F /* GenericService.swift */; };
 		31F3B39628219EB100821127 /* RankingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F3B39428219EB100821127 /* RankingTableViewCell.swift */; };
-		31F3B39728219EB100821127 /* RankingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31F3B39528219EB100821127 /* RankingTableViewCell.xib */; };
 		31F3B39928219FFE00821127 /* Medal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F3B39828219FFE00821127 /* Medal.swift */; };
-		43C0A1489ABE26A622ABD2CE /* Pods_Marcelo_WorldCupSounds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B03EC9C1AB5BB49836EEA884 /* Pods_Marcelo_WorldCupSounds.framework */; };
+		45EBAF3AED6BAB62BAD90F2A /* Pods_Marcelo_WorldCupQatar22.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC80CDAB193CCA7CE58D1753 /* Pods_Marcelo_WorldCupQatar22.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,7 +58,7 @@
 		314750682823082C00EB1A48 /* MatchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchTableViewCell.swift; sourceTree = "<group>"; };
 		314750692823082C00EB1A48 /* MatchTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MatchTableViewCell.xib; sourceTree = "<group>"; };
 		3147506C2824106400EB1A48 /* Matches.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Matches.swift; sourceTree = "<group>"; };
-		314871972820367C0021B553 /* Marcelo.WorldCupSounds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Marcelo.WorldCupSounds.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		314871972820367C0021B553 /* Marcelo.WorldCupQatar22.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Marcelo.WorldCupQatar22.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3148719A2820367C0021B553 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3148719C2820367C0021B553 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		3148719E2820367C0021B553 /* Stadium.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stadium.swift; sourceTree = "<group>"; };
@@ -89,9 +89,9 @@
 		31F3B39428219EB100821127 /* RankingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingTableViewCell.swift; sourceTree = "<group>"; };
 		31F3B39528219EB100821127 /* RankingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RankingTableViewCell.xib; sourceTree = "<group>"; };
 		31F3B39828219FFE00821127 /* Medal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Medal.swift; sourceTree = "<group>"; };
-		5634AB95F94B6B3CD6E5E0A6 /* Pods-Marcelo.WorldCupSounds.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Marcelo.WorldCupSounds.debug.xcconfig"; path = "Target Support Files/Pods-Marcelo.WorldCupSounds/Pods-Marcelo.WorldCupSounds.debug.xcconfig"; sourceTree = "<group>"; };
-		99E50FBE4C145F3AD4281170 /* Pods-Marcelo.WorldCupSounds.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Marcelo.WorldCupSounds.release.xcconfig"; path = "Target Support Files/Pods-Marcelo.WorldCupSounds/Pods-Marcelo.WorldCupSounds.release.xcconfig"; sourceTree = "<group>"; };
-		B03EC9C1AB5BB49836EEA884 /* Pods_Marcelo_WorldCupSounds.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Marcelo_WorldCupSounds.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A2F06F0807216EFE030E394 /* Pods-Marcelo.WorldCupQatar22.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Marcelo.WorldCupQatar22.release.xcconfig"; path = "Target Support Files/Pods-Marcelo.WorldCupQatar22/Pods-Marcelo.WorldCupQatar22.release.xcconfig"; sourceTree = "<group>"; };
+		7E56C9244D33E41C9A444E04 /* Pods-Marcelo.WorldCupQatar22.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Marcelo.WorldCupQatar22.debug.xcconfig"; path = "Target Support Files/Pods-Marcelo.WorldCupQatar22/Pods-Marcelo.WorldCupQatar22.debug.xcconfig"; sourceTree = "<group>"; };
+		FC80CDAB193CCA7CE58D1753 /* Pods_Marcelo_WorldCupQatar22.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Marcelo_WorldCupQatar22.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,41 +99,40 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				43C0A1489ABE26A622ABD2CE /* Pods_Marcelo_WorldCupSounds.framework in Frameworks */,
+				45EBAF3AED6BAB62BAD90F2A /* Pods_Marcelo_WorldCupQatar22.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		23D14957715974492A9A2007 /* Pods */ = {
+		3103191B81527A21BEC6D764 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				5634AB95F94B6B3CD6E5E0A6 /* Pods-Marcelo.WorldCupSounds.debug.xcconfig */,
-				99E50FBE4C145F3AD4281170 /* Pods-Marcelo.WorldCupSounds.release.xcconfig */,
+				FC80CDAB193CCA7CE58D1753 /* Pods_Marcelo_WorldCupQatar22.framework */,
 			);
-			path = Pods;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		3148718E2820367C0021B553 = {
 			isa = PBXGroup;
 			children = (
-				314871992820367C0021B553 /* Marcelo.WorldCupSounds */,
+				314871992820367C0021B553 /* Marcelo.WorldCupQatar22 */,
 				314871982820367C0021B553 /* Products */,
-				23D14957715974492A9A2007 /* Pods */,
-				AD78C58D8007F733E20A4035 /* Frameworks */,
+				5C87EAA5FB1DD143683443CE /* Pods */,
+				3103191B81527A21BEC6D764 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		314871982820367C0021B553 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				314871972820367C0021B553 /* Marcelo.WorldCupSounds.app */,
+				314871972820367C0021B553 /* Marcelo.WorldCupQatar22.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		314871992820367C0021B553 /* Marcelo.WorldCupSounds */ = {
+		314871992820367C0021B553 /* Marcelo.WorldCupQatar22 */ = {
 			isa = PBXGroup;
 			children = (
 				31A4764D2846A03F0011999F /* Service */,
@@ -147,7 +146,7 @@
 				314871A52820367E0021B553 /* LaunchScreen.storyboard */,
 				314871A82820367E0021B553 /* Info.plist */,
 			);
-			path = Marcelo.WorldCupSounds;
+			path = Marcelo.WorldCupQatar22;
 			sourceTree = "<group>";
 		};
 		314871AE28203A940021B553 /* Controller */ = {
@@ -219,34 +218,35 @@
 			path = Service;
 			sourceTree = "<group>";
 		};
-		AD78C58D8007F733E20A4035 /* Frameworks */ = {
+		5C87EAA5FB1DD143683443CE /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				B03EC9C1AB5BB49836EEA884 /* Pods_Marcelo_WorldCupSounds.framework */,
+				7E56C9244D33E41C9A444E04 /* Pods-Marcelo.WorldCupQatar22.debug.xcconfig */,
+				6A2F06F0807216EFE030E394 /* Pods-Marcelo.WorldCupQatar22.release.xcconfig */,
 			);
-			name = Frameworks;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		314871962820367C0021B553 /* Marcelo.WorldCupSounds */ = {
+		314871962820367C0021B553 /* Marcelo.WorldCupQatar22 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 314871AB2820367E0021B553 /* Build configuration list for PBXNativeTarget "Marcelo.WorldCupSounds" */;
+			buildConfigurationList = 314871AB2820367E0021B553 /* Build configuration list for PBXNativeTarget "Marcelo.WorldCupQatar22" */;
 			buildPhases = (
-				527FD301A1DB5328B3FE2CBD /* [CP] Check Pods Manifest.lock */,
+				C08011C4C548C9BC8D11B3C4 /* [CP] Check Pods Manifest.lock */,
 				314871932820367C0021B553 /* Sources */,
 				314871942820367C0021B553 /* Frameworks */,
 				314871952820367C0021B553 /* Resources */,
-				B71E5CA04ED8ABBC7BFA6B6C /* [CP] Embed Pods Frameworks */,
+				6B0FE7D43688677795591F52 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Marcelo.WorldCupSounds;
+			name = Marcelo.WorldCupQatar22;
 			productName = Marcelo.WorldCupSounds;
-			productReference = 314871972820367C0021B553 /* Marcelo.WorldCupSounds.app */;
+			productReference = 314871972820367C0021B553 /* Marcelo.WorldCupQatar22.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -264,7 +264,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 314871922820367C0021B553 /* Build configuration list for PBXProject "Marcelo.WorldCupSounds" */;
+			buildConfigurationList = 314871922820367C0021B553 /* Build configuration list for PBXProject "Marcelo.WorldCupQatar22" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -277,7 +277,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				314871962820367C0021B553 /* Marcelo.WorldCupSounds */,
+				314871962820367C0021B553 /* Marcelo.WorldCupQatar22 */,
 			);
 		};
 /* End PBXProject section */
@@ -287,16 +287,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				314871BB282051560021B553 /* GroupsCustomTableViewCell.xib in Resources */,
-				3189B9C2282623AD002BFFD1 /* PlayersTableViewCell.xib in Resources */,
+				311A49E9285D1122003E3B0E /* Assets.xcassets in Resources */,
 				314871A72820367E0021B553 /* LaunchScreen.storyboard in Resources */,
-				31545FE3282C7EC00038DF62 /* InfoTeamTableViewCell.xib in Resources */,
-				3189B9BE28257A9B002BFFD1 /* TopGoalTableViewCell.xib in Resources */,
-				3147506B2823082C00EB1A48 /* MatchTableViewCell.xib in Resources */,
-				314871A42820367E0021B553 /* Assets.xcassets in Resources */,
-				314871C32820A63B0021B553 /* StadiumTableViewCell.xib in Resources */,
-				313BF4FF28272009004CE901 /* FifaTableViewCell.xib in Resources */,
-				31F3B39728219EB100821127 /* RankingTableViewCell.xib in Resources */,
 				314871A22820367C0021B553 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -304,7 +296,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		527FD301A1DB5328B3FE2CBD /* [CP] Check Pods Manifest.lock */ = {
+		6B0FE7D43688677795591F52 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Marcelo.WorldCupQatar22/Pods-Marcelo.WorldCupQatar22-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Marcelo.WorldCupQatar22/Pods-Marcelo.WorldCupQatar22-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Marcelo.WorldCupQatar22/Pods-Marcelo.WorldCupQatar22-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C08011C4C548C9BC8D11B3C4 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -319,28 +328,11 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Marcelo.WorldCupSounds-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Marcelo.WorldCupQatar22-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B71E5CA04ED8ABBC7BFA6B6C /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Marcelo.WorldCupSounds/Pods-Marcelo.WorldCupSounds-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Marcelo.WorldCupSounds/Pods-Marcelo.WorldCupSounds-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Marcelo.WorldCupSounds/Pods-Marcelo.WorldCupSounds-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -350,6 +342,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				311A49D8285D097F003E3B0E /* GroupsCustomTableViewCell.xib in Sources */,
+				311A49D9285D097F003E3B0E /* StadiumTableViewCell.xib in Sources */,
+				311A49DA285D097F003E3B0E /* RankingTableViewCell.xib in Sources */,
+				311A49DB285D097F003E3B0E /* MatchTableViewCell.xib in Sources */,
+				311A49DC285D097F003E3B0E /* TopGoalTableViewCell.xib in Sources */,
+				311A49DD285D097F003E3B0E /* PlayersTableViewCell.xib in Sources */,
+				311A49DE285D097F003E3B0E /* FifaTableViewCell.xib in Sources */,
+				311A49DF285D097F003E3B0E /* InfoTeamTableViewCell.xib in Sources */,
 				3148719F2820367C0021B553 /* Stadium.swift in Sources */,
 				31A4764F2846A07D0011999F /* Service.swift in Sources */,
 				3148719B2820367C0021B553 /* AppDelegate.swift in Sources */,
@@ -518,7 +518,7 @@
 		};
 		314871AC2820367E0021B553 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5634AB95F94B6B3CD6E5E0A6 /* Pods-Marcelo.WorldCupSounds.debug.xcconfig */;
+			baseConfigurationReference = 7E56C9244D33E41C9A444E04 /* Pods-Marcelo.WorldCupQatar22.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -526,7 +526,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = RVDHB2VBB6;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Marcelo.WorldCupSounds/Info.plist;
+				INFOPLIST_FILE = Marcelo.WorldCupQatar22/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -538,7 +538,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "backfront.Marcelo-WorldCupSounds";
+				PRODUCT_BUNDLE_IDENTIFIER = backfront.Marcelo.WorldCupQatar22;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -548,7 +548,7 @@
 		};
 		314871AD2820367E0021B553 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 99E50FBE4C145F3AD4281170 /* Pods-Marcelo.WorldCupSounds.release.xcconfig */;
+			baseConfigurationReference = 6A2F06F0807216EFE030E394 /* Pods-Marcelo.WorldCupQatar22.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -556,7 +556,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = RVDHB2VBB6;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Marcelo.WorldCupSounds/Info.plist;
+				INFOPLIST_FILE = Marcelo.WorldCupQatar22/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -568,7 +568,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "backfront.Marcelo-WorldCupSounds";
+				PRODUCT_BUNDLE_IDENTIFIER = backfront.Marcelo.WorldCupQatar22;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -579,7 +579,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		314871922820367C0021B553 /* Build configuration list for PBXProject "Marcelo.WorldCupSounds" */ = {
+		314871922820367C0021B553 /* Build configuration list for PBXProject "Marcelo.WorldCupQatar22" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				314871A92820367E0021B553 /* Debug */,
@@ -588,7 +588,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		314871AB2820367E0021B553 /* Build configuration list for PBXNativeTarget "Marcelo.WorldCupSounds" */ = {
+		314871AB2820367E0021B553 /* Build configuration list for PBXNativeTarget "Marcelo.WorldCupQatar22" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				314871AC2820367E0021B553 /* Debug */,

@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_Marcelo_WorldCupSoundsVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_Marcelo_WorldCupSoundsVersionString[];
+FOUNDATION_EXPORT double Pods_Marcelo_WorldCupQatar22VersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_Marcelo_WorldCupQatar22VersionString[];
 
