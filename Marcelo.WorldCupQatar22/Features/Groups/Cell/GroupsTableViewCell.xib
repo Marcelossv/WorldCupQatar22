@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleAspectFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="GroupsTableViewCell" rowHeight="83" id="KGk-i7-Jjw" customClass="GroupsTableViewCell" customModule="Marcelo_WorldCupQatar22" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="83"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="83"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HK1-Nk-KO1">
+                        <rect key="frame" x="15" y="10" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="GsX-6D-eIo"/>
+                            <constraint firstAttribute="height" constant="60" id="OEc-G7-vlv"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EDQ-ds-497">
+                        <rect key="frame" x="95" y="30" width="41.5" height="20"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K5F-vf-FXU">
+                        <rect key="frame" x="259" y="26" width="45" height="31"/>
+                        <color key="tintColor" red="0.61176470589999998" green="0.10980392160000001" blue="0.1215686275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" image="info.circle" catalog="system"/>
+                        <connections>
+                            <action selector="tappedInfo:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="fIw-Ga-gm9"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="HK1-Nk-KO1" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="FiV-7h-C0P"/>
+                    <constraint firstItem="K5F-vf-FXU" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="26" id="Nq7-6M-Njm"/>
+                    <constraint firstItem="EDQ-ds-497" firstAttribute="leading" secondItem="HK1-Nk-KO1" secondAttribute="trailing" constant="20" id="hSv-VR-3Mv"/>
+                    <constraint firstItem="HK1-Nk-KO1" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="jD9-oC-n3j"/>
+                    <constraint firstAttribute="trailing" secondItem="K5F-vf-FXU" secondAttribute="trailing" constant="16" id="xUd-m6-akS"/>
+                    <constraint firstItem="EDQ-ds-497" firstAttribute="centerY" secondItem="HK1-Nk-KO1" secondAttribute="centerY" id="xZq-O4-Sxu"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="buttonInfo" destination="K5F-vf-FXU" id="i1P-fp-b3a"/>
+                <outlet property="imageProfile" destination="HK1-Nk-KO1" id="chD-z1-61V"/>
+                <outlet property="nameLabel" destination="EDQ-ds-497" id="OZ7-i6-rPa"/>
+            </connections>
+            <point key="canvasLocation" x="76.811594202898561" y="92.075892857142847"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="info.circle" catalog="system" width="128" height="121"/>
+    </resources>
+</document>

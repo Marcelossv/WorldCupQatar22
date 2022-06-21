@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="X8l-Ya-ZL0">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="X8l-Ya-ZL0">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -13,15 +12,15 @@
             <objects>
                 <viewController storyboardIdentifier="Ranking" id="6ac-zs-c3r" customClass="RankingViewController" customModule="Marcelo_WorldCupSounds" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="bottom" semanticContentAttribute="playback" id="bn4-qH-iWh">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Fec-7t-nOA">
-                                <rect key="frame" x="0.0" y="96" width="414" height="717"/>
+                                <rect key="frame" x="0.0" y="52" width="600" height="499"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="D1i-Ye-4KR">
-                                <rect key="frame" x="0.0" y="44" width="414" height="32"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="32"/>
                                 <segments>
                                     <segment title="WINNERS 🏆"/>
                                     <segment title=" GOALS ⚽️"/>
@@ -33,7 +32,7 @@
                                 </connections>
                             </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="* Last updated at 14/01/22" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9fV-dv-BfI">
-                                <rect key="frame" x="3" y="78" width="411" height="16"/>
+                                <rect key="frame" x="3" y="34" width="597" height="16"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -72,13 +71,13 @@
         <!--Groups-->
         <scene sceneID="drX-UR-4aY">
             <objects>
-                <viewController storyboardIdentifier="Groups" id="Qzo-Ih-FsZ" customClass="Groups" customModule="Marcelo_WorldCupSounds" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Groups" id="Qzo-Ih-FsZ" customClass="GroupsViewController" customModule="Marcelo_WorldCupSounds" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4m0-2t-JMc">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="pXJ-Yr-hTi">
-                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                         </subviews>
@@ -102,36 +101,36 @@
             </objects>
             <point key="canvasLocation" x="-932" y="860"/>
         </scene>
-        <!--Info Team View Controller-->
+        <!--Team Info View Controller-->
         <scene sceneID="bja-uR-rDR">
             <objects>
-                <viewController storyboardIdentifier="InfoTeamViewController" definesPresentationContext="YES" providesPresentationContextTransitionStyle="YES" modalPresentationStyle="formSheet" id="yWa-I0-0fm" customClass="InfoTeamViewController" customModule="Marcelo_WorldCupSounds" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="InfoTeamViewController" definesPresentationContext="YES" providesPresentationContextTransitionStyle="YES" modalPresentationStyle="formSheet" id="yWa-I0-0fm" customClass="TeamInfoViewController" customModule="Marcelo_WorldCupSounds" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NgK-iJ-3qo">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U6q-zf-cVX">
-                                <rect key="frame" x="20" y="362" width="374" height="31"/>
+                                <rect key="frame" x="20" y="318" width="560" height="31"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                                 <color key="shadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ny6-mx-5SU">
-                                <rect key="frame" x="20" y="398" width="374" height="18"/>
+                                <rect key="frame" x="20" y="354" width="560" height="18"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pre-FP-gxE">
-                                <rect key="frame" x="160" y="54" width="102" height="2"/>
+                                <rect key="frame" x="160" y="10" width="288" height="2"/>
                                 <color key="backgroundColor" systemColor="labelColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="2" id="aUa-Jq-xNe"/>
                                 </constraints>
                             </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="quk-DR-pC3">
-                                <rect key="frame" x="10" y="66" width="394" height="281"/>
+                                <rect key="frame" x="103" y="22" width="394" height="281"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="281" id="QhQ-kN-V6l"/>
                                     <constraint firstAttribute="width" constant="394" id="ZNW-9S-Kla"/>
@@ -169,11 +168,11 @@
             <objects>
                 <viewController storyboardIdentifier="ModalStadiumViewController" interfaceStyle="light" id="Cwz-RM-7zT" customClass="ModalStadiumViewController" customModule="Marcelo_WorldCupSounds" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" tag="1" contentMode="TopLeft" semanticContentAttribute="playback" id="06A-2R-jK1">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="JBX-B8-vUP" customClass="YTPlayerView">
-                                <rect key="frame" x="0.0" y="252" width="414" height="325"/>
+                                <rect key="frame" x="0.0" y="252" width="600" height="63"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
                         </subviews>
@@ -203,35 +202,35 @@
             <objects>
                 <viewController storyboardIdentifier="CountDown" id="GCU-G2-70P" customClass="CountDown" customModule="Marcelo_WorldCupSounds" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MDX-NR-SOk">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fi1589q1f7-fifa-world-cup-qatar-2022-logo-qatar-2022-symbols-fifa-world-cup" translatesAutoresizingMaskIntoConstraints="NO" id="zaN-uj-LLZ">
-                                <rect key="frame" x="5" y="59" width="404" height="357"/>
+                                <rect key="frame" x="5" y="15" width="590" height="357"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="357" id="3ov-Jg-kBG"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DAYS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hgA-ly-aXY">
-                                <rect key="frame" x="71" y="587" width="34" height="16"/>
+                                <rect key="frame" x="71" y="325" width="34" height="16"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HOURS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cCJ-ej-L0q">
-                                <rect key="frame" x="145" y="587" width="46" height="16"/>
+                                <rect key="frame" x="145" y="325" width="46" height="16"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MINUTES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UFL-ED-iDm">
-                                <rect key="frame" x="218" y="587" width="58" height="16"/>
+                                <rect key="frame" x="404" y="325" width="58" height="16"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="highlightedColor" systemColor="tintColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="none" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wpN-SM-mx6">
-                                <rect key="frame" x="50" y="533.5" width="314" height="36.5"/>
+                                <rect key="frame" x="50" y="268.5" width="500" height="39.5"/>
                                 <attributedString key="attributedText">
                                     <fragment content="196   06   00    58">
                                         <attributes>
@@ -245,7 +244,7 @@
                                 <color key="shadowColor" red="0.61176470589999998" green="0.10980392160000001" blue="0.1215686275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SECONDS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XRI-Mr-itS">
-                                <rect key="frame" x="301" y="587" width="63" height="16"/>
+                                <rect key="frame" x="487" y="325" width="63" height="16"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -286,17 +285,17 @@
         <!--Matchs-->
         <scene sceneID="kNf-MS-DLu">
             <objects>
-                <viewController storyboardIdentifier="Matchs" id="arF-am-Bib" customClass="Matchs" customModule="Marcelo_WorldCupSounds" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Matchs" id="arF-am-Bib" customClass="MatchesViewController" customModule="Marcelo_WorldCupSounds" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="bottom" semanticContentAttribute="playback" id="psk-qZ-c44">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="amA-xm-c2j">
-                                <rect key="frame" x="0.0" y="99" width="414" height="714"/>
+                                <rect key="frame" x="0.0" y="55" width="600" height="496"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="COy-li-dsp">
-                                <rect key="frame" x="0.0" y="49" width="414" height="46"/>
+                                <rect key="frame" x="0.0" y="5" width="600" height="46"/>
                                 <segments>
                                     <segment title="A"/>
                                     <segment title="B"/>
@@ -341,13 +340,13 @@
         <!--Stadium-->
         <scene sceneID="yM0-EQ-qtx">
             <objects>
-                <viewController storyboardIdentifier="Stadium" id="YKj-eA-fnq" customClass="Stadium" customModule="Marcelo_WorldCupSounds" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Stadium" id="YKj-eA-fnq" customClass="StadiumViewController" customModule="Marcelo_WorldCupSounds" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vJm-Et-0OC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="EqO-gK-kpn">
-                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                         </subviews>
