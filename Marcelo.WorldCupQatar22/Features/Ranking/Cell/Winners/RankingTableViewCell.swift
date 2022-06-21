@@ -21,7 +21,7 @@ class RankingTableViewCell: UITableViewCell {
         super.awakeFromNib()
     }
     
-    public func setupCell(medal:Medal){
+    public func setupCell(medal:Winners){
         self.imageTeam.image = medal.image
         self.numberMedalLabel.text = medal.numberMedal
     }

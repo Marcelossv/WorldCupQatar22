@@ -101,10 +101,10 @@
             </objects>
             <point key="canvasLocation" x="-932" y="860"/>
         </scene>
-        <!--Info Team View Controller-->
+        <!--Team Info View Controller-->
         <scene sceneID="bja-uR-rDR">
             <objects>
-                <viewController storyboardIdentifier="InfoTeamViewController" definesPresentationContext="YES" providesPresentationContextTransitionStyle="YES" modalPresentationStyle="formSheet" id="yWa-I0-0fm" customClass="InfoTeamViewController" customModule="Marcelo_WorldCupSounds" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="InfoTeamViewController" definesPresentationContext="YES" providesPresentationContextTransitionStyle="YES" modalPresentationStyle="formSheet" id="yWa-I0-0fm" customClass="TeamInfoViewController" customModule="Marcelo_WorldCupSounds" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NgK-iJ-3qo">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -285,7 +285,7 @@
         <!--Matchs-->
         <scene sceneID="kNf-MS-DLu">
             <objects>
-                <viewController storyboardIdentifier="Matchs" id="arF-am-Bib" customClass="Matchs" customModule="Marcelo_WorldCupSounds" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Matchs" id="arF-am-Bib" customClass="MatchesViewController" customModule="Marcelo_WorldCupSounds" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="bottom" semanticContentAttribute="playback" id="psk-qZ-c44">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -340,7 +340,7 @@
         <!--Stadium-->
         <scene sceneID="yM0-EQ-qtx">
             <objects>
-                <viewController storyboardIdentifier="Stadium" id="YKj-eA-fnq" customClass="Stadium" customModule="Marcelo_WorldCupSounds" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Stadium" id="YKj-eA-fnq" customClass="StadiumViewController" customModule="Marcelo_WorldCupSounds" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vJm-Et-0OC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -38,7 +38,7 @@ class StadiumTableViewCell: UITableViewCell {
         self.delegate?.tappedPLayedButton()
     }
     
-    public func setupCell(stadiumNames:StadiumNames){
+    public func setupCell(stadiumNames:Stadium){
         self.imageStadium.image = stadiumNames.imageStadium
         self.capacityLabel.text = stadiumNames.capacity
         self.cityLabel.text = stadiumNames.city

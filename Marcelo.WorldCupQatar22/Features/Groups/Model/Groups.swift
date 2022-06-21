@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-struct Group{
+struct Groups{
     var nameGroup: String
     var image: [UIImage]
     var name: [String]

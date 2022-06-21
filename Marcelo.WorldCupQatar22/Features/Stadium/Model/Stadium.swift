@@ -8,10 +8,10 @@
 import Foundation
 import UIKit
 
-struct StadiumNames{
+struct Stadium {
     let nameStadium: String
     let imageStadium: UIImage
     let capacity: String
     let city: String
     let matchesPlanned: String
-    }
+}

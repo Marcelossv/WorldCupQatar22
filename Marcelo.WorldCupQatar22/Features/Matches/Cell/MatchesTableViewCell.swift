@@ -7,7 +7,7 @@
 
 import UIKit
 
-class MatchTableViewCell: UITableViewCell {
+class MatchesTableViewCell: UITableViewCell {
 
     @IBOutlet weak var titleMatchLabel: UILabel!
     @IBOutlet weak var homeNameTeam: UILabel!
@@ -17,14 +17,14 @@ class MatchTableViewCell: UITableViewCell {
     @IBOutlet weak var imageHome: UIImageView!
     @IBOutlet weak var imageVisit: UIImageView!
     
-    static let identifier: String = "MatchTableViewCell"
+    static let identifier: String = "MatchesTableViewCell"
     static func getNib() -> UINib{
         return UINib(nibName: self.identifier, bundle: nil)
     }
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        self.dataTimeMAtch.layer.cornerRadius = 20
+        self.dataTimeMAtch.layer.cornerRadius = 10
     }
 
     public func setupCell(matches:Matches){

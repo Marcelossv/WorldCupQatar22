@@ -27,29 +27,29 @@ class RankingViewController: UIViewController {
     
     var fifaRaking: [Datum] = []
     
-    var medal: [Medal] = [
-        Medal(image: #imageLiteral(resourceName:"Brazil"), numberMedal: "5 (1958, 1962, 1970, 1994, 2002)"),
-        Medal(image: #imageLiteral(resourceName:"Germany-Flag-icon"), numberMedal: "4 (1954, 1974, 1990, 2014)"),
-        Medal(image: #imageLiteral(resourceName:"MicrosoftTeams-image (5)"), numberMedal: "4 (1934, 1938, 1982, 2006)"),
-        Medal(image: #imageLiteral(resourceName:"Argentina-Flag-icon"), numberMedal: "2 (1978, 1986)"),
-        Medal(image: #imageLiteral(resourceName:"France-Flag-icon"), numberMedal: "2 (1998, 2018)"),
-        Medal(image: #imageLiteral(resourceName:"Uruguay-Flag-icon"), numberMedal: "2 (1930, 1950)"),
-        Medal(image: #imageLiteral(resourceName:"England-Flag-icon"), numberMedal: "1 (1966)"),
-        Medal(image: #imageLiteral(resourceName:"Spain-Flag-icon"), numberMedal: "1 (2010)")
+    var medal: [Winners] = [
+        Winners(image: #imageLiteral(resourceName:"Brazil"), numberMedal: "5 (1958, 1962, 1970, 1994, 2002)"),
+        Winners(image: #imageLiteral(resourceName:"Germany-Flag-icon"), numberMedal: "4 (1954, 1974, 1990, 2014)"),
+        Winners(image: #imageLiteral(resourceName:"MicrosoftTeams-image (5)"), numberMedal: "4 (1934, 1938, 1982, 2006)"),
+        Winners(image: #imageLiteral(resourceName:"Argentina-Flag-icon"), numberMedal: "2 (1978, 1986)"),
+        Winners(image: #imageLiteral(resourceName:"France-Flag-icon"), numberMedal: "2 (1998, 2018)"),
+        Winners(image: #imageLiteral(resourceName:"Uruguay-Flag-icon"), numberMedal: "2 (1930, 1950)"),
+        Winners(image: #imageLiteral(resourceName:"England-Flag-icon"), numberMedal: "1 (1966)"),
+        Winners(image: #imageLiteral(resourceName:"Spain-Flag-icon"), numberMedal: "1 (2010)")
     ]
     
     
-    var topGoal: [TopGoal] = [
-        TopGoal(image: #imageLiteral(resourceName: "Screen Shot 2022-05-07 at 14.24.13"), namePlayer: "🇩🇪 Klose (2002, 2006, 2010, 2014)", gols: "⚽️ 16"),
-        TopGoal(image: #imageLiteral(resourceName: "ronaldo-nazario-lima"), namePlayer: "🇧🇷 Ronaldo (1994, 1998, 2002, 2006)  ", gols: "⚽️ 15"),
-        TopGoal(image: #imageLiteral(resourceName: "Screen Shot 2022-05-07 at 14.22.16"), namePlayer: "🇩🇪 Gerd Müller (1970, 1974)", gols: "⚽️ 14"),
-        TopGoal(image: #imageLiteral(resourceName: "fontaine2"), namePlayer: "🇫🇷 Just Fontaine (1958) ", gols: "⚽️ 13"),
-        TopGoal(image: #imageLiteral(resourceName: "pele"), namePlayer: "🇧🇷 Pelé (1958, 1962, 1966, 1970)", gols: "⚽️ 12"),
-        TopGoal(image: #imageLiteral(resourceName: "Sándor Kocsis"), namePlayer: "🇹🇯 Sándor Kocsis (1954)", gols: "⚽️ 11"),
-        TopGoal(image: #imageLiteral(resourceName: "Jürgen-Klinsmann-alemanha"), namePlayer: "🇩🇪 Jurgen Klinsmann (1994, 1998)", gols: "⚽️ 11"),
-        TopGoal(image: #imageLiteral(resourceName: "licensed-image"), namePlayer: "🇩🇪 Helmut Rahn (1954, 1958) ", gols: "⚽️ 10"),
-        TopGoal(image: #imageLiteral(resourceName: "teeeeee"), namePlayer: "🇵🇪 Teófilo Cubillas (1970, 1978 e 1982)", gols: "⚽️ 10"),
-        TopGoal(image: #imageLiteral(resourceName: "Screen Shot 2022-05-07 at 14.23.51"), namePlayer: "🇵🇱 Grzegorz Lato (1975, 1982) ", gols: "⚽️ 10")
+    var topGoal: [Goals] = [
+        Goals(image: #imageLiteral(resourceName: "Screen Shot 2022-05-07 at 14.24.13"), namePlayer: "🇩🇪 Klose (2002, 2006, 2010, 2014)", gols: "⚽️ 16"),
+        Goals(image: #imageLiteral(resourceName: "ronaldo-nazario-lima"), namePlayer: "🇧🇷 Ronaldo (1994, 1998, 2002, 2006)  ", gols: "⚽️ 15"),
+        Goals(image: #imageLiteral(resourceName: "Screen Shot 2022-05-07 at 14.22.16"), namePlayer: "🇩🇪 Gerd Müller (1970, 1974)", gols: "⚽️ 14"),
+        Goals(image: #imageLiteral(resourceName: "fontaine2"), namePlayer: "🇫🇷 Just Fontaine (1958) ", gols: "⚽️ 13"),
+        Goals(image: #imageLiteral(resourceName: "pele"), namePlayer: "🇧🇷 Pelé (1958, 1962, 1966, 1970)", gols: "⚽️ 12"),
+        Goals(image: #imageLiteral(resourceName: "Sándor Kocsis"), namePlayer: "🇹🇯 Sándor Kocsis (1954)", gols: "⚽️ 11"),
+        Goals(image: #imageLiteral(resourceName: "Jürgen-Klinsmann-alemanha"), namePlayer: "🇩🇪 Jurgen Klinsmann (1994, 1998)", gols: "⚽️ 11"),
+        Goals(image: #imageLiteral(resourceName: "licensed-image"), namePlayer: "🇩🇪 Helmut Rahn (1954, 1958) ", gols: "⚽️ 10"),
+        Goals(image: #imageLiteral(resourceName: "teeeeee"), namePlayer: "🇵🇪 Teófilo Cubillas (1970, 1978 e 1982)", gols: "⚽️ 10"),
+        Goals(image: #imageLiteral(resourceName: "Screen Shot 2022-05-07 at 14.23.51"), namePlayer: "🇵🇱 Grzegorz Lato (1975, 1982) ", gols: "⚽️ 10")
     ]
     
     

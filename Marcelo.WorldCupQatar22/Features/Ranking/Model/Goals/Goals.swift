@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-struct TopGoal{
+struct Goals{
     let image: UIImage
     let namePlayer: String
     let gols: String

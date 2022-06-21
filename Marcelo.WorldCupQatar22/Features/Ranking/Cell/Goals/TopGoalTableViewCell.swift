@@ -26,7 +26,7 @@ class TopGoalTableViewCell: UITableViewCell {
         self.imagePlayer.contentMode = .scaleAspectFit
     }
 
-    public func setupCell(topGoal:TopGoal){
+    public func setupCell(topGoal:Goals){
         self.imagePlayer.image = topGoal.image
         self.namePLayer.text = topGoal.namePlayer
         self.infoGoalPLayer.text = topGoal.gols

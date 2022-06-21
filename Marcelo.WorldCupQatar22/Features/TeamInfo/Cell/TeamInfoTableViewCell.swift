@@ -7,13 +7,13 @@
 
 import UIKit
 
-class InfoTeamTableViewCell: UITableViewCell {
+class TeamInfoTableViewCell: UITableViewCell {
     
     @IBOutlet weak var imageTeam: UIImageView!
     @IBOutlet weak var titleTeam: UILabel!
     @IBOutlet weak var textTeam: UILabel!
     
-    static let identifier: String = "InfoTeamTableViewCell"
+    static let identifier: String = "TeamInfoTableViewCell"
     
     static func getNib() -> UINib{
         return UINib(nibName: self.identifier, bundle: nil)
@@ -24,7 +24,7 @@ class InfoTeamTableViewCell: UITableViewCell {
         
     }
 
-    func setupCell(infoTeams:InfoTeams){
+    func setupCell(infoTeams:TeamInfo){
         self.imageTeam.image = infoTeams.imageTeam
         self.titleTeam.text = infoTeams.nameTeam
         self.textTeam.text = infoTeams.labelTeam

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class GroupsCustomTableViewCell: UITableViewCell {
+class GroupsTableViewCell: UITableViewCell {
     
     var imageTeam: UIImage?
     var teamTitle: String?
@@ -18,7 +18,7 @@ class GroupsCustomTableViewCell: UITableViewCell {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var buttonInfo: UIButton!
     
-    static let identifier: String = "GroupsCustomTableViewCell"
+    static let identifier: String = "GroupsTableViewCell"
     static func getNib() -> UINib{
         return UINib(nibName: self.identifier, bundle: nil)
     }
@@ -39,7 +39,7 @@ class GroupsCustomTableViewCell: UITableViewCell {
     }
     
     func showDetails() {
-        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController (withIdentifier: "InfoTeamViewController") as? InfoTeamViewController
+        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController (withIdentifier: "InfoTeamViewController") as? TeamInfoViewController
         vc?.imageTeam = self.imageTeam
         vc?.teamTitle = self.teamTitle
         vc?.teamText = self.teamText

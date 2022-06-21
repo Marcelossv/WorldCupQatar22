@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-struct Medal{
+struct Winners {
     let image: UIImage
     let numberMedal: String
 }

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class Matchs: UIViewController{
+class MatchesViewController: UIViewController{
 
     @IBOutlet weak var segControl: UISegmentedControl!
     @IBOutlet weak var tableView: UITableView!
@@ -119,19 +119,19 @@ class Matchs: UIViewController{
     private func configTableView(){
         self.tableView.delegate = self
         self.tableView.dataSource = self
-        self.tableView.register(MatchTableViewCell.getNib(), forCellReuseIdentifier: "MatchTableViewCell")
+        self.tableView.register(MatchesTableViewCell.getNib(), forCellReuseIdentifier: MatchesTableViewCell.identifier)
     }
     
 }
 
-extension Matchs: UITableViewDataSource,UITableViewDelegate{
+extension MatchesViewController: UITableViewDataSource,UITableViewDelegate{
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return rowsTodisplay.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: MatchTableViewCell.identifier, for: indexPath) as? MatchTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: MatchesTableViewCell.identifier, for: indexPath) as? MatchesTableViewCell
         cell?.titleMatchLabel.text = rowsTodisplay[indexPath.row].titleMatch
         cell?.homeNameTeam.text = rowsTodisplay[indexPath.row].homeName
         cell?.visitNameTeam.text = rowsTodisplay[indexPath.row].visitName

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class InfoTeamViewController: UIViewController {
+class TeamInfoViewController: UIViewController {
     
     var imageTeam: UIImage?
     var teamTitle: String?
@@ -20,7 +20,6 @@ class InfoTeamViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setupUI()
-
     }
     
     func setupUI() {
@@ -29,7 +28,3 @@ class InfoTeamViewController: UIViewController {
         self.textTeamLabel.text = self.teamText
     }
 }
-
-    
-    
-
