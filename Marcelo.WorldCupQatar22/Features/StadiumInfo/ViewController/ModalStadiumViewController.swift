@@ -17,9 +17,5 @@ class ModalStadiumViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         playerView.load(withVideoId: "zuhA6cEHvfo")
-
     }
-    
-
 }
-

@@ -24,7 +24,9 @@ class RankingViewController: UIViewController {
     //Master Array
     lazy var goalTodisplay = topGoal
     // #imageLiteral(resourceName:"Screen Shot 2022-05-07 at 14.24.13")
+    
     var fifaRaking: [Datum] = []
+    
     var medal: [Medal] = [
         Medal(image: #imageLiteral(resourceName:"Brazil"), numberMedal: "5 (1958, 1962, 1970, 1994, 2002)"),
         Medal(image: #imageLiteral(resourceName:"Germany-Flag-icon"), numberMedal: "4 (1954, 1974, 1990, 2014)"),

@@ -6,7 +6,7 @@
 //
 
 import UIKit
-class Groups: UIViewController {
+class GroupsViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     // #imageLiteral(resourceName:"EDUCATION1")
@@ -36,7 +36,7 @@ class Groups: UIViewController {
     
 }
 
-extension Groups: UITableViewDelegate, UITableViewDataSource {
+extension GroupsViewController: UITableViewDelegate, UITableViewDataSource {
    
     func numberOfSections(in tableView: UITableView) -> Int {
         return group.count
