@@ -26,10 +26,10 @@ class Matchs: UIViewController{
     
     var groupB : [Matches] = [
        Matches(titleMatch: "GROUP B - KHALIFA 🏟", homeName: "ENG", visitName: "IRA", vs: "X", dataTimeMatch: "MON 21/11 - 08H00", imageH: #imageLiteral(resourceName: "England-Flag-icon"), imageV: #imageLiteral(resourceName: "Iran-Flag-icon")),
-       Matches(titleMatch: "GROUP B - AHMAD BIN ALI 🏟", homeName: "USA", visitName: "WAL", vs: "X", dataTimeMatch: "MON 21/11 - 14H00", imageH: #imageLiteral(resourceName: "United-States-Flag-icon"), imageV: #imageLiteral(resourceName: "Wales")),
-       Matches(titleMatch: "GROUP B - AHMAD BIN ALI  🏟", homeName: "WAL", visitName: "IRA", vs: "X", dataTimeMatch: "FRI 25/11 - 17H00", imageH: #imageLiteral(resourceName: "Wales"), imageV: #imageLiteral(resourceName: "Iran-Flag-icon")),
+       Matches(titleMatch: "GROUP B - AHMAD BIN ALI 🏟", homeName: "USA", visitName: "WAL", vs: "X", dataTimeMatch: "MON 21/11 - 14H00", imageH: #imageLiteral(resourceName: "United-States-Flag-icon"), imageV: #imageLiteral(resourceName: "MicrosoftTeams-image (6)")),
+       Matches(titleMatch: "GROUP B - AHMAD BIN ALI  🏟", homeName: "WAL", visitName: "IRA", vs: "X", dataTimeMatch: "FRI 25/11 - 17H00", imageH: #imageLiteral(resourceName: "MicrosoftTeams-image (6)"), imageV: #imageLiteral(resourceName: "Iran-Flag-icon")),
        Matches(titleMatch: "GROUP B - AL BAYT STADIUM 🏟", homeName: "ENG", visitName: "USA", vs: "X", dataTimeMatch: "FRI 25/11 - 14H00", imageH: #imageLiteral(resourceName: "England-Flag-icon"), imageV: #imageLiteral(resourceName: "United-States-Flag-icon")),
-       Matches(titleMatch: "GROUP B - AHMAD BIN ALI  🏟", homeName: "WAL", visitName: "ENG", vs: "X", dataTimeMatch: "TUE 29/11 - 14H00", imageH: #imageLiteral(resourceName: "Wales"), imageV: #imageLiteral(resourceName: "England-Flag-icon")),
+       Matches(titleMatch: "GROUP B - AHMAD BIN ALI  🏟", homeName: "WAL", visitName: "ENG", vs: "X", dataTimeMatch: "TUE 29/11 - 14H00", imageH: #imageLiteral(resourceName: "MicrosoftTeams-image (6)"), imageV: #imageLiteral(resourceName: "England-Flag-icon")),
        Matches(titleMatch: "GROUP B - AL THUMAMA 🏟", homeName: "IRA", visitName: "USA", vs: "X", dataTimeMatch: "TUE 29/11 - 14H00", imageH: #imageLiteral(resourceName: "Iran-Flag-icon"), imageV: #imageLiteral(resourceName: "United-States-Flag-icon"))
     ]
     
@@ -44,20 +44,20 @@ class Matchs: UIViewController{
     
     var groupD : [Matches] = [
        Matches(titleMatch: "GROUP D - EDUCATION CITY 🏟", homeName: "DEN", visitName: "TUN", vs: "X", dataTimeMatch: "TUE 22/11 - 08H00", imageH: #imageLiteral(resourceName: "Denmark-Flag-icon"), imageV: #imageLiteral(resourceName: "Tunisia-Flag-icon")),
-       Matches(titleMatch: "GROUP D - AL JANOUB 🏟", homeName: "FRA", visitName: "AUS", vs: "X", dataTimeMatch: "TUE 22/11 - 14H00", imageH: #imageLiteral(resourceName: "France-Flag-icon"), imageV: #imageLiteral(resourceName: "Australia")),
-       Matches(titleMatch: "GROUP D - AL JANOUB  🏟", homeName: "TUN", visitName: "AUS", vs: "X", dataTimeMatch: "SAT 26/11 - 05H00", imageH: #imageLiteral(resourceName: "Tunisia-Flag-icon"), imageV: #imageLiteral(resourceName: "Australia")),
+       Matches(titleMatch: "GROUP D - AL JANOUB 🏟", homeName: "FRA", visitName: "AUS", vs: "X", dataTimeMatch: "TUE 22/11 - 14H00", imageH: #imageLiteral(resourceName: "France-Flag-icon"), imageV: #imageLiteral(resourceName: "MicrosoftTeams-image (6)")),
+       Matches(titleMatch: "GROUP D - AL JANOUB  🏟", homeName: "TUN", visitName: "AUS", vs: "X", dataTimeMatch: "SAT 26/11 - 05H00", imageH: #imageLiteral(resourceName: "Tunisia-Flag-icon"), imageV: #imageLiteral(resourceName: "MicrosoftTeams-image (6)")),
        Matches(titleMatch: "GROUP D - 974 🏟", homeName: "FRA", visitName: "DEN", vs: "X", dataTimeMatch: "SAT 26/11 - 11H00", imageH: #imageLiteral(resourceName: "France-Flag-icon"), imageV: #imageLiteral(resourceName: "Denmark-Flag-icon")),
        Matches(titleMatch: "GROUP D - EDUCATION CITY  🏟", homeName: "TUN", visitName: "FRA", vs: "X", dataTimeMatch: "WED 30/11 - 10H00", imageH: #imageLiteral(resourceName: "Tunisia-Flag-icon"), imageV: #imageLiteral(resourceName: "France-Flag-icon")),
-       Matches(titleMatch: "GROUP D - AL JANOUB 🏟", homeName: "AUS", visitName: "DEN", vs: "X", dataTimeMatch: "WED 30/11 - 10H00", imageH: #imageLiteral(resourceName: "Australia"), imageV: #imageLiteral(resourceName: "Denmark-Flag-icon"))
+       Matches(titleMatch: "GROUP D - AL JANOUB 🏟", homeName: "AUS", visitName: "DEN", vs: "X", dataTimeMatch: "WED 30/11 - 10H00", imageH: #imageLiteral(resourceName: "MicrosoftTeams-image (6)"), imageV: #imageLiteral(resourceName: "Denmark-Flag-icon"))
     ]
     
     var groupE : [Matches] = [
        Matches(titleMatch: "GROUP E - KHALIFA 🏟", homeName: "GER", visitName: "JPN", vs: "X", dataTimeMatch: "WED 23/11 - 08H00", imageH: #imageLiteral(resourceName: "Germany-Flag-icon"), imageV: #imageLiteral(resourceName: "Japan-Flag-icon")),
-       Matches(titleMatch: "GROUP E - AL THUMAMA 🏟", homeName: "SPA", visitName: "CR", vs: "X", dataTimeMatch: "WED 23/11 - 11H00", imageH: #imageLiteral(resourceName: "Spain-Flag-icon"), imageV: #imageLiteral(resourceName: "costaRica")),
-       Matches(titleMatch: "GROUP E - AHMAD BIN ALI  🏟", homeName: "JPN", visitName: "CR", vs: "X", dataTimeMatch: "SUN 27/11 - 05H00", imageH: #imageLiteral(resourceName: "Japan-Flag-icon"), imageV: #imageLiteral(resourceName: "costaRica")),
+       Matches(titleMatch: "GROUP E - AL THUMAMA 🏟", homeName: "SPA", visitName: "CR", vs: "X", dataTimeMatch: "WED 23/11 - 11H00", imageH: #imageLiteral(resourceName: "Spain-Flag-icon"), imageV: #imageLiteral(resourceName: "MicrosoftTeams-image (6)")),
+       Matches(titleMatch: "GROUP E - AHMAD BIN ALI  🏟", homeName: "JPN", visitName: "CR", vs: "X", dataTimeMatch: "SUN 27/11 - 05H00", imageH: #imageLiteral(resourceName: "Japan-Flag-icon"), imageV: #imageLiteral(resourceName: "MicrosoftTeams-image (6)")),
        Matches(titleMatch: "GROUP E - AL BAYT 🏟", homeName: "SPA", visitName: "GER", vs: "X", dataTimeMatch: "SUN 27/11 - 14H00", imageH: #imageLiteral(resourceName: "Spain-Flag-icon"), imageV: #imageLiteral(resourceName: "Germany-Flag-icon")),
        Matches(titleMatch: "GROUP E - KHALIFA 🏟", homeName: "JPN", visitName: "SPA", vs: "X", dataTimeMatch: "THURS 01/12 - 14H00", imageH: #imageLiteral(resourceName: "Japan-Flag-icon"), imageV: #imageLiteral(resourceName: "Spain-Flag-icon")),
-       Matches(titleMatch: "GROUP E - AL BAYT 🏟", homeName: "CR", visitName: "GER", vs: "X", dataTimeMatch: "THURS 01/12 - 14H00", imageH: #imageLiteral(resourceName: "costaRica"), imageV: #imageLiteral(resourceName: "Germany-Flag-icon"))
+       Matches(titleMatch: "GROUP E - AL BAYT 🏟", homeName: "CR", visitName: "GER", vs: "X", dataTimeMatch: "THURS 01/12 - 14H00", imageH: #imageLiteral(resourceName: "MicrosoftTeams-image (6)"), imageV: #imageLiteral(resourceName: "Germany-Flag-icon"))
     ]
     
     
