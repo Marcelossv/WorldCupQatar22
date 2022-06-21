@@ -48,7 +48,7 @@ var infoTeamGroup2 = [
 var infoTeamGroup3 = [
     InfoTeams(imageTeam: #imageLiteral(resourceName:"france"), nameTeam: "France", labelTeam: "Although they fell far short of expectations at Euro 2020, France still heads to Qatar with the strongest team of any competing nation and as such are favorites to defend the title they won in 2018. Kylian Mbappé and Karim Benzema have shown in recent months that they are building a formidable relationship in attack. Still, the only thing that could stop the Nations League winners in the competition is the conservative nature of their coach, Didier Deschamps."),
     
-    InfoTeams(imageTeam: #imageLiteral(resourceName: "Australia"), nameTeam: "Australia", labelTeam: "Australia"),
+    InfoTeams(imageTeam: #imageLiteral(resourceName: "Austrlia"), nameTeam: "Australia", labelTeam: "Australia"),
     
     InfoTeams(imageTeam: #imageLiteral(resourceName:"dinamarca"), nameTeam: "Denmark", labelTeam: "The Euro 2020 surprise team maintained the momentum they built over the summer and only conceded their first goal in World Cup qualifiers after their spot in Qatar was confirmed. Kasper Hjulmand is emerging as one of the most brilliant coaches in international football, and now he has Christian Eriksen back at his disposal following the ace's triumphant return to football in the early months of 2022. Combine Eriksen's attacking prowess and Denmark's famous defense, and a shot at the playoffs isn't out of the question."),
     
