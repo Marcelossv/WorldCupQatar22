@@ -32,7 +32,7 @@ var infoTeamGroup1 = [
 
     TeamInfo(imageTeam: #imageLiteral(resourceName:"usa"), nameTeam: "USA", labelTeam: "Having failed to qualify in 2018, the United States managed to correct that mistake by returning to the World Cup four years later. Despite the disappointing result in the qualifiers, Gregg Berhalter's team made their way through the final games in March. Probably one of the youngest teams in Qatar and with question marks defending against high-quality opponents, it would be asking too much for the United States to go far this time, but the signs are good for the 2026 co-hosts to be among the favorites in home next time."),
 
-    TeamInfo(imageTeam: #imageLiteral(resourceName:"qtarPlayoff"), nameTeam: "WAL", labelTeam: "Wales"),
+    TeamInfo(imageTeam: #imageLiteral(resourceName: "Wales"), nameTeam: "WAL", labelTeam: "Wales"),
 ]
 
 var infoTeamGroup2 = [
@@ -48,7 +48,7 @@ var infoTeamGroup2 = [
 var infoTeamGroup3 = [
     TeamInfo(imageTeam: #imageLiteral(resourceName:"france"), nameTeam: "France", labelTeam: "Although they fell far short of expectations at Euro 2020, France still heads to Qatar with the strongest team of any competing nation and as such are favorites to defend the title they won in 2018. Kylian Mbappé and Karim Benzema have shown in recent months that they are building a formidable relationship in attack. Still, the only thing that could stop the Nations League winners in the competition is the conservative nature of their coach, Didier Deschamps."),
     
-    TeamInfo(imageTeam: #imageLiteral(resourceName:"qtarPlayoff"), nameTeam: "Australia", labelTeam: "Australia"),
+    TeamInfo(imageTeam: #imageLiteral(resourceName: "Austrlia"), nameTeam: "Australia", labelTeam: "Australia"),
     
     TeamInfo(imageTeam: #imageLiteral(resourceName:"dinamarca"), nameTeam: "Denmark", labelTeam: "The Euro 2020 surprise team maintained the momentum they built over the summer and only conceded their first goal in World Cup qualifiers after their spot in Qatar was confirmed. Kasper Hjulmand is emerging as one of the most brilliant coaches in international football, and now he has Christian Eriksen back at his disposal following the ace's triumphant return to football in the early months of 2022. Combine Eriksen's attacking prowess and Denmark's famous defense, and a shot at the playoffs isn't out of the question."),
     
@@ -59,7 +59,7 @@ var infoTeamGroup4 = [
     
      TeamInfo(imageTeam: #imageLiteral(resourceName:"espanha"), nameTeam: "Spain", labelTeam: "After reaching the Euro 2020 semi-final and the Nations League final, Spain is certainly heading in the right direction with Luis Enrique. While the former Barcelona manager continues to test and change his squad from game to game, there is a sense that he is building a deep pool of players from which he can select the fittest when the World Cup rolls around. Until then, Pedri and Gavi are expected to have another 12 months of experience, while Ansu Fati may have overlooked the injury problems that have plagued him since 2020."),
 
-     TeamInfo(imageTeam: #imageLiteral(resourceName:"qtarPlayoff"), nameTeam: "Costa Rica", labelTeam: "Costa Rica "),
+     TeamInfo(imageTeam: #imageLiteral(resourceName: "costaRica"), nameTeam: "Costa Rica", labelTeam: "Costa Rica "),
 
      TeamInfo(imageTeam: #imageLiteral(resourceName:"alemanha1"), nameTeam: "Germany", labelTeam: "The Joachim Low era may have ended in disappointment for Germany, but the first signs are that Hansi Flick is heading in the right direction. The former Bayern Munich manager has won eight of the games he has played since taking charge after Euro 2020, and has seen his team score 34 goals in that span, conceding just three times. Germany are a team full of experience and while they may face a tougher group than they expected after losing a place among the top teams, they are still poised for their best tournament campaign since Euro 2016."),
 
