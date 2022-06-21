@@ -33,7 +33,6 @@ class GroupsViewController: UIViewController {
         self.tableView.register(GroupsTableViewCell.getNib(), forCellReuseIdentifier: GroupsTableViewCell.identifier)
         self.tableView.register(TeamInfoTableViewCell.getNib(), forCellReuseIdentifier: "InfoTeamTableViewCell")
     }
-    
 }
 
 extension GroupsViewController: UITableViewDelegate, UITableViewDataSource {
@@ -43,7 +42,6 @@ extension GroupsViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-     
         return 4
     }
 
@@ -104,13 +102,4 @@ extension GroupsViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 83
     }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print(indexPath)
-    }
-    
 }
-
-    
-    
-

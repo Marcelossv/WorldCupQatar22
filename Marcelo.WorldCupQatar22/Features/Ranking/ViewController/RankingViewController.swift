@@ -38,7 +38,6 @@ class RankingViewController: UIViewController {
         Winners(image: #imageLiteral(resourceName:"Spain-Flag-icon"), numberMedal: "1 (2010)")
     ]
     
-    
     var topGoal: [Goals] = [
         Goals(image: #imageLiteral(resourceName: "Screen Shot 2022-05-07 at 14.24.13"), namePlayer: "🇩🇪 Klose (2002, 2006, 2010, 2014)", gols: "⚽️ 16"),
         Goals(image: #imageLiteral(resourceName: "ronaldo-nazario-lima"), namePlayer: "🇧🇷 Ronaldo (1994, 1998, 2002, 2006)  ", gols: "⚽️ 15"),
@@ -51,9 +50,6 @@ class RankingViewController: UIViewController {
         Goals(image: #imageLiteral(resourceName: "teeeeee"), namePlayer: "🇵🇪 Teófilo Cubillas (1970, 1978 e 1982)", gols: "⚽️ 10"),
         Goals(image: #imageLiteral(resourceName: "Screen Shot 2022-05-07 at 14.23.51"), namePlayer: "🇵🇱 Grzegorz Lato (1975, 1982) ", gols: "⚽️ 10")
     ]
-    
-    
-   
     
     var player: [Player] = [
         Player(name: "Kylian Mbappé", age: "23", nation: "🇫🇷", valueMarket: "€160.00m"),
@@ -104,23 +100,15 @@ class RankingViewController: UIViewController {
         Player(name: "Rodrygo", age: "21", nation: "🇧🇷", valueMarket: "€40.00m"),
         Player(name: "Cristiano Ronaldo", age: "37", nation: "🇵🇹", valueMarket: "€35.00m"),
         Player(name: "Edouard Mendy", age: "30", nation: "🇸🇳", valueMarket: "€32.00m"),
-        Player(name: "Karim Benzema", age: "34", nation: "🇫🇷", valueMarket: "€25.00m"),
-
-
+        Player(name: "Karim Benzema", age: "34", nation: "🇫🇷", valueMarket: "€25.00m")
     ]
-    
-
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.configTableView()
         self.configLabelTop()
-        // Do any additional setup after loading the view.
-        
-        
     }
 
-    
     @IBAction func tappedSegmentedControl(_ sender: UISegmentedControl) {
         
         switch segControl.selectedSegmentIndex {
@@ -132,10 +120,10 @@ class RankingViewController: UIViewController {
             goalTodisplay = topGoal
         default:
             goalTodisplay = topGoal
-    }
+        }
         self.configLabelTop()
         self.tableView.reloadData()
-
+        
     }
     
     private func configTableView(){
@@ -165,14 +153,10 @@ class RankingViewController: UIViewController {
             }else{
                 self.delegate?.error()
             }
-                
         }
-            
-        
     }
-    
-    
 }
+
 extension RankingViewController:UITableViewDelegate,UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -187,7 +171,7 @@ extension RankingViewController:UITableViewDelegate,UITableViewDataSource{
             self.getFifaRanking()
             return fifaRaking.count
     }
-    }
+}
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
@@ -218,7 +202,7 @@ extension RankingViewController:UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         switch segControl.selectedSegmentIndex {
         case 0:
-            return 98
+            return 92
         case 1:
             return 86
         case 2:
@@ -226,8 +210,7 @@ extension RankingViewController:UITableViewDelegate,UITableViewDataSource{
         default:
             return 53
     }
-        
-    }
+}
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         switch segControl.selectedSegmentIndex {
@@ -239,8 +222,8 @@ extension RankingViewController:UITableViewDelegate,UITableViewDataSource{
             return "                                       Age            Nat             Market Value"
         default:
             return "                                 Avg.Age           Total Value        Points"
+        }
     }
-}
 }
 
 extension RankingViewController:RankingDelegate {
@@ -253,7 +236,4 @@ extension RankingViewController:RankingDelegate {
     func error() {
         print("deu ruim")
     }
-    
-    
-    
 }
