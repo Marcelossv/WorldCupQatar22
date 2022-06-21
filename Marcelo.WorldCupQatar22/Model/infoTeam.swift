@@ -59,7 +59,7 @@ var infoTeamGroup4 = [
     
      InfoTeams(imageTeam: #imageLiteral(resourceName:"espanha"), nameTeam: "Spain", labelTeam: "After reaching the Euro 2020 semi-final and the Nations League final, Spain is certainly heading in the right direction with Luis Enrique. While the former Barcelona manager continues to test and change his squad from game to game, there is a sense that he is building a deep pool of players from which he can select the fittest when the World Cup rolls around. Until then, Pedri and Gavi are expected to have another 12 months of experience, while Ansu Fati may have overlooked the injury problems that have plagued him since 2020."),
 
-     InfoTeams(imageTeam: #imageLiteral(resourceName: "costaRica"), nameTeam: "Costa Rica", labelTeam: "Costa Rica "),
+     InfoTeams(imageTeam: #imageLiteral(resourceName: "Jürgen-Klinsmann-alemanha"), nameTeam: "Costa Rica", labelTeam: "Costa Rica "),
 
      InfoTeams(imageTeam: #imageLiteral(resourceName:"alemanha1"), nameTeam: "Germany", labelTeam: "The Joachim Low era may have ended in disappointment for Germany, but the first signs are that Hansi Flick is heading in the right direction. The former Bayern Munich manager has won eight of the games he has played since taking charge after Euro 2020, and has seen his team score 34 goals in that span, conceding just three times. Germany are a team full of experience and while they may face a tougher group than they expected after losing a place among the top teams, they are still poised for their best tournament campaign since Euro 2016."),
 

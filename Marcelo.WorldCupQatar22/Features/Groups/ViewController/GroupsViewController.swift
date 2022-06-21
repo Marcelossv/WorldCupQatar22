@@ -9,14 +9,14 @@ import UIKit
 class GroupsViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
-    // #imageLiteral(resourceName:"EDUCATION1")
+    // #imageLiteral(resourceName:"Wales-Flag")
     
     var group:[Groups] = [
         Groups(nameGroup: "Group A", image: [#imageLiteral(resourceName:"Qtar"),#imageLiteral(resourceName:"Ecuador"),#imageLiteral(resourceName:"Senegal"),#imageLiteral(resourceName:"Netherlands-Flag-icon")], name: ["Qtar", "Ecuador", "Senegal", "Netherlands"]),
-        Groups(nameGroup: "Group B", image: [#imageLiteral(resourceName: "England-Flag-icon"),#imageLiteral(resourceName:"Iran-Flag-icon"),#imageLiteral(resourceName:"United-States-Flag-icon"),#imageLiteral(resourceName:"MicrosoftTeams-image (6)")], name: ["England", "IR Iran", "USA", "Wales"]),
+        Groups(nameGroup: "Group B", image: [#imageLiteral(resourceName: "England-Flag-icon"),#imageLiteral(resourceName:"Iran-Flag-icon"),#imageLiteral(resourceName:"United-States-Flag-icon"),#imageLiteral(resourceName:"Wales-Flag")], name: ["England", "IR Iran", "USA", "Wales"]),
         Groups(nameGroup: "Group C", image: [#imageLiteral(resourceName: "Argentina-Flag-icon"),#imageLiteral(resourceName:"Saudi-Arabia-Flag-icon"),#imageLiteral(resourceName:"Mexico-Flag-icon"),#imageLiteral(resourceName:"Poland-Flag-icon")], name: ["Argentina","Saudi Arabia", "Mexico", "Poland"]),
-        Groups(nameGroup: "Group D", image: [#imageLiteral(resourceName: "France-Flag-icon"),#imageLiteral(resourceName:"MicrosoftTeams-image (6)"),#imageLiteral(resourceName:"Denmark-Flag-icon"),#imageLiteral(resourceName:"Tunisia-Flag-icon")], name: ["France","Australia", "Denmark", "Tunisia"]),
-        Groups(nameGroup: "Group E", image: [#imageLiteral(resourceName: "Spain-Flag-icon"),#imageLiteral(resourceName:"MicrosoftTeams-image (6)"),#imageLiteral(resourceName:"Germany-Flag-icon"),#imageLiteral(resourceName:"Japan-Flag-icon")], name: ["Spain","Costa Rica", "Germany", "Japan"]),
+        Groups(nameGroup: "Group D", image: [#imageLiteral(resourceName: "France-Flag-icon"),#imageLiteral(resourceName:"Australia-Flag"),#imageLiteral(resourceName:"Denmark-Flag-icon"),#imageLiteral(resourceName:"Tunisia-Flag-icon")], name: ["France","Australia", "Denmark", "Tunisia"]),
+        Groups(nameGroup: "Group E", image: [#imageLiteral(resourceName: "Spain-Flag-icon"),#imageLiteral(resourceName:"costaRica-Flag"),#imageLiteral(resourceName:"Germany-Flag-icon"),#imageLiteral(resourceName:"Japan-Flag-icon")], name: ["Spain","Costa Rica", "Germany", "Japan"]),
         Groups(nameGroup: "Group F", image: [#imageLiteral(resourceName: "Belgium-Flag-icon"),#imageLiteral(resourceName:"Canada-Flag-icon"),#imageLiteral(resourceName:"Morocco-Flag-icon"),#imageLiteral(resourceName:"Croatian-Flag-icon")], name: ["Belgium","Canada", "Morocco", "Croatia"]),
         Groups(nameGroup: "Group G", image: [#imageLiteral(resourceName: "Brazil"),#imageLiteral(resourceName:"Serbia-Flag-icon"),#imageLiteral(resourceName:"Switzerland-Flag-icon"),#imageLiteral(resourceName:"Cameroon-Flag-icon")], name: ["Brazil","Serbia", "Switzerland", "Cameroon"]),
         Groups(nameGroup: "Group H", image: [#imageLiteral(resourceName: "Portugal-Flag-icon"),#imageLiteral(resourceName:"Ghana-Flag-icon"),#imageLiteral(resourceName:"Uruguay-Flag-icon"),#imageLiteral(resourceName:"Korea-Flag-icon")], name: ["Portugal","Ghana", "Uruguay", "Korea Republic"]),
