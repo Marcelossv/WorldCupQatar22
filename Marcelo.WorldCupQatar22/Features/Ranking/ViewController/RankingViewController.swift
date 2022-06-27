@@ -13,7 +13,6 @@ protocol RankingDelegate: AnyObject{
 }
 
 class RankingViewController: UIViewController {
-
     
     @IBOutlet weak var segControl: UISegmentedControl!
     @IBOutlet weak var tableView: UITableView!
@@ -123,7 +122,6 @@ class RankingViewController: UIViewController {
         }
         self.configLabelTop()
         self.tableView.reloadData()
-        
     }
     
     private func configTableView(){
@@ -142,7 +140,6 @@ class RankingViewController: UIViewController {
         }else{
             labelTop.isHidden = true
         }
-        
     }
 
     func getFifaRanking() {

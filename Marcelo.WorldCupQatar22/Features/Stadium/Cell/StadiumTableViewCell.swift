@@ -35,7 +35,7 @@ class StadiumTableViewCell: UITableViewCell {
     }
 
     @IBAction func tappedPLayedButton(_ sender: Any) {
-        self.delegate?.tappedPLayedButton()
+//        self.delegate?.tappedPLayedButton()
     }
     
     public func setupCell(stadiumNames:Stadium){

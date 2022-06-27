@@ -41,7 +41,6 @@ class StadiumViewController: UIViewController {
         self.tableView.dataSource = self
         self.tableView.register(StadiumTableViewCell.getNib(), forCellReuseIdentifier: StadiumTableViewCell.identifier)
     }
-
 }
 
 extension StadiumViewController: UITableViewDelegate, UITableViewDataSource {
@@ -58,7 +57,6 @@ extension StadiumViewController: UITableViewDelegate, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: StadiumTableViewCell.identifier, for: indexPath) as? StadiumTableViewCell
         cell?.setupCell(stadiumNames: Stadium(nameStadium: "", imageStadium: stadium[indexPath.section].imageStadium, capacity: stadium[indexPath.section].capacity, city:stadium[indexPath.section].city, matchesPlanned: stadium[indexPath.section].matchesPlanned))
         cell?.delegate = self
-
         return cell ?? UITableViewCell()
     }
      
@@ -69,24 +67,28 @@ extension StadiumViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return stadium[section].nameStadium
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tappedPLayedButton()
+        print(indexPath)
+    }
 }
 
 extension StadiumViewController:StadiumTableViewCellDelegate{
     func tappedPLayedButton() {
         let vc = UIStoryboard(name:
         "Main", bundle: nil).instantiateViewController (withIdentifier: "ModalStadiumViewController") as? ModalStadiumViewController
+//        vc?.linkYoutube = swi
         self.present(vc ?? UIViewController(), animated: true, completion: nil)
-        
-            
     }
+    
     func swipeStadium(indexPath:IndexPath) -> String {
         switch indexPath.section{
         case 0:
+            print("BOLA")
             return ""
         default:
             return ""
         }
-        
     }
-    
 }
