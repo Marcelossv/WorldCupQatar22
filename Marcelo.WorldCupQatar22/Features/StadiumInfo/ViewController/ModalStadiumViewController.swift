@@ -10,12 +10,12 @@ import UIKit
 
 class ModalStadiumViewController: UIViewController {
     
-    var linkYoutube: String?
+    var linkYoutube: String = ""
     
     @IBOutlet var playerView: YTPlayerView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        playerView.load(withVideoId: "zuhA6cEHvfo")
+        playerView.load(withVideoId: linkYoutube)
     }
 }

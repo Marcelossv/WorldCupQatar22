@@ -7,11 +7,6 @@
 
 import UIKit
 
-protocol StadiumTableViewCellDelegate:AnyObject{
-    func tappedPLayedButton()
-}
-
-
 class StadiumTableViewCell: UITableViewCell {
   
     var linkYoutube: String?
@@ -21,21 +16,15 @@ class StadiumTableViewCell: UITableViewCell {
     @IBOutlet weak var capacityLabel: UILabel!
     @IBOutlet weak var cityLabel: UILabel!
     @IBOutlet weak var matchesPlannedLabel: UILabel!
-    
-    weak var delegate: StadiumTableViewCellDelegate?
+    @IBOutlet weak var playImageView: UIImageView!
     
     static let identifier: String = "StadiumTableViewCell"
     static func getNib() -> UINib{
         return UINib(nibName: self.identifier, bundle: nil)
     }
-    
 
     override func awakeFromNib() {
         super.awakeFromNib()
-    }
-
-    @IBAction func tappedPLayedButton(_ sender: Any) {
-//        self.delegate?.tappedPLayedButton()
     }
     
     public func setupCell(stadiumNames:Stadium){
@@ -55,9 +44,4 @@ class StadiumTableViewCell: UITableViewCell {
         vc?.linkYoutube = ""
         self.vc?.present(vc ?? UIViewController(), animated: true, completion: nil)
     }
-    
-
-    
 }
-
-

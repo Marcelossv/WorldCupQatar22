@@ -56,7 +56,6 @@ extension StadiumViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: StadiumTableViewCell.identifier, for: indexPath) as? StadiumTableViewCell
         cell?.setupCell(stadiumNames: Stadium(nameStadium: "", imageStadium: stadium[indexPath.section].imageStadium, capacity: stadium[indexPath.section].capacity, city:stadium[indexPath.section].city, matchesPlanned: stadium[indexPath.section].matchesPlanned))
-        cell?.delegate = self
         return cell ?? UITableViewCell()
     }
      
@@ -69,26 +68,30 @@ extension StadiumViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        tappedPLayedButton()
-        print(indexPath)
-    }
-}
-
-extension StadiumViewController:StadiumTableViewCellDelegate{
-    func tappedPLayedButton() {
         let vc = UIStoryboard(name:
         "Main", bundle: nil).instantiateViewController (withIdentifier: "ModalStadiumViewController") as? ModalStadiumViewController
-//        vc?.linkYoutube = swi
+        vc?.linkYoutube = showStadiumVideo(indexPath: indexPath)
         self.present(vc ?? UIViewController(), animated: true, completion: nil)
     }
     
-    func swipeStadium(indexPath:IndexPath) -> String {
-        switch indexPath.section{
+    private func showStadiumVideo(indexPath: IndexPath) -> String {
+        switch indexPath.section {
         case 0:
-            print("BOLA")
-            return ""
+            return "bJavR2NsGF4"
+        case 1:
+            return "70KJEOBZzsY"
+        case 2:
+            return "s7BT33Mmn_I"
+        case 3:
+            return "zUSSg81SG8I"
+        case 4:
+            return "3hCkWzGYc1M"
+        case 5:
+            return "CDgzV4youzY"
+        case 6:
+            return "1GoiYsy7H1A"
         default:
-            return ""
+            return "-W_0f5ZLtQM"
         }
     }
 }
