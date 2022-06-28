@@ -30,6 +30,4 @@ class PlayersTableViewCell: UITableViewCell {
         self.natPlayer.text = player.nation
         self.valueMarket.text = player.valueMarket
     }
-
-    
 }

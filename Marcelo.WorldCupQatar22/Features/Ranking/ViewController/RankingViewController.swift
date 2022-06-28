@@ -19,7 +19,7 @@ class RankingViewController: UIViewController {
     @IBOutlet weak var labelTop: UILabel!
     
     weak var delegate: RankingDelegate?
-    var service = Service()
+    var service = FifaRankingService()
     //Master Array
     lazy var goalTodisplay = topGoal
     // #imageLiteral(resourceName:"Screen Shot 2022-05-07 at 14.24.13")
@@ -106,6 +106,7 @@ class RankingViewController: UIViewController {
         super.viewDidLoad()
         self.configTableView()
         self.configLabelTop()
+        self.getFifaRanking()
     }
 
     @IBAction func tappedSegmentedControl(_ sender: UISegmentedControl) {
@@ -118,6 +119,7 @@ class RankingViewController: UIViewController {
         case 2:
             goalTodisplay = topGoal
         default:
+            print(segControl.selectedSegmentIndex)
             goalTodisplay = topGoal
         }
         self.configLabelTop()
@@ -127,10 +129,10 @@ class RankingViewController: UIViewController {
     private func configTableView(){
         self.tableView.delegate = self
         self.tableView.dataSource = self
-        self.tableView.register(RankingTableViewCell.getNib(), forCellReuseIdentifier: "RankingTableViewCell")
-        self.tableView.register(TopGoalTableViewCell.getNib(), forCellReuseIdentifier: "TopGoalTableViewCell")
-        self.tableView.register(PlayersTableViewCell.getNib(), forCellReuseIdentifier: "PlayersTableViewCell")
-        self.tableView.register(FifaTableViewCell.getNib(), forCellReuseIdentifier: "FifaTableViewCell")
+        self.tableView.register(RankingTableViewCell.getNib(), forCellReuseIdentifier: RankingTableViewCell.identifier)
+        self.tableView.register(TopGoalTableViewCell.getNib(), forCellReuseIdentifier: TopGoalTableViewCell.identifier)
+        self.tableView.register(PlayersTableViewCell.getNib(), forCellReuseIdentifier: PlayersTableViewCell.identifier)
+        self.tableView.register(FifaTableViewCell.getNib(), forCellReuseIdentifier: FifaTableViewCell.identifier)
         self.tableView.reloadData()
     }
     
@@ -165,34 +167,33 @@ extension RankingViewController:UITableViewDelegate,UITableViewDataSource{
         case 2:
             return player.count
         default:
-            self.getFifaRanking()
             return fifaRaking.count
     }
 }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-            switch segControl.selectedSegmentIndex {
-            case 0:
+        switch segControl.selectedSegmentIndex {
+        case 0:
             let cell = tableView.dequeueReusableCell(withIdentifier: RankingTableViewCell.identifier, for: indexPath) as? RankingTableViewCell
-                cell?.setupCell(medal: medal[indexPath.row])
-        return cell ?? UITableViewCell()
-
-            case 1:
-            let cell2 = tableView.dequeueReusableCell(withIdentifier: TopGoalTableViewCell.identifier, for: indexPath) as?
-                TopGoalTableViewCell
-                cell2?.setupCell(topGoal: topGoal[indexPath.row])
-           return cell2 ?? UITableViewCell()
+            cell?.setupCell(medal: medal[indexPath.row])
+            return cell ?? UITableViewCell()
             
-           case 2:
-                let cell3 = tableView.dequeueReusableCell(withIdentifier: PlayersTableViewCell.identifier, for: indexPath) as? PlayersTableViewCell
-                cell3?.setupCell(player: player[indexPath.row])
-            return cell3 ?? UITableViewCell()
-           
-            default:
-                let cell4 = tableView.dequeueReusableCell(withIdentifier: FifaTableViewCell.identifier, for: indexPath) as? FifaTableViewCell
-                cell4?.setupCell(data: fifaRaking[indexPath.row])
-            return cell4 ?? UITableViewCell()
+        case 1:
+            let cell = tableView.dequeueReusableCell(withIdentifier: TopGoalTableViewCell.identifier, for: indexPath) as?
+            TopGoalTableViewCell
+            cell?.setupCell(topGoal: topGoal[indexPath.row])
+            return cell ?? UITableViewCell()
+            
+        case 2:
+            let cell = tableView.dequeueReusableCell(withIdentifier: PlayersTableViewCell.identifier, for: indexPath) as? PlayersTableViewCell
+            cell?.setupCell(player: player[indexPath.row])
+            return cell ?? UITableViewCell()
+            
+        default:
+            let cell = tableView.dequeueReusableCell(withIdentifier: FifaTableViewCell.identifier, for: indexPath) as? FifaTableViewCell
+            cell?.setupCell(data: fifaRaking[indexPath.row])
+            return cell ?? UITableViewCell()
         }
     }
     

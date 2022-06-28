@@ -41,7 +41,7 @@
 		3189B9BD28257A9B002BFFD1 /* TopGoalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3189B9BB28257A9B002BFFD1 /* TopGoalTableViewCell.swift */; };
 		3189B9C1282623AD002BFFD1 /* PlayersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3189B9BF282623AD002BFFD1 /* PlayersTableViewCell.swift */; };
 		3189B9C62826298E002BFFD1 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3189B9C52826298E002BFFD1 /* Player.swift */; };
-		31A4764F2846A07D0011999F /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A4764E2846A07D0011999F /* Service.swift */; };
+		31A4764F2846A07D0011999F /* FifaRankingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A4764E2846A07D0011999F /* FifaRankingService.swift */; };
 		31A476512846A8980011999F /* GenericService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A476502846A8980011999F /* GenericService.swift */; };
 		31F3B39628219EB100821127 /* RankingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F3B39428219EB100821127 /* RankingTableViewCell.swift */; };
 		31F3B39928219FFE00821127 /* Winners.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F3B39828219FFE00821127 /* Winners.swift */; };
@@ -84,7 +84,7 @@
 		3189B9BF282623AD002BFFD1 /* PlayersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersTableViewCell.swift; sourceTree = "<group>"; };
 		3189B9C0282623AD002BFFD1 /* PlayersTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlayersTableViewCell.xib; sourceTree = "<group>"; };
 		3189B9C52826298E002BFFD1 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
-		31A4764E2846A07D0011999F /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		31A4764E2846A07D0011999F /* FifaRankingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FifaRankingService.swift; sourceTree = "<group>"; };
 		31A476502846A8980011999F /* GenericService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericService.swift; sourceTree = "<group>"; };
 		31F3B39428219EB100821127 /* RankingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingTableViewCell.swift; sourceTree = "<group>"; };
 		31F3B39528219EB100821127 /* RankingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RankingTableViewCell.xib; sourceTree = "<group>"; };
@@ -158,7 +158,7 @@
 		31A4764D2846A03F0011999F /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				31A4764E2846A07D0011999F /* Service.swift */,
+				31A4764E2846A07D0011999F /* FifaRankingService.swift */,
 				31A476502846A8980011999F /* GenericService.swift */,
 			);
 			path = Service;
@@ -591,7 +591,7 @@
 				311A49DE285D097F003E3B0E /* FifaTableViewCell.xib in Sources */,
 				311A49DF285D097F003E3B0E /* TeamInfoTableViewCell.xib in Sources */,
 				3148719F2820367C0021B553 /* StadiumViewController.swift in Sources */,
-				31A4764F2846A07D0011999F /* Service.swift in Sources */,
+				31A4764F2846A07D0011999F /* FifaRankingService.swift in Sources */,
 				3148719B2820367C0021B553 /* AppDelegate.swift in Sources */,
 				314871B028203AF70021B553 /* RankingViewController.swift in Sources */,
 				31475067282306EB00EB1A48 /* MatchesViewController.swift in Sources */,

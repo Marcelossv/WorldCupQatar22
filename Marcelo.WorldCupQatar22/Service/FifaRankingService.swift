@@ -7,13 +7,13 @@
 
 import Foundation
 
-protocol ServiceDelegate: GenericService {
+protocol FifaRankingServiceDelegate: GenericService {
     func getRanking(completion: @escaping completion<[Datum]?>)
 }
 
-class Service: ServiceDelegate {
+class FifaRankingService: FifaRankingServiceDelegate {
     func getRanking(completion: @escaping completion<[Datum]?>) {
-        let urlString = "http://api.isportsapi.com/sport/football/fifaranking?api_key=XPAj6XMQT3puaOie"
+        let urlString = "http://api.isportsapi.com/sport/football/fifaranking?api_key=p3x1D2FzFVMIMsb2"
    
         guard let url:URL = URL(string: urlString) else {
             return completion(nil, Error.errorDescription(message: "error url"))
@@ -39,7 +39,7 @@ class Service: ServiceDelegate {
                
                 do {
                     let model: FifaRanking = try JSONDecoder().decode(FifaRanking.self, from: data)
-//                    completion(model, nil)
+                    completion(model.data, nil)
                 } catch {
                     return completion(nil, Error.errorDescription(message: "Deu ruim no Parse", error: error))
                 }
@@ -49,7 +49,4 @@ class Service: ServiceDelegate {
         }
         task.resume()
     }
-    
-    
-    
 }

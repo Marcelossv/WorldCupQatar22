@@ -25,9 +25,9 @@ class FifaTableViewCell: UITableViewCell {
     }
 
     public func setupCell(data:Datum){
-        self.rankLabel.text = data.rank
+        self.rankLabel.text = String(data.rank)
         self.teamNameLabel.text = data.teamName
-        self.scoreLabel.text = data.score
+        self.scoreLabel.text = String(data.score)
     }
     
 }
