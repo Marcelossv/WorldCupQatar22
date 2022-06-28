@@ -16,6 +16,7 @@ class ModalStadiumViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .red
         playerView.load(withVideoId: linkYoutube)
     }
 }

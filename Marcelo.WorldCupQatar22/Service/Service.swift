@@ -39,6 +39,7 @@ class Service: ServiceDelegate {
                
                 do {
                     let model: FifaRanking = try JSONDecoder().decode(FifaRanking.self, from: data)
+//                    completion(model, nil)
                 } catch {
                     return completion(nil, Error.errorDescription(message: "Deu ruim no Parse", error: error))
                 }

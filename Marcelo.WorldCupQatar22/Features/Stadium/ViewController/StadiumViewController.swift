@@ -68,10 +68,18 @@ extension StadiumViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let vc = UIStoryboard(name:
-        "Main", bundle: nil).instantiateViewController (withIdentifier: "ModalStadiumViewController") as? ModalStadiumViewController
+        presentModal(indexPath: indexPath)
+    }
+    
+    private func presentModal(indexPath: IndexPath) {
+        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController (withIdentifier: "ModalStadiumViewController") as? ModalStadiumViewController
+        let nav = UINavigationController(rootViewController: vc ?? UIViewController())
+        nav.modalPresentationStyle = .pageSheet
         vc?.linkYoutube = showStadiumVideo(indexPath: indexPath)
-        self.present(vc ?? UIViewController(), animated: true, completion: nil)
+        if let sheet = nav.sheetPresentationController {
+            sheet.detents = [.medium()]
+        }
+        self.present(nav, animated: true, completion: nil)
     }
     
     private func showStadiumVideo(indexPath: IndexPath) -> String {
