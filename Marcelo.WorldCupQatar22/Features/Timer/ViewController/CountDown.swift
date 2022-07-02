@@ -11,6 +11,7 @@ class CountDown: UIViewController {
     @IBOutlet var timerLabel: UILabel!
     
     var timer: Timer!
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,7 +33,7 @@ class CountDown: UIViewController {
         eventDateComponents.hour = 05
         eventDateComponents.minute = 00
         eventDateComponents.second = 00
-        eventDateComponents.timeZone = TimeZone(abbreviation: "AST")
+        eventDateComponents.timeZone = TimeZone(abbreviation: "GMT-3")
         
         // Convert eventDateComponents to the user's calendar
         let eventDate = userCalendar.date(from: eventDateComponents)!
@@ -41,7 +42,14 @@ class CountDown: UIViewController {
         let timeLeft = userCalendar.dateComponents([.day, .hour, .minute, .second], from: currentDate, to: eventDate)
         
         // Display Countdown, final sentence i can put "D,h...
-        timerLabel.text = "\(timeLeft.day!)       \(timeLeft.hour!)          \(timeLeft.minute!)       \(timeLeft.second!)"
+        var countDown: NSString =  "\(timeLeft.day!)D   \(timeLeft.hour!)H   \(timeLeft.minute!)M   \(timeLeft.second!)S " as NSString
+        var mutableCountDown = NSMutableAttributedString()
+        mutableCountDown = NSMutableAttributedString(string: countDown as String, attributes: [NSAttributedString.Key.font:UIFont(name: "Arial", size: 30) ?? 0])
+        mutableCountDown.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.black, range: NSRange(location: 3, length: 1))
+        mutableCountDown.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.black, range: NSRange(location: 9, length: 1))
+        mutableCountDown.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.black, range: NSRange(location: 15, length: 1))
+        mutableCountDown.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.black, range: NSRange(location: 21, length: 1))
+        timerLabel.attributedText = mutableCountDown
         
         // Show diffrent text when the event has passed
         endEvent(currentdate: currentDate, eventdate: eventDate)
