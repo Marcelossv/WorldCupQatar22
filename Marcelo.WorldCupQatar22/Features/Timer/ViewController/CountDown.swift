@@ -45,10 +45,10 @@ class CountDown: UIViewController {
         var countDown: NSString =  "\(timeLeft.day!)D   \(timeLeft.hour!)H   \(timeLeft.minute!)M   \(timeLeft.second!)S " as NSString
         var mutableCountDown = NSMutableAttributedString()
         mutableCountDown = NSMutableAttributedString(string: countDown as String, attributes: [NSAttributedString.Key.font:UIFont(name: "Arial", size: 30) ?? 0])
-        mutableCountDown.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.black, range: NSRange(location: 3, length: 1))
-        mutableCountDown.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.black, range: NSRange(location: 9, length: 1))
-        mutableCountDown.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.black, range: NSRange(location: 15, length: 1))
-        mutableCountDown.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.black, range: NSRange(location: 21, length: 1))
+//        mutableCountDown.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.black, range: NSRange(location: 3, length: 1))
+//        mutableCountDown.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.black, range: NSRange(location: 9, length: 1))
+//        mutableCountDown.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.black, range: NSRange(location: 15, length: 1))
+//        mutableCountDown.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.black, range: NSRange(location: 21, length: 1))
         timerLabel.attributedText = mutableCountDown
         
         // Show diffrent text when the event has passed

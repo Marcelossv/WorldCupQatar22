@@ -105,7 +105,6 @@ class RankingViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.configTableView()
-        self.configLabelTop()
         self.getFifaRanking()
     }
 
@@ -122,7 +121,6 @@ class RankingViewController: UIViewController {
             print(segControl.selectedSegmentIndex)
             goalTodisplay = topGoal
         }
-        self.configLabelTop()
         self.tableView.reloadData()
     }
     
@@ -134,14 +132,6 @@ class RankingViewController: UIViewController {
         self.tableView.register(PlayersTableViewCell.getNib(), forCellReuseIdentifier: PlayersTableViewCell.identifier)
         self.tableView.register(FifaTableViewCell.getNib(), forCellReuseIdentifier: FifaTableViewCell.identifier)
         self.tableView.reloadData()
-    }
-    
-    private func configLabelTop(){
-        if segControl.selectedSegmentIndex == 3 {
-            labelTop.isHidden = false
-        }else{
-            labelTop.isHidden = true
-        }
     }
 
     func getFifaRanking() {
@@ -167,7 +157,7 @@ extension RankingViewController:UITableViewDelegate,UITableViewDataSource{
         case 2:
             return player.count
         default:
-            return fifaRaking.count
+            return 211
     }
 }
     
@@ -210,18 +200,18 @@ extension RankingViewController:UITableViewDelegate,UITableViewDataSource{
     }
 }
     
-    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        switch segControl.selectedSegmentIndex {
-        case 0:
-            return ""
-        case 1:
-            return ""
-        case 2:
-            return "                                       Age            Nat             Market Value"
-        default:
-            return "                                 Avg.Age           Total Value        Points"
-        }
-    }
+//    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+//        switch segControl.selectedSegmentIndex {
+//        case 0:
+//            return ""
+//        case 1:
+//            return ""
+//        case 2:
+//            return "                                       Age            Nat             Market Value"
+//        default:
+//            return "                                 "
+//        }
+//    }
 }
 
 extension RankingViewController:RankingDelegate {
