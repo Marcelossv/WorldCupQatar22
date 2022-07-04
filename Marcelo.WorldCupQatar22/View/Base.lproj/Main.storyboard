@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="X8l-Ya-ZL0">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="X8l-Ya-ZL0">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -11,47 +11,40 @@
         <!--Ranking-->
         <scene sceneID="kJO-41-GXl">
             <objects>
-                <viewController storyboardIdentifier="Ranking" id="6ac-zs-c3r" customClass="RankingViewController" customModule="Marcelo_WorldCupSounds" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Ranking" id="6ac-zs-c3r" customClass="RankingViewController" customModule="Marcelo_WorldCupQatar22" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="bottom" semanticContentAttribute="playback" id="bn4-qH-iWh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Fec-7t-nOA">
-                                <rect key="frame" x="0.0" y="96" width="414" height="717"/>
+                                <rect key="frame" x="0.0" y="95" width="414" height="718"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="D1i-Ye-4KR">
-                                <rect key="frame" x="0.0" y="44" width="414" height="32"/>
+                                <rect key="frame" x="2" y="54" width="410" height="32"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <segments>
                                     <segment title="WINNERS 🏆"/>
                                     <segment title=" GOALS ⚽️"/>
                                     <segment title="PLAYERS 💰"/>
-                                    <segment title="FIFA🇫🇲"/>
+                                    <segment title="FIFA 🇫🇲"/>
                                 </segments>
+                                <color key="selectedSegmentTintColor" red="0.66666668653488159" green="0.45873556551273825" blue="0.42615735357503748" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <action selector="tappedSegmentedControl:" destination="6ac-zs-c3r" eventType="valueChanged" id="HgQ-ME-9oj"/>
                                 </connections>
                             </segmentedControl>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="* Last updated at 14/01/22" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9fV-dv-BfI">
-                                <rect key="frame" x="3" y="78" width="411" height="16"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="pGK-oc-PLj"/>
                         <color key="backgroundColor" red="0.61176470589999998" green="0.10980392160000001" blue="0.1215686275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <rect key="contentStretch" x="0.0" y="0.0" width="0.40000000000000002" height="1"/>
                         <constraints>
-                            <constraint firstItem="pGK-oc-PLj" firstAttribute="trailing" secondItem="9fV-dv-BfI" secondAttribute="trailing" id="29c-bM-Sb4"/>
                             <constraint firstItem="Fec-7t-nOA" firstAttribute="leading" secondItem="pGK-oc-PLj" secondAttribute="leading" id="2VE-iK-gMg"/>
-                            <constraint firstItem="pGK-oc-PLj" firstAttribute="trailing" secondItem="D1i-Ye-4KR" secondAttribute="trailing" id="76G-A9-5Gh"/>
+                            <constraint firstItem="pGK-oc-PLj" firstAttribute="trailing" secondItem="D1i-Ye-4KR" secondAttribute="trailing" constant="2" id="76G-A9-5Gh"/>
                             <constraint firstItem="Fec-7t-nOA" firstAttribute="trailing" secondItem="pGK-oc-PLj" secondAttribute="trailing" id="8Xy-WK-DNc"/>
-                            <constraint firstItem="D1i-Ye-4KR" firstAttribute="top" secondItem="pGK-oc-PLj" secondAttribute="top" id="9ua-gy-9qr"/>
-                            <constraint firstItem="9fV-dv-BfI" firstAttribute="top" secondItem="D1i-Ye-4KR" secondAttribute="bottom" constant="3" id="IDk-Ud-XX6"/>
-                            <constraint firstItem="D1i-Ye-4KR" firstAttribute="leading" secondItem="pGK-oc-PLj" secondAttribute="leading" id="RR1-Nt-zGi"/>
-                            <constraint firstItem="Fec-7t-nOA" firstAttribute="top" secondItem="D1i-Ye-4KR" secondAttribute="bottom" constant="21" id="Y6A-a9-m2P"/>
-                            <constraint firstItem="9fV-dv-BfI" firstAttribute="leading" secondItem="pGK-oc-PLj" secondAttribute="leading" constant="3" id="YMP-rK-hpO"/>
+                            <constraint firstItem="D1i-Ye-4KR" firstAttribute="top" secondItem="pGK-oc-PLj" secondAttribute="top" constant="10" id="9ua-gy-9qr"/>
+                            <constraint firstItem="D1i-Ye-4KR" firstAttribute="leading" secondItem="pGK-oc-PLj" secondAttribute="leading" constant="2" id="RR1-Nt-zGi"/>
+                            <constraint firstItem="Fec-7t-nOA" firstAttribute="top" secondItem="D1i-Ye-4KR" secondAttribute="bottom" constant="10" id="Y6A-a9-m2P"/>
                             <constraint firstItem="Fec-7t-nOA" firstAttribute="bottom" secondItem="pGK-oc-PLj" secondAttribute="bottom" id="y0N-Rw-Bft"/>
                         </constraints>
                     </view>
@@ -60,7 +53,6 @@
                         <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBarItem>
                     <connections>
-                        <outlet property="labelTop" destination="9fV-dv-BfI" id="sa2-WG-CDO"/>
                         <outlet property="segControl" destination="D1i-Ye-4KR" id="zSg-jA-0Dx"/>
                         <outlet property="tableView" destination="Fec-7t-nOA" id="dIQ-kX-sc0"/>
                     </connections>
@@ -72,23 +64,31 @@
         <!--Groups-->
         <scene sceneID="drX-UR-4aY">
             <objects>
-                <viewController storyboardIdentifier="Groups" id="Qzo-Ih-FsZ" customClass="Groups" customModule="Marcelo_WorldCupSounds" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Groups" id="Qzo-Ih-FsZ" customClass="GroupsViewController" customModule="Marcelo_WorldCupQatar22" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4m0-2t-JMc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="pXJ-Yr-hTi">
-                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Groups" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MUS-60-Xq6">
+                                <rect key="frame" x="167.5" y="49" width="79" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="E8n-nY-qDJ"/>
                         <color key="backgroundColor" red="0.61176470589999998" green="0.10980392160000001" blue="0.1215686275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="MUS-60-Xq6" firstAttribute="top" secondItem="E8n-nY-qDJ" secondAttribute="top" constant="5" id="537-bA-cYo"/>
                             <constraint firstItem="E8n-nY-qDJ" firstAttribute="trailing" secondItem="pXJ-Yr-hTi" secondAttribute="trailing" id="Lb7-YD-rn0"/>
                             <constraint firstItem="pXJ-Yr-hTi" firstAttribute="leading" secondItem="E8n-nY-qDJ" secondAttribute="leading" id="Psb-lZ-eXm"/>
+                            <constraint firstItem="MUS-60-Xq6" firstAttribute="centerX" secondItem="4m0-2t-JMc" secondAttribute="centerX" id="auN-W2-Je2"/>
                             <constraint firstItem="E8n-nY-qDJ" firstAttribute="bottom" secondItem="pXJ-Yr-hTi" secondAttribute="bottom" id="clV-7h-4qf"/>
-                            <constraint firstItem="pXJ-Yr-hTi" firstAttribute="top" secondItem="E8n-nY-qDJ" secondAttribute="top" id="jN7-Ke-bID"/>
+                            <constraint firstItem="pXJ-Yr-hTi" firstAttribute="top" secondItem="E8n-nY-qDJ" secondAttribute="top" constant="44" id="jN7-Ke-bID"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Groups" image="tablecells.fill" catalog="system" id="Pjr-8t-Acd">
@@ -100,12 +100,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ffU-le-zuH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-932" y="860"/>
+            <point key="canvasLocation" x="-933.33333333333337" y="859.82142857142856"/>
         </scene>
-        <!--Info Team View Controller-->
+        <!--Team Info View Controller-->
         <scene sceneID="bja-uR-rDR">
             <objects>
-                <viewController storyboardIdentifier="InfoTeamViewController" definesPresentationContext="YES" providesPresentationContextTransitionStyle="YES" modalPresentationStyle="formSheet" id="yWa-I0-0fm" customClass="InfoTeamViewController" customModule="Marcelo_WorldCupSounds" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="InfoTeamViewController" definesPresentationContext="YES" providesPresentationContextTransitionStyle="YES" modalPresentationStyle="formSheet" id="yWa-I0-0fm" customClass="TeamInfoViewController" customModule="Marcelo_WorldCupQatar22" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NgK-iJ-3qo">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -167,24 +167,26 @@
         <!--Modal Stadium View Controller-->
         <scene sceneID="kOJ-2G-Znr">
             <objects>
-                <viewController storyboardIdentifier="ModalStadiumViewController" interfaceStyle="light" id="Cwz-RM-7zT" customClass="ModalStadiumViewController" customModule="Marcelo_WorldCupSounds" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ModalStadiumViewController" interfaceStyle="light" id="Cwz-RM-7zT" customClass="ModalStadiumViewController" customModule="Marcelo_WorldCupQatar22" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" tag="1" contentMode="TopLeft" semanticContentAttribute="playback" id="06A-2R-jK1">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="JBX-B8-vUP" customClass="YTPlayerView">
-                                <rect key="frame" x="0.0" y="252" width="414" height="325"/>
+                                <rect key="frame" x="10" y="10" width="394" height="275"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="275" id="EMl-xO-KL1"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="wVn-G1-6fj"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <rect key="contentStretch" x="0.0" y="0.0" width="1" height="0.84999999999999998"/>
                         <constraints>
-                            <constraint firstItem="JBX-B8-vUP" firstAttribute="centerX" secondItem="06A-2R-jK1" secondAttribute="centerX" id="emb-Zs-4UH"/>
-                            <constraint firstItem="JBX-B8-vUP" firstAttribute="top" secondItem="wVn-G1-6fj" secondAttribute="top" constant="252" id="si9-AO-kAj"/>
-                            <constraint firstItem="wVn-G1-6fj" firstAttribute="bottom" secondItem="JBX-B8-vUP" secondAttribute="bottom" constant="265" id="vNu-Yb-KjG"/>
-                            <constraint firstItem="JBX-B8-vUP" firstAttribute="leading" secondItem="wVn-G1-6fj" secondAttribute="leading" id="yze-tb-SN2"/>
+                            <constraint firstItem="JBX-B8-vUP" firstAttribute="leading" secondItem="wVn-G1-6fj" secondAttribute="leading" constant="10" id="KQA-qL-Mfy"/>
+                            <constraint firstAttribute="trailing" secondItem="JBX-B8-vUP" secondAttribute="trailing" constant="10" id="dgg-Zn-oDk"/>
+                            <constraint firstItem="JBX-B8-vUP" firstAttribute="top" secondItem="wVn-G1-6fj" secondAttribute="top" constant="10" id="y6Y-M1-J38"/>
                         </constraints>
                     </view>
                     <nil key="simulatedTopBarMetrics"/>
@@ -201,7 +203,7 @@
         <!--Timer-->
         <scene sceneID="1sP-EA-KvY">
             <objects>
-                <viewController storyboardIdentifier="CountDown" id="GCU-G2-70P" customClass="CountDown" customModule="Marcelo_WorldCupSounds" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CountDown" id="GCU-G2-70P" customClass="CountDown" customModule="Marcelo_WorldCupQatar22" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MDX-NR-SOk">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -212,26 +214,11 @@
                                     <constraint firstAttribute="height" constant="357" id="3ov-Jg-kBG"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DAYS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hgA-ly-aXY">
-                                <rect key="frame" x="71" y="587" width="34" height="16"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HOURS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cCJ-ej-L0q">
-                                <rect key="frame" x="145" y="587" width="46" height="16"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MINUTES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UFL-ED-iDm">
-                                <rect key="frame" x="218" y="587" width="58" height="16"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="highlightedColor" systemColor="tintColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="none" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wpN-SM-mx6">
-                                <rect key="frame" x="50" y="533.5" width="314" height="36.5"/>
+                                <rect key="frame" x="20" y="534" width="374" height="39.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39.5" id="PTG-6F-RK3"/>
+                                </constraints>
                                 <attributedString key="attributedText">
                                     <fragment content="196   06   00    58">
                                         <attributes>
@@ -244,32 +231,16 @@
                                 <color key="highlightedColor" red="0.5647059083" green="0.1607843041" blue="0.14901961389999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="shadowColor" red="0.61176470589999998" green="0.10980392160000001" blue="0.1215686275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SECONDS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XRI-Mr-itS">
-                                <rect key="frame" x="301" y="587" width="63" height="16"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="cPd-ZI-ual"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="cCJ-ej-L0q" firstAttribute="leading" secondItem="hgA-ly-aXY" secondAttribute="trailing" constant="40" id="1p5-wX-y7n"/>
-                            <constraint firstItem="XRI-Mr-itS" firstAttribute="top" secondItem="wpN-SM-mx6" secondAttribute="bottom" constant="17" id="9bf-jw-P3F"/>
-                            <constraint firstItem="cPd-ZI-ual" firstAttribute="trailing" secondItem="XRI-Mr-itS" secondAttribute="trailing" constant="50" id="CgL-uy-9Ya"/>
-                            <constraint firstItem="XRI-Mr-itS" firstAttribute="leading" secondItem="UFL-ED-iDm" secondAttribute="trailing" constant="25" id="GLK-Dk-y79"/>
-                            <constraint firstItem="hgA-ly-aXY" firstAttribute="top" secondItem="wpN-SM-mx6" secondAttribute="bottom" constant="17" id="HEz-NE-YO5"/>
+                            <constraint firstItem="cPd-ZI-ual" firstAttribute="trailing" secondItem="wpN-SM-mx6" secondAttribute="trailing" constant="20" id="6dE-FN-y4x"/>
                             <constraint firstItem="zaN-uj-LLZ" firstAttribute="leading" secondItem="cPd-ZI-ual" secondAttribute="leading" constant="5" id="N2R-of-4hc"/>
-                            <constraint firstItem="cPd-ZI-ual" firstAttribute="trailing" secondItem="wpN-SM-mx6" secondAttribute="trailing" constant="50" id="PMJ-JS-Obm"/>
-                            <constraint firstItem="hgA-ly-aXY" firstAttribute="leading" secondItem="cPd-ZI-ual" secondAttribute="leading" constant="71" id="ReR-JG-dUI"/>
-                            <constraint firstItem="cPd-ZI-ual" firstAttribute="bottom" secondItem="wpN-SM-mx6" secondAttribute="bottom" constant="243" id="YAL-zn-E74"/>
-                            <constraint firstItem="UFL-ED-iDm" firstAttribute="top" secondItem="wpN-SM-mx6" secondAttribute="bottom" constant="17" id="aA2-y2-eWW"/>
                             <constraint firstItem="zaN-uj-LLZ" firstAttribute="top" secondItem="cPd-ZI-ual" secondAttribute="top" constant="15" id="g1k-rL-UJs"/>
-                            <constraint firstItem="XRI-Mr-itS" firstAttribute="leading" secondItem="UFL-ED-iDm" secondAttribute="trailing" constant="25" id="hab-6f-qYs"/>
+                            <constraint firstItem="wpN-SM-mx6" firstAttribute="top" secondItem="zaN-uj-LLZ" secondAttribute="bottom" constant="118" id="gWb-MQ-T7t"/>
                             <constraint firstItem="cPd-ZI-ual" firstAttribute="trailing" secondItem="zaN-uj-LLZ" secondAttribute="trailing" constant="5" id="i9a-wS-48y"/>
-                            <constraint firstItem="UFL-ED-iDm" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="cCJ-ej-L0q" secondAttribute="trailing" constant="8" symbolic="YES" id="lbc-Os-g8W"/>
-                            <constraint firstItem="cCJ-ej-L0q" firstAttribute="top" secondItem="wpN-SM-mx6" secondAttribute="bottom" constant="17" id="n5y-bC-7iP"/>
-                            <constraint firstItem="wpN-SM-mx6" firstAttribute="leading" secondItem="cPd-ZI-ual" secondAttribute="leading" constant="50" id="ur5-Zo-oX7"/>
+                            <constraint firstItem="wpN-SM-mx6" firstAttribute="leading" secondItem="cPd-ZI-ual" secondAttribute="leading" constant="20" id="qd4-Sn-mcs"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Timer" image="timer" catalog="system" id="AnK-ae-lfX">
@@ -286,7 +257,7 @@
         <!--Matchs-->
         <scene sceneID="kNf-MS-DLu">
             <objects>
-                <viewController storyboardIdentifier="Matchs" id="arF-am-Bib" customClass="Matchs" customModule="Marcelo_WorldCupSounds" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Matchs" id="arF-am-Bib" customClass="MatchesViewController" customModule="Marcelo_WorldCupQatar22" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="bottom" semanticContentAttribute="playback" id="psk-qZ-c44">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -296,7 +267,8 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="COy-li-dsp">
-                                <rect key="frame" x="0.0" y="49" width="414" height="46"/>
+                                <rect key="frame" x="2" y="54" width="410" height="36"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <segments>
                                     <segment title="A"/>
                                     <segment title="B"/>
@@ -308,6 +280,7 @@
                                     <segment title="H"/>
                                 </segments>
                                 <color key="tintColor" red="0.61176470589999998" green="0.10980392160000001" blue="0.1215686275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="selectedSegmentTintColor" red="0.66666668650000005" green="0.4587355655" blue="0.42615735360000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <action selector="tappedSegControl:" destination="arF-am-Bib" eventType="valueChanged" id="LUh-dv-2k6"/>
                                 </connections>
@@ -318,12 +291,12 @@
                         <constraints>
                             <constraint firstItem="sLH-qO-Szn" firstAttribute="bottom" secondItem="amA-xm-c2j" secondAttribute="bottom" id="3OK-ic-GWf"/>
                             <constraint firstItem="amA-xm-c2j" firstAttribute="top" secondItem="sLH-qO-Szn" secondAttribute="top" constant="55" id="AC3-Ea-y8D"/>
-                            <constraint firstItem="sLH-qO-Szn" firstAttribute="trailing" secondItem="COy-li-dsp" secondAttribute="trailing" id="D4b-Ni-CK3"/>
-                            <constraint firstItem="COy-li-dsp" firstAttribute="top" secondItem="sLH-qO-Szn" secondAttribute="top" constant="5" id="Hv8-je-K5C"/>
+                            <constraint firstItem="sLH-qO-Szn" firstAttribute="trailing" secondItem="COy-li-dsp" secondAttribute="trailing" constant="2" id="D4b-Ni-CK3"/>
+                            <constraint firstItem="COy-li-dsp" firstAttribute="top" secondItem="sLH-qO-Szn" secondAttribute="top" constant="10" id="Hv8-je-K5C"/>
                             <constraint firstItem="amA-xm-c2j" firstAttribute="leading" secondItem="sLH-qO-Szn" secondAttribute="leading" id="MXA-Pu-3Uv"/>
                             <constraint firstItem="sLH-qO-Szn" firstAttribute="trailing" secondItem="amA-xm-c2j" secondAttribute="trailing" id="dkP-Hz-2aX"/>
-                            <constraint firstItem="amA-xm-c2j" firstAttribute="top" secondItem="COy-li-dsp" secondAttribute="bottom" constant="5" id="kOb-gr-33r"/>
-                            <constraint firstItem="COy-li-dsp" firstAttribute="leading" secondItem="sLH-qO-Szn" secondAttribute="leading" id="oc8-1O-aet"/>
+                            <constraint firstItem="amA-xm-c2j" firstAttribute="top" secondItem="COy-li-dsp" secondAttribute="bottom" constant="10" id="kOb-gr-33r"/>
+                            <constraint firstItem="COy-li-dsp" firstAttribute="leading" secondItem="sLH-qO-Szn" secondAttribute="leading" constant="2" id="oc8-1O-aet"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Matchs" image="icons8-stadium-50" id="k9g-Vc-dGS">
@@ -341,20 +314,28 @@
         <!--Stadium-->
         <scene sceneID="yM0-EQ-qtx">
             <objects>
-                <viewController storyboardIdentifier="Stadium" id="YKj-eA-fnq" customClass="Stadium" customModule="Marcelo_WorldCupSounds" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Stadium" id="YKj-eA-fnq" customClass="StadiumViewController" customModule="Marcelo_WorldCupQatar22" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vJm-Et-0OC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="EqO-gK-kpn">
-                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stadiums" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B7M-Ww-Peq">
+                                <rect key="frame" x="156.5" y="49" width="101.5" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="NnK-Ms-t33"/>
                         <color key="backgroundColor" red="0.61176470589999998" green="0.10980392160000001" blue="0.1215686275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="EqO-gK-kpn" firstAttribute="top" secondItem="NnK-Ms-t33" secondAttribute="top" id="4Z4-8Z-hiO"/>
+                            <constraint firstItem="B7M-Ww-Peq" firstAttribute="centerX" secondItem="vJm-Et-0OC" secondAttribute="centerX" id="04A-Yl-9ux"/>
+                            <constraint firstItem="EqO-gK-kpn" firstAttribute="top" secondItem="NnK-Ms-t33" secondAttribute="top" constant="44" id="4Z4-8Z-hiO"/>
+                            <constraint firstItem="B7M-Ww-Peq" firstAttribute="top" secondItem="NnK-Ms-t33" secondAttribute="top" constant="5" id="Hft-VM-teg"/>
                             <constraint firstItem="EqO-gK-kpn" firstAttribute="leading" secondItem="NnK-Ms-t33" secondAttribute="leading" id="Lob-qX-cCB"/>
                             <constraint firstItem="NnK-Ms-t33" firstAttribute="bottom" secondItem="EqO-gK-kpn" secondAttribute="bottom" id="TiS-XR-4UM"/>
                             <constraint firstItem="NnK-Ms-t33" firstAttribute="trailing" secondItem="EqO-gK-kpn" secondAttribute="trailing" id="YVz-q5-oLl"/>
@@ -414,9 +395,6 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="tintColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

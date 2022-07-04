@@ -41,7 +41,7 @@
 		20C5AE7BABE406C17260F1B42370FD85 /* Pods-Marcelo.WorldCupQatar22.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Marcelo.WorldCupQatar22.debug.xcconfig"; sourceTree = "<group>"; };
 		221B06E63B8D07B2586C67D6AB275F92 /* youtube-ios-player-helper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "youtube-ios-player-helper.debug.xcconfig"; sourceTree = "<group>"; };
 		248A7DEADB8B6474E6A92C731CC67BC9 /* youtube-ios-player-helper-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "youtube-ios-player-helper-dummy.m"; sourceTree = "<group>"; };
-		2E47521848510B66011D23B5C1D5F547 /* Pods-Marcelo.WorldCupQatar22 */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Marcelo.WorldCupQatar22"; path = Pods_Marcelo_WorldCupQatar22.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E47521848510B66011D23B5C1D5F547 /* Pods_Marcelo_WorldCupQatar22.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Marcelo_WorldCupQatar22.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		398D96D194BCA912E7072F9CFD5F69EA /* Pods-Marcelo.WorldCupQatar22-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Marcelo.WorldCupQatar22-dummy.m"; sourceTree = "<group>"; };
 		3D773F205A1EB7E2EBBF861888919C42 /* YTPlayerView-iframe-player.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = "YTPlayerView-iframe-player.html"; path = "Sources/Assets/YTPlayerView-iframe-player.html"; sourceTree = "<group>"; };
 		4AEA34178540C08DD8DD6FD544C6792F /* youtube-ios-player-helper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "youtube-ios-player-helper.release.xcconfig"; sourceTree = "<group>"; };
@@ -94,7 +94,7 @@
 		03703CF155A525B3032F2FC55D4BF179 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2E47521848510B66011D23B5C1D5F547 /* Pods-Marcelo.WorldCupQatar22 */,
+				2E47521848510B66011D23B5C1D5F547 /* Pods_Marcelo_WorldCupQatar22.framework */,
 				8498A1B2C60117E181CA67921DDAE0B6 /* youtube_ios_player_helper.framework */,
 				D674200BB0575198145B5455CF13275F /* Assets.bundle */,
 			);
@@ -252,7 +252,7 @@
 			);
 			name = "Pods-Marcelo.WorldCupQatar22";
 			productName = Pods_Marcelo_WorldCupQatar22;
-			productReference = 2E47521848510B66011D23B5C1D5F547 /* Pods-Marcelo.WorldCupQatar22 */;
+			productReference = 2E47521848510B66011D23B5C1D5F547 /* Pods_Marcelo_WorldCupQatar22.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		D1A7AF186BE136DE56FD5699070589B8 /* youtube-ios-player-helper */ = {
@@ -388,7 +388,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-Marcelo.WorldCupQatar22/Pods-Marcelo.WorldCupQatar22-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -460,7 +460,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-Marcelo.WorldCupQatar22/Pods-Marcelo.WorldCupQatar22-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
