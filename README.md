@@ -1,28 +1,35 @@
-# Yoga Zone
+# WorldCupQatar22
 
-Projeto Integrador com o tema de yoga. 
+The purpose of the application is to gather the main information regarding the world cup in Qatar 2022, some features are, countdown timer, days and places of the games, information of each team and their expectation for the tournament, complete information of each stadium where it is possible take a tour and find out how it was built and get an idea of how it is inside, in addition to the Ranking feature that brings together the 10 top scorers of all cups, the ranking of the winners of all cups, the market value of each player and the FIFA Team Ranking.
 
-O App possui funcionalidades voltadas para uso individual como calculadora de IMC, sons para prática de meditação, galeria com poses de yoga e como usa-las, treinos de yoga e uma seção de eventos para encontrar e criar encontros.
+## Used Technologies:
+  🔹Storyboard & Xib
+  🔹Cocoapods
+  🔹Api Rest
+  🔹Delegate
+  🔹Protocol
+  🔹TabBar
+  🔹TableView
+  🔹Segmented Control
+  
+  ## Configration
 
-**_Obs: Ainda em desenvolvimento_**
-
-## Configuração
-
-Após clonar o projeto, instalar os pods:
+After cloning the project, installing the pods:
 
 ```
-$ cd YogaZone
+$ cd WorldCupQatar22
 $ pod install
-$ open YogaZone.xcworkspace
+$ open WorldCupQatar22.xcworkspace
 ```
 
-Excutar o build no xcode.
+Run the build in Xcode.
 
 ## Screenshots
 
-![Login](./Images/Login.png)
-![Onboarding](./Images/Oboarding.png)
-![Meditacao](./Images/Meditacao.png)
-![IMC](./Images/Imc.png)
-![Treino](./Images/Treino.png)
-![Eventos](./Images/Eventos.png)
+![picture](./Images/picture.png)
+
+## Video App Working:
+
+[![Alt text](https://img.youtube.com/vi/fZuFghtHTtg/0.jpg)](https://www.youtube.com/watch?v=fZuFghtHTtg)
+
+
