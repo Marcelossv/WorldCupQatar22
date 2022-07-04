@@ -26,7 +26,7 @@ Run the build in Xcode.
 
 ## Screenshots
 
-![picture](./picture/layout.png)
+![picture](./Images/picture1.png)
 
 ## Video App Working:
 
