@@ -45,6 +45,7 @@
 		31A476512846A8980011999F /* GenericService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A476502846A8980011999F /* GenericService.swift */; };
 		31F3B39628219EB100821127 /* RankingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F3B39428219EB100821127 /* RankingTableViewCell.swift */; };
 		31F3B39928219FFE00821127 /* Winners.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F3B39828219FFE00821127 /* Winners.swift */; };
+		BC69B2E428CAB0B6007631D1 /* YouTubeiOSPlayerHelper in Frameworks */ = {isa = PBXBuildFile; productRef = BC69B2E328CAB0B6007631D1 /* YouTubeiOSPlayerHelper */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -95,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC69B2E428CAB0B6007631D1 /* YouTubeiOSPlayerHelper in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,7 +108,6 @@
 			children = (
 				314871992820367C0021B553 /* Marcelo.WorldCupQatar22 */,
 				314871982820367C0021B553 /* Products */,
-				5C87EAA5FB1DD143683443CE /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -148,13 +149,6 @@
 				31A476502846A8980011999F /* GenericService.swift */,
 			);
 			path = Service;
-			sourceTree = "<group>";
-		};
-		5C87EAA5FB1DD143683443CE /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Pods;
 			sourceTree = "<group>";
 		};
 		882D1BDF286221380080CB69 /* Model */ = {
@@ -467,6 +461,9 @@
 			dependencies = (
 			);
 			name = Marcelo.WorldCupQatar22;
+			packageProductDependencies = (
+				BC69B2E328CAB0B6007631D1 /* YouTubeiOSPlayerHelper */,
+			);
 			productName = Marcelo.WorldCupSounds;
 			productReference = 314871972820367C0021B553 /* Marcelo.WorldCupQatar22.app */;
 			productType = "com.apple.product-type.application";
@@ -495,6 +492,9 @@
 				Base,
 			);
 			mainGroup = 3148718E2820367C0021B553;
+			packageReferences = (
+				BC69B2E228CAB0B6007631D1 /* XCRemoteSwiftPackageReference "youtube-ios-player-helper" */,
+			);
 			productRefGroup = 314871982820367C0021B553 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -778,6 +778,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BC69B2E228CAB0B6007631D1 /* XCRemoteSwiftPackageReference "youtube-ios-player-helper" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/youtube/youtube-ios-player-helper.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BC69B2E328CAB0B6007631D1 /* YouTubeiOSPlayerHelper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BC69B2E228CAB0B6007631D1 /* XCRemoteSwiftPackageReference "youtube-ios-player-helper" */;
+			productName = YouTubeiOSPlayerHelper;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3148718F2820367C0021B553 /* Project object */;
 }
