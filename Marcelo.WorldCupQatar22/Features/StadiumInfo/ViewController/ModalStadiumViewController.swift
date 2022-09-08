@@ -5,7 +5,7 @@
 //  Created by Marcelo Silva on 10/05/22.
 //
 
-import youtube_ios_player_helper
+import YouTubeiOSPlayerHelper
 import UIKit
 
 class ModalStadiumViewController: UIViewController {
