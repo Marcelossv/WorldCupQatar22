@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import youtube_ios_player_helper
 
 class StadiumViewController: UIViewController {
     

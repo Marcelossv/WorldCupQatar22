@@ -45,7 +45,6 @@
 		31A476512846A8980011999F /* GenericService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A476502846A8980011999F /* GenericService.swift */; };
 		31F3B39628219EB100821127 /* RankingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F3B39428219EB100821127 /* RankingTableViewCell.swift */; };
 		31F3B39928219FFE00821127 /* Winners.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F3B39828219FFE00821127 /* Winners.swift */; };
-		45EBAF3AED6BAB62BAD90F2A /* Pods_Marcelo_WorldCupQatar22.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC80CDAB193CCA7CE58D1753 /* Pods_Marcelo_WorldCupQatar22.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -89,9 +88,6 @@
 		31F3B39428219EB100821127 /* RankingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingTableViewCell.swift; sourceTree = "<group>"; };
 		31F3B39528219EB100821127 /* RankingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RankingTableViewCell.xib; sourceTree = "<group>"; };
 		31F3B39828219FFE00821127 /* Winners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Winners.swift; sourceTree = "<group>"; };
-		6A2F06F0807216EFE030E394 /* Pods-Marcelo.WorldCupQatar22.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Marcelo.WorldCupQatar22.release.xcconfig"; path = "Target Support Files/Pods-Marcelo.WorldCupQatar22/Pods-Marcelo.WorldCupQatar22.release.xcconfig"; sourceTree = "<group>"; };
-		7E56C9244D33E41C9A444E04 /* Pods-Marcelo.WorldCupQatar22.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Marcelo.WorldCupQatar22.debug.xcconfig"; path = "Target Support Files/Pods-Marcelo.WorldCupQatar22/Pods-Marcelo.WorldCupQatar22.debug.xcconfig"; sourceTree = "<group>"; };
-		FC80CDAB193CCA7CE58D1753 /* Pods_Marcelo_WorldCupQatar22.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Marcelo_WorldCupQatar22.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,28 +95,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				45EBAF3AED6BAB62BAD90F2A /* Pods_Marcelo_WorldCupQatar22.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3103191B81527A21BEC6D764 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				FC80CDAB193CCA7CE58D1753 /* Pods_Marcelo_WorldCupQatar22.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		3148718E2820367C0021B553 = {
 			isa = PBXGroup;
 			children = (
 				314871992820367C0021B553 /* Marcelo.WorldCupQatar22 */,
 				314871982820367C0021B553 /* Products */,
 				5C87EAA5FB1DD143683443CE /* Pods */,
-				3103191B81527A21BEC6D764 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -167,8 +153,6 @@
 		5C87EAA5FB1DD143683443CE /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				7E56C9244D33E41C9A444E04 /* Pods-Marcelo.WorldCupQatar22.debug.xcconfig */,
-				6A2F06F0807216EFE030E394 /* Pods-Marcelo.WorldCupQatar22.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -474,11 +458,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 314871AB2820367E0021B553 /* Build configuration list for PBXNativeTarget "Marcelo.WorldCupQatar22" */;
 			buildPhases = (
-				C08011C4C548C9BC8D11B3C4 /* [CP] Check Pods Manifest.lock */,
 				314871932820367C0021B553 /* Sources */,
 				314871942820367C0021B553 /* Frameworks */,
 				314871952820367C0021B553 /* Resources */,
-				6B0FE7D43688677795591F52 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -534,48 +516,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		6B0FE7D43688677795591F52 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Marcelo.WorldCupQatar22/Pods-Marcelo.WorldCupQatar22-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Marcelo.WorldCupQatar22/Pods-Marcelo.WorldCupQatar22-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Marcelo.WorldCupQatar22/Pods-Marcelo.WorldCupQatar22-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C08011C4C548C9BC8D11B3C4 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Marcelo.WorldCupQatar22-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		314871932820367C0021B553 /* Sources */ = {
@@ -758,7 +698,6 @@
 		};
 		314871AC2820367E0021B553 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7E56C9244D33E41C9A444E04 /* Pods-Marcelo.WorldCupQatar22.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -789,7 +728,6 @@
 		};
 		314871AD2820367E0021B553 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6A2F06F0807216EFE030E394 /* Pods-Marcelo.WorldCupQatar22.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
