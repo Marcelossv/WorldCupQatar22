@@ -7,15 +7,14 @@
 
 import UIKit
 
-class CountDown: UIViewController {
+final class CountDown: UIViewController {
     @IBOutlet var timerLabel: UILabel!
     
-    var timer: Timer!
+    private var timer: Timer?
 
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        timer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(UpdateTime), userInfo: nil, repeats: true) // Repeat "func Update() " every second and update the label
+        timer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(UpdateTime), userInfo: nil, repeats: true)
     }
     
     @objc func UpdateTime() {
@@ -42,13 +41,9 @@ class CountDown: UIViewController {
         let timeLeft = userCalendar.dateComponents([.day, .hour, .minute, .second], from: currentDate, to: eventDate)
         
         // Display Countdown, final sentence i can put "D,h...
-        var countDown: NSString =  "\(timeLeft.day!)D   \(timeLeft.hour!)H   \(timeLeft.minute!)M   \(timeLeft.second!)S " as NSString
+        let countDown: NSString =  "\(timeLeft.day!)D   \(timeLeft.hour!)H   \(timeLeft.minute!)M   \(timeLeft.second!)S " as NSString
         var mutableCountDown = NSMutableAttributedString()
         mutableCountDown = NSMutableAttributedString(string: countDown as String, attributes: [NSAttributedString.Key.font:UIFont(name: "Arial", size: 30) ?? 0])
-//        mutableCountDown.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.black, range: NSRange(location: 3, length: 1))
-//        mutableCountDown.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.black, range: NSRange(location: 9, length: 1))
-//        mutableCountDown.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.black, range: NSRange(location: 15, length: 1))
-//        mutableCountDown.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.black, range: NSRange(location: 21, length: 1))
         timerLabel.attributedText = mutableCountDown
         
         // Show diffrent text when the event has passed
@@ -59,7 +54,7 @@ class CountDown: UIViewController {
         if currentdate >= eventdate {
             timerLabel.text = "Welcome to World Cup Qatar 2022!"
             // Stop Timer
-            timer.invalidate()
+            timer?.invalidate()
         }
     }
 }
