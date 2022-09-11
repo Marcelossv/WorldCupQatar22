@@ -8,53 +8,64 @@
 import UIKit
 
 final class CountDown: UIViewController {
+
     @IBOutlet var timerLabel: UILabel!
-    
+
     private var timer: Timer?
+    private var qatarEventDate: Date {
+        let dateComponents = DateComponents(
+            calendar: Calendar.current,
+            timeZone: TimeZone(identifier: "Asia/Qatar"),
+            year: 2022,
+            month: 11,
+            day: 21,
+            hour: 13,
+            minute: 00,
+            second: 00
+        )
+
+        if let date = Calendar.current.date(from: dateComponents) {
+            return date
+        } else {
+            return Date()
+        }
+    }
+    private var currentDate: Date {
+        Date.now
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        timer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(UpdateTime), userInfo: nil, repeats: true)
+        startScheduledTimer()
     }
-    
-    @objc func UpdateTime() {
-        let userCalendar = Calendar.current
-        // Set Current Date
-        let date = Date()
-        let components = userCalendar.dateComponents([.hour, .minute, .month, .year, .day, .second], from: date)
-        let currentDate = userCalendar.date(from: components)!
-        
-        // Set Event Date
-        var eventDateComponents = DateComponents()
-        eventDateComponents.year = 2022
-        eventDateComponents.month = 11
-        eventDateComponents.day = 21
-        eventDateComponents.hour = 05
-        eventDateComponents.minute = 00
-        eventDateComponents.second = 00
-        eventDateComponents.timeZone = TimeZone(abbreviation: "GMT-3")
-        
-        // Convert eventDateComponents to the user's calendar
-        let eventDate = userCalendar.date(from: eventDateComponents)!
-        
-        // Change the seconds to days, hours, minutes and seconds
-        let timeLeft = userCalendar.dateComponents([.day, .hour, .minute, .second], from: currentDate, to: eventDate)
-        
-        // Display Countdown, final sentence i can put "D,h...
-        let countDown: NSString =  "\(timeLeft.day!)D   \(timeLeft.hour!)H   \(timeLeft.minute!)M   \(timeLeft.second!)S " as NSString
-        var mutableCountDown = NSMutableAttributedString()
-        mutableCountDown = NSMutableAttributedString(string: countDown as String, attributes: [NSAttributedString.Key.font:UIFont(name: "Arial", size: 30) ?? 0])
-        timerLabel.attributedText = mutableCountDown
-        
-        // Show diffrent text when the event has passed
-        endEvent(currentdate: currentDate, eventdate: eventDate)
-    }
-    
-    func endEvent(currentdate: Date, eventdate: Date) {
-        if currentdate >= eventdate {
-            timerLabel.text = "Welcome to World Cup Qatar 2022!"
-            // Stop Timer
-            timer?.invalidate()
+
+    private func startScheduledTimer() {
+        timer = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true) { [weak self] _ in
+            guard let `self` = self else { return }
+            self.updateTimerLabel(dateDifference: self.calculateDateDifference())
         }
     }
+
+    private func calculateDateDifference() -> DateComponents {
+        return Calendar.current.dateComponents(
+            [.day, .hour, .minute, .second],
+            from: self.currentDate,
+            to: self.qatarEventDate
+        )
+    }
+
+    private func updateTimerLabel(dateDifference: DateComponents) {
+        if self.currentDate >= self.qatarEventDate {
+            timerLabel.text = "Welcome to World Cup Qatar 2022!"
+            timer?.invalidate()
+        } else {
+            let day = String(dateDifference.day ?? 00)
+            let hour = String(dateDifference.hour ?? 00)
+            let minute = String(dateDifference.minute ?? 00)
+            let second = String(dateDifference.second ?? 00)
+            let displayCount = "\(day)D   \(hour)H   \(minute)M   \(second)S "
+            timerLabel.text = displayCount
+        }
+    }
+
 }
