@@ -19,7 +19,7 @@
 		313BF4FE28272009004CE901 /* FifaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313BF4FC28272009004CE901 /* FifaTableViewCell.swift */; };
 		313BF501282721F4004CE901 /* Datum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313BF500282721F4004CE901 /* Datum.swift */; };
 		313BF50328274967004CE901 /* TeamInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313BF50228274967004CE901 /* TeamInfoViewController.swift */; };
-		313BF52528288D0B004CE901 /* CountDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313BF52428288D0B004CE901 /* CountDown.swift */; };
+		313BF52528288D0B004CE901 /* CountDownViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313BF52428288D0B004CE901 /* CountDownViewController.swift */; };
 		31475067282306EB00EB1A48 /* MatchesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31475066282306EB00EB1A48 /* MatchesViewController.swift */; };
 		3147506A2823082C00EB1A48 /* MatchesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314750682823082C00EB1A48 /* MatchesTableViewCell.swift */; };
 		3147506D2824106400EB1A48 /* Matches.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3147506C2824106400EB1A48 /* Matches.swift */; };
@@ -46,6 +46,7 @@
 		31F3B39628219EB100821127 /* RankingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F3B39428219EB100821127 /* RankingTableViewCell.swift */; };
 		31F3B39928219FFE00821127 /* Winners.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F3B39828219FFE00821127 /* Winners.swift */; };
 		BC69B2E428CAB0B6007631D1 /* YouTubeiOSPlayerHelper in Frameworks */ = {isa = PBXBuildFile; productRef = BC69B2E328CAB0B6007631D1 /* YouTubeiOSPlayerHelper */; };
+		BCEB6E2128D15DB90044B699 /* CountDown.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCEB6E2028D15DB90044B699 /* CountDown.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,7 +54,7 @@
 		313BF4FD28272009004CE901 /* FifaTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FifaTableViewCell.xib; sourceTree = "<group>"; };
 		313BF500282721F4004CE901 /* Datum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Datum.swift; sourceTree = "<group>"; };
 		313BF50228274967004CE901 /* TeamInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamInfoViewController.swift; sourceTree = "<group>"; };
-		313BF52428288D0B004CE901 /* CountDown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountDown.swift; sourceTree = "<group>"; };
+		313BF52428288D0B004CE901 /* CountDownViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountDownViewController.swift; sourceTree = "<group>"; };
 		31475066282306EB00EB1A48 /* MatchesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchesViewController.swift; sourceTree = "<group>"; };
 		314750682823082C00EB1A48 /* MatchesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchesTableViewCell.swift; sourceTree = "<group>"; };
 		314750692823082C00EB1A48 /* MatchesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MatchesTableViewCell.xib; sourceTree = "<group>"; };
@@ -89,6 +90,7 @@
 		31F3B39428219EB100821127 /* RankingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingTableViewCell.swift; sourceTree = "<group>"; };
 		31F3B39528219EB100821127 /* RankingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RankingTableViewCell.xib; sourceTree = "<group>"; };
 		31F3B39828219FFE00821127 /* Winners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Winners.swift; sourceTree = "<group>"; };
+		BCEB6E2028D15DB90044B699 /* CountDown.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CountDown.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,14 +124,11 @@
 		314871992820367C0021B553 /* Marcelo.WorldCupQatar22 */ = {
 			isa = PBXGroup;
 			children = (
+				BCEB6E2328D15FA40044B699 /* AppDelegate */,
 				31A4764D2846A03F0011999F /* Service */,
 				88B1A07B2862202E008E7D18 /* Features */,
 				314871B328203B5F0021B553 /* View */,
-				3148719A2820367C0021B553 /* AppDelegate.swift */,
-				3148719C2820367C0021B553 /* SceneDelegate.swift */,
-				314871A32820367E0021B553 /* Assets.xcassets */,
-				314871A52820367E0021B553 /* LaunchScreen.storyboard */,
-				314871A82820367E0021B553 /* Info.plist */,
+				BCEB6E2428D15FB70044B699 /* Resources */,
 			);
 			path = Marcelo.WorldCupQatar22;
 			sourceTree = "<group>";
@@ -414,6 +413,7 @@
 		88B1A07C28622040008E7D18 /* Timer */ = {
 			isa = PBXGroup;
 			children = (
+				BCEB6E2228D15F730044B699 /* Storyboard */,
 				88B1A07D28622081008E7D18 /* ViewController */,
 			);
 			path = Timer;
@@ -422,7 +422,7 @@
 		88B1A07D28622081008E7D18 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				313BF52428288D0B004CE901 /* CountDown.swift */,
+				313BF52428288D0B004CE901 /* CountDownViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -443,6 +443,33 @@
 				314871B128203B3B0021B553 /* GroupsViewController.swift */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		BCEB6E2228D15F730044B699 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				BCEB6E2028D15DB90044B699 /* CountDown.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		BCEB6E2328D15FA40044B699 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				3148719A2820367C0021B553 /* AppDelegate.swift */,
+				3148719C2820367C0021B553 /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		BCEB6E2428D15FB70044B699 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				314871A32820367E0021B553 /* Assets.xcassets */,
+				314871A52820367E0021B553 /* LaunchScreen.storyboard */,
+				314871A82820367E0021B553 /* Info.plist */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -509,6 +536,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCEB6E2128D15DB90044B699 /* CountDown.storyboard in Resources */,
 				311A49E9285D1122003E3B0E /* Assets.xcassets in Resources */,
 				314871A72820367E0021B553 /* LaunchScreen.storyboard in Resources */,
 				314871A22820367C0021B553 /* Main.storyboard in Resources */,
@@ -536,7 +564,7 @@
 				314871B028203AF70021B553 /* RankingViewController.swift in Sources */,
 				31475067282306EB00EB1A48 /* MatchesViewController.swift in Sources */,
 				3148FC11282B0A7600D24AEE /* ModalStadiumViewController.swift in Sources */,
-				313BF52528288D0B004CE901 /* CountDown.swift in Sources */,
+				313BF52528288D0B004CE901 /* CountDownViewController.swift in Sources */,
 				3189B9BD28257A9B002BFFD1 /* TopGoalTableViewCell.swift in Sources */,
 				314871BA282051560021B553 /* GroupsTableViewCell.swift in Sources */,
 				31F3B39928219FFE00821127 /* Winners.swift in Sources */,
@@ -705,7 +733,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = RVDHB2VBB6;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Marcelo.WorldCupQatar22/Info.plist;
+				INFOPLIST_FILE = Marcelo.WorldCupQatar22/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -735,7 +763,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = RVDHB2VBB6;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Marcelo.WorldCupQatar22/Info.plist;
+				INFOPLIST_FILE = Marcelo.WorldCupQatar22/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
