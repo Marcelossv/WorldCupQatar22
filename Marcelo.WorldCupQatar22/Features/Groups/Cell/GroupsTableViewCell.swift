@@ -7,43 +7,29 @@
 
 import UIKit
 
-class GroupsTableViewCell: UITableViewCell {
-    
-    var imageTeam: UIImage?
-    var teamTitle: String?
-    var teamText: String?
-    var vc: UIViewController?
-    
-    @IBOutlet weak var imageProfile: UIImageView!
-    @IBOutlet weak var nameLabel: UILabel!
-    @IBOutlet weak var buttonInfo: UIButton!
+final class GroupsTableViewCell: UITableViewCell {
+        
+    @IBOutlet private weak var imageProfile: UIImageView!
+    @IBOutlet private weak var nameLabel: UILabel!
     
     static let identifier: String = "GroupsTableViewCell"
-    static func getNib() -> UINib{
-        return UINib(nibName: self.identifier, bundle: nil)
+    
+    struct ViewModel {
+        let nameCountry: String
+        let flag: UIImage
     }
     
     override func awakeFromNib() {
         super.awakeFromNib()
     }
     
-    @IBAction func tappedInfo(_ sender: Any) {
-        self.showDetails()
+    static func getNib() -> UINib {
+        return UINib(nibName: self.identifier, bundle: nil)
     }
         
-   public func setupCell(imageTeam: UIImage, teamTitle: String, teamText: String, vc: UIViewController){
-        self.vc = vc
-        self.imageTeam = imageTeam
-        self.teamTitle = teamTitle
-        self.teamText = teamText
+    func setupCell(_ viewModel: ViewModel) {
+        imageProfile.image = viewModel.flag
+        nameLabel.text = viewModel.nameCountry
     }
-    
-    func showDetails() {
-        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController (withIdentifier: "InfoTeamViewController") as? TeamInfoViewController
-        vc?.imageTeam = self.imageTeam
-        vc?.teamTitle = self.teamTitle
-        vc?.teamText = self.teamText
-        self.vc?.present(vc ?? UIViewController(), animated: true, completion: nil)
-    }
+        
 }
-
