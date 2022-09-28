@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="X8l-Ya-ZL0">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="X8l-Ya-ZL0">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -101,68 +101,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ffU-le-zuH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-933.33333333333337" y="859.82142857142856"/>
-        </scene>
-        <!--Team Info View Controller-->
-        <scene sceneID="bja-uR-rDR">
-            <objects>
-                <viewController storyboardIdentifier="InfoTeamViewController" definesPresentationContext="YES" providesPresentationContextTransitionStyle="YES" modalPresentationStyle="formSheet" id="yWa-I0-0fm" customClass="TeamInfoViewController" customModule="Marcelo_WorldCupQatar22" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="NgK-iJ-3qo">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U6q-zf-cVX">
-                                <rect key="frame" x="20" y="362" width="374" height="31"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                                <color key="shadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ny6-mx-5SU">
-                                <rect key="frame" x="20" y="398" width="374" height="18"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pre-FP-gxE">
-                                <rect key="frame" x="160" y="54" width="102" height="2"/>
-                                <color key="backgroundColor" systemColor="labelColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="2" id="aUa-Jq-xNe"/>
-                                </constraints>
-                            </view>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="quk-DR-pC3">
-                                <rect key="frame" x="10" y="66" width="394" height="281"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="281" id="QhQ-kN-V6l"/>
-                                    <constraint firstAttribute="width" constant="394" id="ZNW-9S-Kla"/>
-                                </constraints>
-                            </imageView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="Fn8-BQ-OhS"/>
-                        <color key="backgroundColor" red="0.61176470589999998" green="0.10980392160000001" blue="0.1215686275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="Ny6-mx-5SU" firstAttribute="leading" secondItem="Fn8-BQ-OhS" secondAttribute="leading" constant="20" id="EVH-ka-4PM"/>
-                            <constraint firstItem="quk-DR-pC3" firstAttribute="centerX" secondItem="NgK-iJ-3qo" secondAttribute="centerX" id="Jkl-YG-8by"/>
-                            <constraint firstAttribute="trailing" secondItem="Pre-FP-gxE" secondAttribute="trailing" constant="152" id="KYs-HN-Fec"/>
-                            <constraint firstItem="quk-DR-pC3" firstAttribute="top" secondItem="Pre-FP-gxE" secondAttribute="bottom" constant="10" id="UWP-Nm-Ydt"/>
-                            <constraint firstItem="U6q-zf-cVX" firstAttribute="leading" secondItem="Fn8-BQ-OhS" secondAttribute="leading" constant="20" id="doX-lx-akX"/>
-                            <constraint firstItem="Ny6-mx-5SU" firstAttribute="top" secondItem="U6q-zf-cVX" secondAttribute="bottom" constant="5" id="ffs-nR-QKX"/>
-                            <constraint firstItem="Fn8-BQ-OhS" firstAttribute="trailing" secondItem="Ny6-mx-5SU" secondAttribute="trailing" constant="20" id="nKM-me-cXj"/>
-                            <constraint firstItem="Pre-FP-gxE" firstAttribute="leading" secondItem="NgK-iJ-3qo" secondAttribute="leading" constant="160" id="oYS-Zw-CsM"/>
-                            <constraint firstItem="U6q-zf-cVX" firstAttribute="top" secondItem="quk-DR-pC3" secondAttribute="bottom" constant="15" id="yBj-XK-Z7Y"/>
-                            <constraint firstItem="Pre-FP-gxE" firstAttribute="top" secondItem="Fn8-BQ-OhS" secondAttribute="top" constant="10" id="ynR-5h-aBe"/>
-                            <constraint firstItem="Fn8-BQ-OhS" firstAttribute="trailing" secondItem="U6q-zf-cVX" secondAttribute="trailing" constant="20" id="zm2-eC-4XZ"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="imageTeamImageView" destination="quk-DR-pC3" id="Hxf-M3-fVU"/>
-                        <outlet property="textTeamLabel" destination="Ny6-mx-5SU" id="E8H-y9-8gG"/>
-                        <outlet property="titleTeamLabel" destination="U6q-zf-cVX" id="NqE-gV-3qA"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="TZQ-bH-SPj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1430.4347826086957" y="1556.9196428571429"/>
         </scene>
         <!--Modal Stadium View Controller-->
         <scene sceneID="kOJ-2G-Znr">
@@ -390,9 +328,6 @@
         <image name="icons8-world-cup-64" width="64" height="64"/>
         <image name="tablecells.fill" catalog="system" width="128" height="93"/>
         <image name="timer" catalog="system" width="128" height="121"/>
-        <systemColor name="labelColor">
-            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
