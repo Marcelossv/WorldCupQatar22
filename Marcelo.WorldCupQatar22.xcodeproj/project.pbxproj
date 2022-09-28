@@ -22,7 +22,7 @@
 		313BF52528288D0B004CE901 /* CountDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313BF52428288D0B004CE901 /* CountDown.swift */; };
 		31475067282306EB00EB1A48 /* MatchesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31475066282306EB00EB1A48 /* MatchesViewController.swift */; };
 		3147506A2823082C00EB1A48 /* MatchesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314750682823082C00EB1A48 /* MatchesTableViewCell.swift */; };
-		3147506D2824106400EB1A48 /* Matches.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3147506C2824106400EB1A48 /* Matches.swift */; };
+		3147506D2824106400EB1A48 /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3147506C2824106400EB1A48 /* Match.swift */; };
 		3148719B2820367C0021B553 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3148719A2820367C0021B553 /* AppDelegate.swift */; };
 		3148719D2820367C0021B553 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3148719C2820367C0021B553 /* SceneDelegate.swift */; };
 		3148719F2820367C0021B553 /* StadiumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3148719E2820367C0021B553 /* StadiumViewController.swift */; };
@@ -57,7 +57,7 @@
 		31475066282306EB00EB1A48 /* MatchesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchesViewController.swift; sourceTree = "<group>"; };
 		314750682823082C00EB1A48 /* MatchesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchesTableViewCell.swift; sourceTree = "<group>"; };
 		314750692823082C00EB1A48 /* MatchesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MatchesTableViewCell.xib; sourceTree = "<group>"; };
-		3147506C2824106400EB1A48 /* Matches.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Matches.swift; sourceTree = "<group>"; };
+		3147506C2824106400EB1A48 /* Match.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Match.swift; sourceTree = "<group>"; };
 		314871972820367C0021B553 /* Marcelo.WorldCupQatar22.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Marcelo.WorldCupQatar22.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3148719A2820367C0021B553 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3148719C2820367C0021B553 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -189,7 +189,7 @@
 		882D1BE3286221A70080CB69 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				3147506C2824106400EB1A48 /* Matches.swift */,
+				3147506C2824106400EB1A48 /* Match.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -552,7 +552,7 @@
 				3148FC0D282ACBAE00D24AEE /* TeamInfo.swift in Sources */,
 				314871B628203F140021B553 /* Groups.swift in Sources */,
 				31F3B39628219EB100821127 /* RankingTableViewCell.swift in Sources */,
-				3147506D2824106400EB1A48 /* Matches.swift in Sources */,
+				3147506D2824106400EB1A48 /* Match.swift in Sources */,
 				3189B9C62826298E002BFFD1 /* Player.swift in Sources */,
 				31545FE2282C7EC00038DF62 /* TeamInfoTableViewCell.swift in Sources */,
 				3189B9BA282571C6002BFFD1 /* Goals.swift in Sources */,
