@@ -59,48 +59,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ihm-zz-Bil" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1528.985507246377" y="859.82142857142856"/>
-        </scene>
-        <!--Groups-->
-        <scene sceneID="drX-UR-4aY">
-            <objects>
-                <viewController storyboardIdentifier="Groups" id="Qzo-Ih-FsZ" customClass="GroupsViewController" customModule="Marcelo_WorldCupQatar22" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="4m0-2t-JMc">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="pXJ-Yr-hTi">
-                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Groups" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MUS-60-Xq6">
-                                <rect key="frame" x="167.5" y="49" width="79" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="E8n-nY-qDJ"/>
-                        <color key="backgroundColor" red="0.61176470589999998" green="0.10980392160000001" blue="0.1215686275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="MUS-60-Xq6" firstAttribute="top" secondItem="E8n-nY-qDJ" secondAttribute="top" constant="5" id="537-bA-cYo"/>
-                            <constraint firstItem="E8n-nY-qDJ" firstAttribute="trailing" secondItem="pXJ-Yr-hTi" secondAttribute="trailing" id="Lb7-YD-rn0"/>
-                            <constraint firstItem="pXJ-Yr-hTi" firstAttribute="leading" secondItem="E8n-nY-qDJ" secondAttribute="leading" id="Psb-lZ-eXm"/>
-                            <constraint firstItem="MUS-60-Xq6" firstAttribute="centerX" secondItem="4m0-2t-JMc" secondAttribute="centerX" id="auN-W2-Je2"/>
-                            <constraint firstItem="E8n-nY-qDJ" firstAttribute="bottom" secondItem="pXJ-Yr-hTi" secondAttribute="bottom" id="clV-7h-4qf"/>
-                            <constraint firstItem="pXJ-Yr-hTi" firstAttribute="top" secondItem="E8n-nY-qDJ" secondAttribute="top" constant="44" id="jN7-Ke-bID"/>
-                        </constraints>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Groups" image="tablecells.fill" catalog="system" id="Pjr-8t-Acd">
-                        <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </tabBarItem>
-                    <connections>
-                        <outlet property="tableView" destination="pXJ-Yr-hTi" id="WLx-iv-cEC"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ffU-le-zuH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-933.33333333333337" y="859.82142857142856"/>
+            <point key="canvasLocation" x="710" y="919"/>
         </scene>
         <!--Modal Stadium View Controller-->
         <scene sceneID="kOJ-2G-Znr">
@@ -136,7 +95,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="To5-K9-h0b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="682.60869565217399" y="1530.8035714285713"/>
+            <point key="canvasLocation" x="-1457" y="133"/>
         </scene>
         <!--Timer-->
         <scene sceneID="1sP-EA-KvY">
@@ -190,64 +149,27 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xar-8F-MZx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1736.2318840579712" y="859.82142857142856"/>
+            <point key="canvasLocation" x="-1062" y="919"/>
         </scene>
-        <!--Matchs-->
-        <scene sceneID="kNf-MS-DLu">
+        <!--Groups-->
+        <scene sceneID="uCz-Z0-9vK">
             <objects>
-                <viewController storyboardIdentifier="Matchs" id="arF-am-Bib" customClass="MatchesViewController" customModule="Marcelo_WorldCupQatar22" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="bottom" semanticContentAttribute="playback" id="psk-qZ-c44">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="amA-xm-c2j">
-                                <rect key="frame" x="0.0" y="99" width="414" height="714"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            </tableView>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="COy-li-dsp">
-                                <rect key="frame" x="2" y="54" width="410" height="36"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <segments>
-                                    <segment title="A"/>
-                                    <segment title="B"/>
-                                    <segment title="C"/>
-                                    <segment title="D"/>
-                                    <segment title="E"/>
-                                    <segment title="F"/>
-                                    <segment title="G"/>
-                                    <segment title="H"/>
-                                </segments>
-                                <color key="tintColor" red="0.61176470589999998" green="0.10980392160000001" blue="0.1215686275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="selectedSegmentTintColor" red="0.66666668650000005" green="0.4587355655" blue="0.42615735360000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <connections>
-                                    <action selector="tappedSegControl:" destination="arF-am-Bib" eventType="valueChanged" id="LUh-dv-2k6"/>
-                                </connections>
-                            </segmentedControl>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="sLH-qO-Szn"/>
-                        <color key="backgroundColor" red="0.61176470589999998" green="0.10980392160000001" blue="0.1215686275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="sLH-qO-Szn" firstAttribute="bottom" secondItem="amA-xm-c2j" secondAttribute="bottom" id="3OK-ic-GWf"/>
-                            <constraint firstItem="amA-xm-c2j" firstAttribute="top" secondItem="sLH-qO-Szn" secondAttribute="top" constant="55" id="AC3-Ea-y8D"/>
-                            <constraint firstItem="sLH-qO-Szn" firstAttribute="trailing" secondItem="COy-li-dsp" secondAttribute="trailing" constant="2" id="D4b-Ni-CK3"/>
-                            <constraint firstItem="COy-li-dsp" firstAttribute="top" secondItem="sLH-qO-Szn" secondAttribute="top" constant="10" id="Hv8-je-K5C"/>
-                            <constraint firstItem="amA-xm-c2j" firstAttribute="leading" secondItem="sLH-qO-Szn" secondAttribute="leading" id="MXA-Pu-3Uv"/>
-                            <constraint firstItem="sLH-qO-Szn" firstAttribute="trailing" secondItem="amA-xm-c2j" secondAttribute="trailing" id="dkP-Hz-2aX"/>
-                            <constraint firstItem="amA-xm-c2j" firstAttribute="top" secondItem="COy-li-dsp" secondAttribute="bottom" constant="10" id="kOb-gr-33r"/>
-                            <constraint firstItem="COy-li-dsp" firstAttribute="leading" secondItem="sLH-qO-Szn" secondAttribute="leading" constant="2" id="oc8-1O-aet"/>
-                        </constraints>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Matchs" image="icons8-stadium-50" id="k9g-Vc-dGS">
-                        <inset key="imageInsets" minX="8" minY="0.0" maxX="4" maxY="0.0"/>
-                    </tabBarItem>
-                    <connections>
-                        <outlet property="segControl" destination="COy-li-dsp" id="oge-he-BCq"/>
-                        <outlet property="tableView" destination="amA-xm-c2j" id="BNQ-FG-mNp"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="BT5-z0-sAu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="Groups" id="8Y1-Wc-vyA" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="AQ4-SQ-MDw"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="63U-GB-sYA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-113.04347826086958" y="859.82142857142856"/>
+            <point key="canvasLocation" x="-568" y="599"/>
+        </scene>
+        <!--Matches-->
+        <scene sceneID="ZlB-pQ-Ps2">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Matches" id="hUq-jk-Jfj" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="6uD-SL-YYV"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q7D-ZS-ovo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-414" y="599"/>
         </scene>
         <!--Stadium-->
         <scene sceneID="yM0-EQ-qtx">
@@ -289,7 +211,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zoP-4d-y6e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="684" y="860"/>
+            <point key="canvasLocation" x="25" y="920"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="ePg-gE-IOe">
@@ -309,11 +231,11 @@
                         </tabBarAppearance>
                     </tabBar>
                     <connections>
-                        <segue destination="GCU-G2-70P" kind="relationship" relationship="viewControllers" id="X9V-xs-2c6"/>
-                        <segue destination="Qzo-Ih-FsZ" kind="relationship" relationship="viewControllers" id="hIy-Tv-lUA"/>
-                        <segue destination="arF-am-Bib" kind="relationship" relationship="viewControllers" id="gGr-M4-Ssk"/>
-                        <segue destination="YKj-eA-fnq" kind="relationship" relationship="viewControllers" id="ErJ-Da-2WN"/>
-                        <segue destination="6ac-zs-c3r" kind="relationship" relationship="viewControllers" id="nOl-pg-jpy"/>
+                        <segue destination="GCU-G2-70P" kind="relationship" relationship="viewControllers" id="rsq-j2-Vu9"/>
+                        <segue destination="8Y1-Wc-vyA" kind="relationship" relationship="viewControllers" id="LFA-AV-LNw"/>
+                        <segue destination="hUq-jk-Jfj" kind="relationship" relationship="viewControllers" id="M6g-dC-FmT"/>
+                        <segue destination="YKj-eA-fnq" kind="relationship" relationship="viewControllers" id="PH8-Be-hdS"/>
+                        <segue destination="6ac-zs-c3r" kind="relationship" relationship="viewControllers" id="1pI-GQ-KDU"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z4w-Hk-aQ5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -324,9 +246,7 @@
     <resources>
         <image name="fi1589q1f7-fifa-world-cup-qatar-2022-logo-qatar-2022-symbols-fifa-world-cup" width="328" height="395"/>
         <image name="icons8-soccer-48" width="48" height="48"/>
-        <image name="icons8-stadium-50" width="50" height="50"/>
         <image name="icons8-world-cup-64" width="64" height="64"/>
-        <image name="tablecells.fill" catalog="system" width="128" height="93"/>
         <image name="timer" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
