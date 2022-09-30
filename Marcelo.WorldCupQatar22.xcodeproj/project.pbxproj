@@ -34,7 +34,7 @@
 		314871C22820A63B0021B553 /* StadiumTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314871C02820A63B0021B553 /* StadiumTableViewCell.swift */; };
 		314871C72820A9480021B553 /* Stadium.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314871C62820A9480021B553 /* Stadium.swift */; };
 		3148FC0D282ACBAE00D24AEE /* CountryInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3148FC0C282ACBAE00D24AEE /* CountryInformation.swift */; };
-		3148FC11282B0A7600D24AEE /* ModalStadiumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3148FC10282B0A7600D24AEE /* ModalStadiumViewController.swift */; };
+		3148FC11282B0A7600D24AEE /* YTPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3148FC10282B0A7600D24AEE /* YTPlayerViewController.swift */; };
 		3189B9BA282571C6002BFFD1 /* Goals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3189B9B9282571C6002BFFD1 /* Goals.swift */; };
 		3189B9BD28257A9B002BFFD1 /* TopGoalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3189B9BB28257A9B002BFFD1 /* TopGoalTableViewCell.swift */; };
 		3189B9C1282623AD002BFFD1 /* PlayersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3189B9BF282623AD002BFFD1 /* PlayersTableViewCell.swift */; };
@@ -43,6 +43,8 @@
 		31A476512846A8980011999F /* GenericService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A476502846A8980011999F /* GenericService.swift */; };
 		31F3B39628219EB100821127 /* RankingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F3B39428219EB100821127 /* RankingTableViewCell.swift */; };
 		31F3B39928219FFE00821127 /* Winners.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F3B39828219FFE00821127 /* Winners.swift */; };
+		BC3A7CAF28E671CA00EB09F4 /* YTPlayer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC3A7CAE28E671CA00EB09F4 /* YTPlayer.storyboard */; };
+		BC3A7CB228E6737B00EB09F4 /* Stadium.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC3A7CB128E6737B00EB09F4 /* Stadium.storyboard */; };
 		BC58FD3B28E516C8003F8D83 /* Groups.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC58FD3A28E516C8003F8D83 /* Groups.storyboard */; };
 		BC58FD3E28E51896003F8D83 /* Matches.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC58FD3D28E51896003F8D83 /* Matches.storyboard */; };
 		BC69B2E428CAB0B6007631D1 /* YouTubeiOSPlayerHelper in Frameworks */ = {isa = PBXBuildFile; productRef = BC69B2E328CAB0B6007631D1 /* YouTubeiOSPlayerHelper */; };
@@ -76,7 +78,7 @@
 		314871C12820A63B0021B553 /* StadiumTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StadiumTableViewCell.xib; sourceTree = "<group>"; };
 		314871C62820A9480021B553 /* Stadium.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stadium.swift; sourceTree = "<group>"; };
 		3148FC0C282ACBAE00D24AEE /* CountryInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryInformation.swift; sourceTree = "<group>"; };
-		3148FC10282B0A7600D24AEE /* ModalStadiumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalStadiumViewController.swift; sourceTree = "<group>"; };
+		3148FC10282B0A7600D24AEE /* YTPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YTPlayerViewController.swift; sourceTree = "<group>"; };
 		3189B9B9282571C6002BFFD1 /* Goals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Goals.swift; sourceTree = "<group>"; };
 		3189B9BB28257A9B002BFFD1 /* TopGoalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopGoalTableViewCell.swift; sourceTree = "<group>"; };
 		3189B9BC28257A9B002BFFD1 /* TopGoalTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopGoalTableViewCell.xib; sourceTree = "<group>"; };
@@ -88,6 +90,8 @@
 		31F3B39428219EB100821127 /* RankingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingTableViewCell.swift; sourceTree = "<group>"; };
 		31F3B39528219EB100821127 /* RankingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RankingTableViewCell.xib; sourceTree = "<group>"; };
 		31F3B39828219FFE00821127 /* Winners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Winners.swift; sourceTree = "<group>"; };
+		BC3A7CAE28E671CA00EB09F4 /* YTPlayer.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = YTPlayer.storyboard; sourceTree = "<group>"; };
+		BC3A7CB128E6737B00EB09F4 /* Stadium.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Stadium.storyboard; sourceTree = "<group>"; };
 		BC58FD3A28E516C8003F8D83 /* Groups.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Groups.storyboard; sourceTree = "<group>"; };
 		BC58FD3D28E51896003F8D83 /* Matches.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Matches.storyboard; sourceTree = "<group>"; };
 		BC76DAC228E3DAE900C70271 /* TeamInfo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TeamInfo.storyboard; sourceTree = "<group>"; };
@@ -211,6 +215,7 @@
 			children = (
 				882D1BE8286222210080CB69 /* Cell */,
 				882D1BE72862221C0080CB69 /* Model */,
+				BC3A7CB328E6744800EB09F4 /* Storyboard */,
 				882D1BE6286222150080CB69 /* ViewController */,
 			);
 			path = Stadium;
@@ -375,18 +380,19 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		882D1BF92862249C0080CB69 /* StadiumInfo */ = {
+		882D1BF92862249C0080CB69 /* YTPlayer */ = {
 			isa = PBXGroup;
 			children = (
+				BC3A7CB028E671CE00EB09F4 /* Storyboard */,
 				882D1BFA286224B20080CB69 /* ViewController */,
 			);
-			path = StadiumInfo;
+			path = YTPlayer;
 			sourceTree = "<group>";
 		};
 		882D1BFA286224B20080CB69 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				3148FC10282B0A7600D24AEE /* ModalStadiumViewController.swift */,
+				3148FC10282B0A7600D24AEE /* YTPlayerViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -398,7 +404,7 @@
 				882D1BE1286221910080CB69 /* Matches */,
 				882D1BE92862228E0080CB69 /* Ranking */,
 				882D1BE52862220F0080CB69 /* Stadium */,
-				882D1BF92862249C0080CB69 /* StadiumInfo */,
+				882D1BF92862249C0080CB69 /* YTPlayer */,
 				882D1BF5286224700080CB69 /* TeamInfo */,
 				88B1A07C28622040008E7D18 /* Timer */,
 			);
@@ -438,6 +444,22 @@
 				314871B128203B3B0021B553 /* GroupsViewController.swift */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		BC3A7CB028E671CE00EB09F4 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				BC3A7CAE28E671CA00EB09F4 /* YTPlayer.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		BC3A7CB328E6744800EB09F4 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				BC3A7CB128E6737B00EB09F4 /* Stadium.storyboard */,
+			);
+			path = Storyboard;
 			sourceTree = "<group>";
 		};
 		BC58FD3C28E5187C003F8D83 /* Storyboard */ = {
@@ -528,7 +550,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC3A7CB228E6737B00EB09F4 /* Stadium.storyboard in Resources */,
 				BC58FD3B28E516C8003F8D83 /* Groups.storyboard in Resources */,
+				BC3A7CAF28E671CA00EB09F4 /* YTPlayer.storyboard in Resources */,
 				311A49E9285D1122003E3B0E /* Assets.xcassets in Resources */,
 				BC58FD3E28E51896003F8D83 /* Matches.storyboard in Resources */,
 				BC76DAC328E3DAE900C70271 /* TeamInfo.storyboard in Resources */,
@@ -556,7 +580,7 @@
 				3148719B2820367C0021B553 /* AppDelegate.swift in Sources */,
 				314871B028203AF70021B553 /* RankingViewController.swift in Sources */,
 				31475067282306EB00EB1A48 /* MatchesViewController.swift in Sources */,
-				3148FC11282B0A7600D24AEE /* ModalStadiumViewController.swift in Sources */,
+				3148FC11282B0A7600D24AEE /* YTPlayerViewController.swift in Sources */,
 				313BF52528288D0B004CE901 /* CountDown.swift in Sources */,
 				3189B9BD28257A9B002BFFD1 /* TopGoalTableViewCell.swift in Sources */,
 				314871BA282051560021B553 /* GroupsTableViewCell.swift in Sources */,
