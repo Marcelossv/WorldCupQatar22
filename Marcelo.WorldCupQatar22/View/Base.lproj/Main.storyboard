@@ -59,43 +59,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ihm-zz-Bil" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="710" y="919"/>
-        </scene>
-        <!--Modal Stadium View Controller-->
-        <scene sceneID="kOJ-2G-Znr">
-            <objects>
-                <viewController storyboardIdentifier="ModalStadiumViewController" interfaceStyle="light" id="Cwz-RM-7zT" customClass="ModalStadiumViewController" customModule="Marcelo_WorldCupQatar22" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" tag="1" contentMode="TopLeft" semanticContentAttribute="playback" id="06A-2R-jK1">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="JBX-B8-vUP" customClass="YTPlayerView">
-                                <rect key="frame" x="10" y="10" width="394" height="275"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="275" id="EMl-xO-KL1"/>
-                                </constraints>
-                            </view>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="wVn-G1-6fj"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <rect key="contentStretch" x="0.0" y="0.0" width="1" height="0.84999999999999998"/>
-                        <constraints>
-                            <constraint firstItem="JBX-B8-vUP" firstAttribute="leading" secondItem="wVn-G1-6fj" secondAttribute="leading" constant="10" id="KQA-qL-Mfy"/>
-                            <constraint firstAttribute="trailing" secondItem="JBX-B8-vUP" secondAttribute="trailing" constant="10" id="dgg-Zn-oDk"/>
-                            <constraint firstItem="JBX-B8-vUP" firstAttribute="top" secondItem="wVn-G1-6fj" secondAttribute="top" constant="10" id="y6Y-M1-J38"/>
-                        </constraints>
-                    </view>
-                    <nil key="simulatedTopBarMetrics"/>
-                    <nil key="simulatedBottomBarMetrics"/>
-                    <modalFormSheetSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <connections>
-                        <outlet property="playerView" destination="JBX-B8-vUP" id="NDP-7O-Bbf"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="To5-K9-h0b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1457" y="133"/>
+            <point key="canvasLocation" x="341" y="919"/>
         </scene>
         <!--Timer-->
         <scene sceneID="1sP-EA-KvY">
@@ -159,7 +123,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="63U-GB-sYA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-568" y="599"/>
+            <point key="canvasLocation" x="-635" y="599"/>
         </scene>
         <!--Matches-->
         <scene sceneID="ZlB-pQ-Ps2">
@@ -172,46 +136,14 @@
             <point key="canvasLocation" x="-414" y="599"/>
         </scene>
         <!--Stadium-->
-        <scene sceneID="yM0-EQ-qtx">
+        <scene sceneID="G2j-E2-9k0">
             <objects>
-                <viewController storyboardIdentifier="Stadium" id="YKj-eA-fnq" customClass="StadiumViewController" customModule="Marcelo_WorldCupQatar22" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="vJm-Et-0OC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="EqO-gK-kpn">
-                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stadiums" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B7M-Ww-Peq">
-                                <rect key="frame" x="156.5" y="49" width="101.5" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="NnK-Ms-t33"/>
-                        <color key="backgroundColor" red="0.61176470589999998" green="0.10980392160000001" blue="0.1215686275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="B7M-Ww-Peq" firstAttribute="centerX" secondItem="vJm-Et-0OC" secondAttribute="centerX" id="04A-Yl-9ux"/>
-                            <constraint firstItem="EqO-gK-kpn" firstAttribute="top" secondItem="NnK-Ms-t33" secondAttribute="top" constant="44" id="4Z4-8Z-hiO"/>
-                            <constraint firstItem="B7M-Ww-Peq" firstAttribute="top" secondItem="NnK-Ms-t33" secondAttribute="top" constant="5" id="Hft-VM-teg"/>
-                            <constraint firstItem="EqO-gK-kpn" firstAttribute="leading" secondItem="NnK-Ms-t33" secondAttribute="leading" id="Lob-qX-cCB"/>
-                            <constraint firstItem="NnK-Ms-t33" firstAttribute="bottom" secondItem="EqO-gK-kpn" secondAttribute="bottom" id="TiS-XR-4UM"/>
-                            <constraint firstItem="NnK-Ms-t33" firstAttribute="trailing" secondItem="EqO-gK-kpn" secondAttribute="trailing" id="YVz-q5-oLl"/>
-                        </constraints>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Stadium" image="icons8-soccer-48" id="YwU-Pj-OIp">
-                        <inset key="imageInsets" minX="8" minY="0.0" maxX="10" maxY="0.0"/>
-                        <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </tabBarItem>
-                    <connections>
-                        <outlet property="tableView" destination="EqO-gK-kpn" id="6p7-C7-X33"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="zoP-4d-y6e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardIdentifier="Stadium" storyboardName="Stadium" id="lSN-Ss-YLE" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="XxT-B5-1IQ"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Aj6-O0-knW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="25" y="920"/>
+            <point key="canvasLocation" x="-173" y="599"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="ePg-gE-IOe">
@@ -234,8 +166,8 @@
                         <segue destination="GCU-G2-70P" kind="relationship" relationship="viewControllers" id="rsq-j2-Vu9"/>
                         <segue destination="8Y1-Wc-vyA" kind="relationship" relationship="viewControllers" id="LFA-AV-LNw"/>
                         <segue destination="hUq-jk-Jfj" kind="relationship" relationship="viewControllers" id="M6g-dC-FmT"/>
-                        <segue destination="YKj-eA-fnq" kind="relationship" relationship="viewControllers" id="PH8-Be-hdS"/>
-                        <segue destination="6ac-zs-c3r" kind="relationship" relationship="viewControllers" id="1pI-GQ-KDU"/>
+                        <segue destination="lSN-Ss-YLE" kind="relationship" relationship="viewControllers" id="Upj-Oq-I0n"/>
+                        <segue destination="6ac-zs-c3r" kind="relationship" relationship="viewControllers" id="P4N-ag-qUf"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z4w-Hk-aQ5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -245,7 +177,6 @@
     </scenes>
     <resources>
         <image name="fi1589q1f7-fifa-world-cup-qatar-2022-logo-qatar-2022-symbols-fifa-world-cup" width="328" height="395"/>
-        <image name="icons8-soccer-48" width="48" height="48"/>
         <image name="icons8-world-cup-64" width="64" height="64"/>
         <image name="timer" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
