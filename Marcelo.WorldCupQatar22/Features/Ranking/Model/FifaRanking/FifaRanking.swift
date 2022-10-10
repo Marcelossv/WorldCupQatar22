@@ -6,12 +6,11 @@
 //
 
 import Foundation
-import UIKit
 
 // MARK: - FifaRanking
 struct FifaRanking: Codable {
-    var code: Int
-    var message: String
+    let code: Int
+    let message: String
     var data: [Datum]
 }
 
@@ -51,5 +50,6 @@ enum UpdateDate: String, Codable {
     case the20226 = "2022-6"
 }
 
-
-
+var fifaRanking: FifaRanking = .init(
+    code: 0, message: String(), data: []
+)

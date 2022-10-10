@@ -7,46 +7,39 @@
 
 import Foundation
 
-protocol FifaRankingServiceDelegate: GenericService {
-    func getRanking(completion: @escaping completion<[Datum]?>)
+protocol FifaRankingAPI {
+    func getRanking(completion: @escaping (Result<FifaRanking, FifaRankingError>) -> Void)
 }
 
-class FifaRankingService: FifaRankingServiceDelegate {
-    func getRanking(completion: @escaping completion<[Datum]?>) {
+final class FifaRankingService: FifaRankingAPI {
+    
+    func getRanking(completion: @escaping (Result<FifaRanking, FifaRankingError>) -> Void) {
         let urlString = "http://api.isportsapi.com/sport/football/fifaranking?api_key=p3x1D2FzFVMIMsb2"
-   
-        guard let url:URL = URL(string: urlString) else {
-            return completion(nil, Error.errorDescription(message: "error url"))
+        
+        guard let url = URL(string: urlString) else {
+            return completion(.failure(.urlInvalidate(message: "URL inválida")))
         }
         
-        var request = URLRequest(url: url)
-        request.httpMethod = "GET"
-        
-        let task = URLSession.shared.dataTask(with: request) { data, response, error in
+        let task = URLSession.shared.dataTask(with: url) { data, response, error in
             
             guard let data = data else {
-                return completion(nil, Error.errorDescription(message: "error data"))
+                return completion(.failure(.dataInvalid(message: "Sem dados")))
             }
             
-            let json = try? JSONSerialization.jsonObject(with: data)
-            print(json as Any)
-            
-            guard let response = response as? HTTPURLResponse else {
-                return completion(nil, Error.errorDescription(message: "error response"))
+            guard let response = response as? HTTPURLResponse, (200...299).contains(response.statusCode) else {
+                return completion(.failure(.dataInvalid(message: "Erro status code diferente de 200")))
             }
             
-            if response.statusCode == 200{
-               
-                do {
-                    let model: FifaRanking = try JSONDecoder().decode(FifaRanking.self, from: data)
-                    completion(model.data, nil)
-                } catch {
-                    return completion(nil, Error.errorDescription(message: "Deu ruim no Parse", error: error))
-                }
-            }else{
-                return completion(nil, Error.errorDescription(message: "error", error: error))
+            do {
+                let fifaRanking = try JSONDecoder().decode(FifaRanking.self, from: data)
+                completion(.success(fifaRanking))
+            } catch let error {
+                return completion(.failure(.dataInvalid(message: error.localizedDescription)))
             }
+            
         }
         task.resume()
+        
     }
+    
 }
