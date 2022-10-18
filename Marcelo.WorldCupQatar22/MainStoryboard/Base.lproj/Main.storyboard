@@ -3,64 +3,18 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Timer-->
-        <scene sceneID="1sP-EA-KvY">
+        <!--CountDown-->
+        <scene sceneID="ry0-wH-xcV">
             <objects>
-                <viewController storyboardIdentifier="CountDown" id="GCU-G2-70P" customClass="CountDown" customModule="Marcelo_WorldCupQatar22" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="MDX-NR-SOk">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fi1589q1f7-fifa-world-cup-qatar-2022-logo-qatar-2022-symbols-fifa-world-cup" translatesAutoresizingMaskIntoConstraints="NO" id="zaN-uj-LLZ">
-                                <rect key="frame" x="5" y="59" width="404" height="357"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="357" id="3ov-Jg-kBG"/>
-                                </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="none" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wpN-SM-mx6">
-                                <rect key="frame" x="20" y="534" width="374" height="39.5"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="39.5" id="PTG-6F-RK3"/>
-                                </constraints>
-                                <attributedString key="attributedText">
-                                    <fragment content="196   06   00    58">
-                                        <attributes>
-                                            <color key="NSColor" red="0.44705885649999999" green="0.1058823466" blue="0.1647058874" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                            <font key="NSFont" metaFont="system" size="32"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <color key="highlightedColor" red="0.5647059083" green="0.1607843041" blue="0.14901961389999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <color key="shadowColor" red="0.61176470589999998" green="0.10980392160000001" blue="0.1215686275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </label>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="cPd-ZI-ual"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="cPd-ZI-ual" firstAttribute="trailing" secondItem="wpN-SM-mx6" secondAttribute="trailing" constant="20" id="6dE-FN-y4x"/>
-                            <constraint firstItem="zaN-uj-LLZ" firstAttribute="leading" secondItem="cPd-ZI-ual" secondAttribute="leading" constant="5" id="N2R-of-4hc"/>
-                            <constraint firstItem="zaN-uj-LLZ" firstAttribute="top" secondItem="cPd-ZI-ual" secondAttribute="top" constant="15" id="g1k-rL-UJs"/>
-                            <constraint firstItem="wpN-SM-mx6" firstAttribute="top" secondItem="zaN-uj-LLZ" secondAttribute="bottom" constant="118" id="gWb-MQ-T7t"/>
-                            <constraint firstItem="cPd-ZI-ual" firstAttribute="trailing" secondItem="zaN-uj-LLZ" secondAttribute="trailing" constant="5" id="i9a-wS-48y"/>
-                            <constraint firstItem="wpN-SM-mx6" firstAttribute="leading" secondItem="cPd-ZI-ual" secondAttribute="leading" constant="20" id="qd4-Sn-mcs"/>
-                        </constraints>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Timer" image="timer" catalog="system" id="AnK-ae-lfX">
-                        <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </tabBarItem>
-                    <connections>
-                        <outlet property="timerLabel" destination="wpN-SM-mx6" id="Jrc-VT-rQ9"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="xar-8F-MZx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardIdentifier="CountDown" storyboardName="CountDown" id="VOp-sL-mmd" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="YLv-i9-dPP"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XQc-UX-X1G" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1062" y="919"/>
+            <point key="canvasLocation" x="-904" y="599"/>
         </scene>
         <!--Groups-->
         <scene sceneID="uCz-Z0-9vK">
@@ -120,23 +74,16 @@
                         </tabBarAppearance>
                     </tabBar>
                     <connections>
-                        <segue destination="GCU-G2-70P" kind="relationship" relationship="viewControllers" id="rsq-j2-Vu9"/>
-                        <segue destination="8Y1-Wc-vyA" kind="relationship" relationship="viewControllers" id="LFA-AV-LNw"/>
-                        <segue destination="hUq-jk-Jfj" kind="relationship" relationship="viewControllers" id="M6g-dC-FmT"/>
-                        <segue destination="lSN-Ss-YLE" kind="relationship" relationship="viewControllers" id="Upj-Oq-I0n"/>
-                        <segue destination="aLr-2p-2vB" kind="relationship" relationship="viewControllers" id="vUc-UT-MnQ"/>
+                        <segue destination="VOp-sL-mmd" kind="relationship" relationship="viewControllers" id="SSI-Dk-8UD"/>
+                        <segue destination="8Y1-Wc-vyA" kind="relationship" relationship="viewControllers" id="kwP-sj-Eor"/>
+                        <segue destination="hUq-jk-Jfj" kind="relationship" relationship="viewControllers" id="9gI-Wm-DVQ"/>
+                        <segue destination="lSN-Ss-YLE" kind="relationship" relationship="viewControllers" id="Mov-1H-uqf"/>
+                        <segue destination="aLr-2p-2vB" kind="relationship" relationship="viewControllers" id="yOx-SA-9FB"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z4w-Hk-aQ5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-414" y="133"/>
+            <point key="canvasLocation" x="-414" y="180"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="fi1589q1f7-fifa-world-cup-qatar-2022-logo-qatar-2022-symbols-fifa-world-cup" width="328" height="395"/>
-        <image name="timer" catalog="system" width="128" height="121"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-    </resources>
 </document>
