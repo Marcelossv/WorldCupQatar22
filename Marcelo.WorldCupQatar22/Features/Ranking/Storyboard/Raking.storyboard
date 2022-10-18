@@ -48,7 +48,7 @@
                             <constraint firstItem="HuJ-SK-m2S" firstAttribute="trailing" secondItem="3fb-mr-IWp" secondAttribute="trailing" constant="2" id="zDg-tZ-c24"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Ranking" image="icons8-world-cup-64" id="UMR-gL-Xbo">
+                    <tabBarItem key="tabBarItem" title="Ranking" image="worldCupIconTabBar" id="UMR-gL-Xbo">
                         <inset key="imageInsets" minX="14" minY="0.0" maxX="10" maxY="0.0"/>
                         <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBarItem>
@@ -63,7 +63,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="icons8-world-cup-64" width="64" height="64"/>
+        <image name="worldCupIconTabBar" width="64" height="64"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

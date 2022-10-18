@@ -53,7 +53,7 @@
                             <constraint firstItem="SeC-CU-B9z" firstAttribute="trailing" secondItem="wkP-EZ-sHE" secondAttribute="trailing" constant="2" id="w5L-yx-9aY"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Matchs" image="icons8-stadium-50" id="P86-Wp-Cim">
+                    <tabBarItem key="tabBarItem" title="Matchs" image="matchIconTabBar" id="P86-Wp-Cim">
                         <inset key="imageInsets" minX="8" minY="0.0" maxX="4" maxY="0.0"/>
                     </tabBarItem>
                     <connections>
@@ -67,7 +67,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="icons8-stadium-50" width="50" height="50"/>
+        <image name="matchIconTabBar" width="50" height="50"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

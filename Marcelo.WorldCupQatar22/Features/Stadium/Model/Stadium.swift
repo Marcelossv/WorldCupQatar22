@@ -19,7 +19,7 @@ struct Stadium {
 let stadiumList: [Stadium] = [
     .init(
         name: "Al Bayt Stadium",
-        image: #imageLiteral(resourceName:"Stadium"),
+        image: UIImage(named: "alBaytStadium") ?? UIImage(),
         capacity: "👤60.000",
         city: "📍Al Khor",
         matchesPlanned: "Opening game and all matches through to the semi-finals",
@@ -27,7 +27,7 @@ let stadiumList: [Stadium] = [
     ),
     .init(
         name: "Al Janoub Stadium",
-        image: #imageLiteral(resourceName: "stadium3"),
+        image: UIImage(named: "alJanoubStadium") ?? UIImage(),
         capacity: "👤40.000",
         city: "📍Al Wakrah",
         matchesPlanned: "Group matches and round of 16",
@@ -35,7 +35,7 @@ let stadiumList: [Stadium] = [
     ),
     .init(
         name: "Al Thumama Stadium",
-        image: #imageLiteral(resourceName: "Stadium 4"),
+        image: UIImage(named: "alThumamaStadium") ?? UIImage(),
         capacity: "👤40.000",
         city: "📍Al Thumama",
         matchesPlanned: "Group matches and round of 16, and quarter finals",
@@ -43,7 +43,7 @@ let stadiumList: [Stadium] = [
     ),
     .init(
         name: "Ahmad Bin Ali Stadium",
-        image: #imageLiteral(resourceName:"Ahmad-Bin-Ali-Stadium"),
+        image: UIImage(named: "ahmadBinAliStadium") ?? UIImage(),
         capacity: "👤40.000",
         city: "📍Al Rayyan",
         matchesPlanned: "Group matches, round of 16",
@@ -51,7 +51,7 @@ let stadiumList: [Stadium] = [
     ),
     .init(
         name: "Khalifa International Stadium",
-        image: #imageLiteral(resourceName:"Screenshot-2021-06-24-at-16.07.45-1170x400"),
+        image: UIImage(named: "khalifaInternationalStadium") ?? UIImage(),
         capacity: "👤48.000",
         city: "📍Doha",
         matchesPlanned: "Group matches, round of 16, and play off for third place game",
@@ -59,7 +59,7 @@ let stadiumList: [Stadium] = [
     ),
     .init(
         name: "Stadium 974",
-        image: #imageLiteral(resourceName:"974"),
+        image: UIImage(named: "974Stadium") ?? UIImage(),
         capacity: "👤40.000",
         city: "📍Doha",
         matchesPlanned: "Group matches and round of 16",
@@ -67,7 +67,7 @@ let stadiumList: [Stadium] = [
     ),
     .init(
         name: "Education City Stadium",
-        image: #imageLiteral(resourceName:"EDUCATION1"),
+        image: UIImage(named: "educationCityStadium") ?? UIImage(),
         capacity: "👤45.350",
         city: "📍Al Rayyan",
         matchesPlanned: "Group matches, round of 16, and and quarter-finals",
@@ -75,7 +75,7 @@ let stadiumList: [Stadium] = [
     ),
     .init(
         name: "Lusail Stadium",
-        image: #imageLiteral(resourceName:"Lusail"),
+        image: UIImage(named: "lusailStadium") ?? UIImage(),
         capacity: "👤86.250",
         city: "Lusail",
         matchesPlanned: "All matches through to the final match",
