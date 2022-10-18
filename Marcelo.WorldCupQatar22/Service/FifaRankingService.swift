@@ -1,5 +1,5 @@
 //
-//  Service.swift
+//  FifaRankingService.swift
 //  Marcelo.WorldCupSounds
 //
 //  Created by Marcelo Silva on 31/05/22.

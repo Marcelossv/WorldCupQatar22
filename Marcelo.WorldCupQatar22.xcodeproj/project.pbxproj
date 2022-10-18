@@ -45,6 +45,8 @@
 		BC3A7CB228E6737B00EB09F4 /* Stadium.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC3A7CB128E6737B00EB09F4 /* Stadium.storyboard */; };
 		BC58FD3B28E516C8003F8D83 /* Groups.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC58FD3A28E516C8003F8D83 /* Groups.storyboard */; };
 		BC58FD3E28E51896003F8D83 /* Matches.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC58FD3D28E51896003F8D83 /* Matches.storyboard */; };
+		BC59BDFB28FF7047007DAF0C /* FifaRankingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC59BDFA28FF7047007DAF0C /* FifaRankingService.swift */; };
+		BC59BDFD28FF707D007DAF0C /* FifaRankingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC59BDFC28FF707D007DAF0C /* FifaRankingError.swift */; };
 		BC69B2E428CAB0B6007631D1 /* YouTubeiOSPlayerHelper in Frameworks */ = {isa = PBXBuildFile; productRef = BC69B2E328CAB0B6007631D1 /* YouTubeiOSPlayerHelper */; };
 		BC6D6BAA28EA445100C89368 /* Raking.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC6D6BA928EA445100C89368 /* Raking.storyboard */; };
 		BC76DAC328E3DAE900C70271 /* TeamInfo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC76DAC228E3DAE900C70271 /* TeamInfo.storyboard */; };
@@ -91,6 +93,8 @@
 		BC3A7CB128E6737B00EB09F4 /* Stadium.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Stadium.storyboard; sourceTree = "<group>"; };
 		BC58FD3A28E516C8003F8D83 /* Groups.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Groups.storyboard; sourceTree = "<group>"; };
 		BC58FD3D28E51896003F8D83 /* Matches.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Matches.storyboard; sourceTree = "<group>"; };
+		BC59BDFA28FF7047007DAF0C /* FifaRankingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FifaRankingService.swift; sourceTree = "<group>"; };
+		BC59BDFC28FF707D007DAF0C /* FifaRankingError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FifaRankingError.swift; sourceTree = "<group>"; };
 		BC6D6BA928EA445100C89368 /* Raking.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Raking.storyboard; sourceTree = "<group>"; };
 		BC76DAC228E3DAE900C70271 /* TeamInfo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TeamInfo.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -126,6 +130,7 @@
 		314871992820367C0021B553 /* Marcelo.WorldCupQatar22 */ = {
 			isa = PBXGroup;
 			children = (
+				BC59BDF928FF702B007DAF0C /* Service1 */,
 				BC6D6BAC28EA462000C89368 /* AppDelegate */,
 				88B1A07B2862202E008E7D18 /* Features */,
 				314871B328203B5F0021B553 /* MainStoryboard */,
@@ -464,6 +469,15 @@
 			path = Storyboard;
 			sourceTree = "<group>";
 		};
+		BC59BDF928FF702B007DAF0C /* Service1 */ = {
+			isa = PBXGroup;
+			children = (
+				BC59BDFA28FF7047007DAF0C /* FifaRankingService.swift */,
+				BC59BDFC28FF707D007DAF0C /* FifaRankingError.swift */,
+			);
+			path = Service1;
+			sourceTree = "<group>";
+		};
 		BC6D6BAB28EA447D00C89368 /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
@@ -586,10 +600,12 @@
 				311A49D9285D097F003E3B0E /* StadiumTableViewCell.xib in Sources */,
 				311A49DA285D097F003E3B0E /* RankingTableViewCell.xib in Sources */,
 				311A49DB285D097F003E3B0E /* MatchesTableViewCell.xib in Sources */,
+				BC59BDFB28FF7047007DAF0C /* FifaRankingService.swift in Sources */,
 				311A49DC285D097F003E3B0E /* TopGoalTableViewCell.xib in Sources */,
 				311A49DD285D097F003E3B0E /* PlayersTableViewCell.xib in Sources */,
 				311A49DE285D097F003E3B0E /* FifaTableViewCell.xib in Sources */,
 				3148719F2820367C0021B553 /* StadiumViewController.swift in Sources */,
+				BC59BDFD28FF707D007DAF0C /* FifaRankingError.swift in Sources */,
 				3148719B2820367C0021B553 /* AppDelegate.swift in Sources */,
 				314871B028203AF70021B553 /* RankingViewController.swift in Sources */,
 				31475067282306EB00EB1A48 /* MatchesViewController.swift in Sources */,
