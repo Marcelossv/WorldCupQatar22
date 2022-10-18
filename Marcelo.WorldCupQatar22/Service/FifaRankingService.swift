@@ -38,8 +38,8 @@ final class FifaRankingService: FifaRankingAPI {
             }
             
         }
+
         task.resume()
-        
     }
     
 }
