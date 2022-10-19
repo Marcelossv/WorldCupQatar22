@@ -92,7 +92,7 @@ extension RankingViewController: UITableViewDataSource {
             
         default:
             let cell = tableView.dequeueReusableCell(withIdentifier: FifaTableViewCell.identifier, for: indexPath) as? FifaTableViewCell
-            cell?.setupCell(data: fifaRanking.data[indexPath.row])
+            cell?.setupCell(fifaRanking: rk[indexPath.row])
             return cell ?? UITableViewCell()
         }
     }
