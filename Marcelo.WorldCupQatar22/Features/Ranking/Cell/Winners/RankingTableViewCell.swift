@@ -7,24 +7,24 @@
 
 import UIKit
 
-class RankingTableViewCell: UITableViewCell {
+final class RankingTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var imageTeam: UIImageView!
-    @IBOutlet weak var numberMedalLabel: UILabel!
+    @IBOutlet private weak var imageTeam: UIImageView!
+    @IBOutlet private weak var numberMedalLabel: UILabel!
     
     static let identifier: String = "RankingTableViewCell"
-    static func getNib() -> UINib{
-        return UINib(nibName: self.identifier, bundle: nil)
-    }
     
     override func awakeFromNib() {
         super.awakeFromNib()
     }
     
-    public func setupCell(medal:Winners){
+    static func getNib() -> UINib {
+        return UINib(nibName: self.identifier, bundle: nil)
+    }
+    
+    func setupCell(medal: Winner) {
         self.imageTeam.image = medal.image
         self.numberMedalLabel.text = medal.numberMedal
     }
  
-    
 }

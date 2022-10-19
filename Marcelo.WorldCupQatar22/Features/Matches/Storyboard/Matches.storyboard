@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JDE-JD-pDc">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Matchs-->
+        <scene sceneID="XVC-Fh-7pz">
+            <objects>
+                <viewController storyboardIdentifier="Matchs" useStoryboardIdentifierAsRestorationIdentifier="YES" id="JDE-JD-pDc" customClass="MatchesViewController" customModule="Marcelo_WorldCupQatar22" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="bottom" semanticContentAttribute="playback" id="MfG-3r-byR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="8YI-kx-xTi">
+                                <rect key="frame" x="0.0" y="99" width="414" height="763"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="wkP-EZ-sHE">
+                                <rect key="frame" x="2" y="54" width="410" height="36"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <segments>
+                                    <segment title="A"/>
+                                    <segment title="B"/>
+                                    <segment title="C"/>
+                                    <segment title="D"/>
+                                    <segment title="E"/>
+                                    <segment title="F"/>
+                                    <segment title="G"/>
+                                    <segment title="H"/>
+                                </segments>
+                                <color key="tintColor" red="0.61176470589999998" green="0.10980392160000001" blue="0.1215686275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="selectedSegmentTintColor" red="0.66666668650000005" green="0.4587355655" blue="0.42615735360000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="tappedSegControl:" destination="JDE-JD-pDc" eventType="valueChanged" id="hXg-DE-wSF"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="SeC-CU-B9z"/>
+                        <color key="backgroundColor" red="0.61176470589999998" green="0.10980392160000001" blue="0.1215686275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="SeC-CU-B9z" firstAttribute="trailing" secondItem="8YI-kx-xTi" secondAttribute="trailing" id="4Zm-w4-geT"/>
+                            <constraint firstItem="8YI-kx-xTi" firstAttribute="leading" secondItem="SeC-CU-B9z" secondAttribute="leading" id="H65-ee-zBa"/>
+                            <constraint firstItem="wkP-EZ-sHE" firstAttribute="leading" secondItem="SeC-CU-B9z" secondAttribute="leading" constant="2" id="HPj-VC-gpO"/>
+                            <constraint firstItem="8YI-kx-xTi" firstAttribute="top" secondItem="SeC-CU-B9z" secondAttribute="top" constant="55" id="aKP-MS-0V1"/>
+                            <constraint firstItem="wkP-EZ-sHE" firstAttribute="top" secondItem="SeC-CU-B9z" secondAttribute="top" constant="10" id="bkF-WU-bRh"/>
+                            <constraint firstItem="SeC-CU-B9z" firstAttribute="bottom" secondItem="8YI-kx-xTi" secondAttribute="bottom" id="cof-Lo-yN8"/>
+                            <constraint firstItem="8YI-kx-xTi" firstAttribute="top" secondItem="wkP-EZ-sHE" secondAttribute="bottom" constant="10" id="rfs-fs-Wxz"/>
+                            <constraint firstItem="SeC-CU-B9z" firstAttribute="trailing" secondItem="wkP-EZ-sHE" secondAttribute="trailing" constant="2" id="w5L-yx-9aY"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Matchs" image="matchIconTabBar" id="P86-Wp-Cim">
+                        <inset key="imageInsets" minX="8" minY="0.0" maxX="4" maxY="0.0"/>
+                    </tabBarItem>
+                    <connections>
+                        <outlet property="segControl" destination="wkP-EZ-sHE" id="w1u-LA-fLV"/>
+                        <outlet property="tableView" destination="8YI-kx-xTi" id="Xf4-Cu-r1Z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4o2-Yq-LUO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-113.04347826086958" y="859.82142857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="matchIconTabBar" width="50" height="50"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

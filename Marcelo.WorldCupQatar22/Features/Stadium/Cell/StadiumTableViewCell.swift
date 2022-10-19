@@ -7,41 +7,40 @@
 
 import UIKit
 
-class StadiumTableViewCell: UITableViewCell {
-  
-    var linkYoutube: String?
-    var vc: UIViewController?
+final class StadiumTableViewCell: UITableViewCell {
     
-    @IBOutlet weak var imageStadium: UIImageView!
-    @IBOutlet weak var capacityLabel: UILabel!
-    @IBOutlet weak var cityLabel: UILabel!
-    @IBOutlet weak var matchesPlannedLabel: UILabel!
-    @IBOutlet weak var playImageView: UIImageView!
+    @IBOutlet private weak var imageStadium: UIImageView!
+    @IBOutlet private weak var capacityLabel: UILabel!
+    @IBOutlet private weak var cityLabel: UILabel!
+    @IBOutlet private weak var matchesPlannedLabel: UILabel!
+    @IBOutlet private weak var playImageView: UIImageView!
     
     static let identifier: String = "StadiumTableViewCell"
-    static func getNib() -> UINib{
-        return UINib(nibName: self.identifier, bundle: nil)
-    }
-
+    
     override func awakeFromNib() {
         super.awakeFromNib()
     }
     
-    public func setupCell(stadiumNames:Stadium){
-        self.imageStadium.image = stadiumNames.imageStadium
-        self.capacityLabel.text = stadiumNames.capacity
-        self.cityLabel.text = stadiumNames.city
-        self.matchesPlannedLabel.text = stadiumNames.matchesPlanned
+    static func getNib() -> UINib {
+        return UINib(nibName: self.identifier, bundle: nil)
     }
     
-    public func setupCell2(linkYoutube: String, vc:UIViewController){
-         self.vc = vc
-         self.linkYoutube = linkYoutube
-     }
-    
-    func showDetails() {
-        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController (withIdentifier: "ModalStadiumViewController") as? ModalStadiumViewController
-        vc?.linkYoutube = ""
-        self.vc?.present(vc ?? UIViewController(), animated: true, completion: nil)
+    func setupCell(_ stadium: ViewModel) {
+        self.imageStadium.image = stadium.imageStadium
+        self.capacityLabel.text = stadium.capacity
+        self.cityLabel.text = stadium.city
+        self.matchesPlannedLabel.text = stadium.matchesPlanned
     }
+
+}
+
+extension StadiumTableViewCell {
+
+    struct ViewModel {
+        let imageStadium: UIImage
+        let capacity: String
+        let city: String
+        let matchesPlanned: String
+    }
+
 }

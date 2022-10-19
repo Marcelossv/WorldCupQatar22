@@ -7,24 +7,31 @@
 
 import UIKit
 
-class TeamInfoViewController: UIViewController {
-    
-    var imageTeam: UIImage?
-    var teamTitle: String?
-    var teamText: String?
+final class TeamInfoViewController: UIViewController {
 
-    @IBOutlet weak var imageTeamImageView: UIImageView!
-    @IBOutlet weak var titleTeamLabel: UILabel!
-    @IBOutlet weak var textTeamLabel: UILabel!
+    @IBOutlet private weak var imageTeamImageView: UIImageView!
+    @IBOutlet private weak var titleTeamLabel: UILabel!
+    @IBOutlet private weak var textTeamLabel: UILabel!
+    
+    struct ViewModel {
+        let name: String
+        let image: UIImage
+        let information: String
+    }
+    
+    var informationViewModel: ViewModel?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setupUI()
     }
     
-    func setupUI() {
-        self.imageTeamImageView.image = self.imageTeam
-        self.titleTeamLabel.text = self.teamTitle
-        self.textTeamLabel.text = self.teamText
+    private func setupUI() {
+        if let viewModel = informationViewModel {
+            self.imageTeamImageView.image = viewModel.image
+            self.titleTeamLabel.text = viewModel.name
+            self.textTeamLabel.text = viewModel.information
+        }
     }
+    
 }
