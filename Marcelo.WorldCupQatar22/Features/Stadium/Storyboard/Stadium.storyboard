@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7nI-oM-nfX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Stadium-->
+        <scene sceneID="oFo-pr-a56">
+            <objects>
+                <viewController storyboardIdentifier="Stadium" useStoryboardIdentifierAsRestorationIdentifier="YES" id="7nI-oM-nfX" customClass="StadiumViewController" customModule="Marcelo_WorldCupQatar22" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vcz-vZ-2et">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="tTg-rp-0lX">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stadiums" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e0W-35-sKx">
+                                <rect key="frame" x="156.5" y="49" width="101.5" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="GDk-MN-cWa"/>
+                        <color key="backgroundColor" red="0.61176470589999998" green="0.10980392160000001" blue="0.1215686275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="GDk-MN-cWa" firstAttribute="trailing" secondItem="tTg-rp-0lX" secondAttribute="trailing" id="2m9-dV-Uje"/>
+                            <constraint firstItem="tTg-rp-0lX" firstAttribute="top" secondItem="GDk-MN-cWa" secondAttribute="top" constant="44" id="KvM-8F-Ut7"/>
+                            <constraint firstItem="tTg-rp-0lX" firstAttribute="leading" secondItem="GDk-MN-cWa" secondAttribute="leading" id="RvI-sS-Kef"/>
+                            <constraint firstItem="e0W-35-sKx" firstAttribute="top" secondItem="GDk-MN-cWa" secondAttribute="top" constant="5" id="W2k-p4-e97"/>
+                            <constraint firstItem="e0W-35-sKx" firstAttribute="centerX" secondItem="vcz-vZ-2et" secondAttribute="centerX" id="aDc-YU-zHw"/>
+                            <constraint firstItem="GDk-MN-cWa" firstAttribute="bottom" secondItem="tTg-rp-0lX" secondAttribute="bottom" id="g1d-BQ-Hba"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Stadium" image="stadiumIconTabBar" id="O2L-sy-NLI">
+                        <inset key="imageInsets" minX="8" minY="0.0" maxX="10" maxY="0.0"/>
+                        <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
+                    <connections>
+                        <outlet property="tableView" destination="tTg-rp-0lX" id="Bjs-F0-1gz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rnK-OE-UJS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="25" y="920"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="stadiumIconTabBar" width="48" height="48"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -7,27 +7,28 @@
 
 import UIKit
 
-class PlayersTableViewCell: UITableViewCell {
+final class PlayersTableViewCell: UITableViewCell {
     
-    @IBOutlet weak var namePlayer: UILabel!
-    @IBOutlet weak var agePlayer: UILabel!
-    @IBOutlet weak var natPlayer: UILabel!
-    @IBOutlet weak var valueMarket: UILabel!
+    @IBOutlet private weak var namePlayer: UILabel!
+    @IBOutlet private weak var agePlayer: UILabel!
+    @IBOutlet private weak var natPlayer: UILabel!
+    @IBOutlet private weak var valueMarket: UILabel!
     
     static let identifier: String = "PlayersTableViewCell"
-    
-    static func getNib() -> UINib{
-        return UINib(nibName: self.identifier, bundle: nil)
-    }
     
     override func awakeFromNib() {
         super.awakeFromNib()
     }
 
-    public func setupCell(player:Player){
+    static func getNib() -> UINib {
+        return UINib(nibName: self.identifier, bundle: nil)
+    }
+
+    func setupCell(player: Player) {
         self.namePlayer.text = player.name
         self.agePlayer.text = player.age
         self.natPlayer.text = player.nation
         self.valueMarket.text = player.valueMarket
     }
+
 }

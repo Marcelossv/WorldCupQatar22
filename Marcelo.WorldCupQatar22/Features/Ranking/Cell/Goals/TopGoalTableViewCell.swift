@@ -7,16 +7,13 @@
 
 import UIKit
 
-class TopGoalTableViewCell: UITableViewCell {
+final class TopGoalTableViewCell: UITableViewCell {
     
-    @IBOutlet weak var imagePlayer: UIImageView!
-    @IBOutlet weak var namePLayer: UILabel!
-    @IBOutlet weak var infoGoalPLayer: UILabel!
+    @IBOutlet private weak var imagePlayer: UIImageView!
+    @IBOutlet private weak var namePLayer: UILabel!
+    @IBOutlet private weak var infoGoalPLayer: UILabel!
     
     static let identifier: String = "TopGoalTableViewCell"
-    static func getNib() -> UINib{
-        return UINib(nibName: self.identifier, bundle: nil)
-    }
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -25,8 +22,12 @@ class TopGoalTableViewCell: UITableViewCell {
         self.imagePlayer.clipsToBounds = true
         self.imagePlayer.contentMode = .scaleAspectFit
     }
+    
+    static func getNib() -> UINib {
+        return UINib(nibName: self.identifier, bundle: nil)
+    }
 
-    public func setupCell(topGoal:Goals){
+    func setupCell(topGoal: Goals) {
         self.imagePlayer.image = topGoal.image
         self.namePLayer.text = topGoal.namePlayer
         self.infoGoalPLayer.text = topGoal.gols
