@@ -1,23 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< HEAD
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dyQ-Cl-1Jo">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
-=======
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hTm-Pe-vNg">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
-    <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
->>>>>>> develop
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Timer-->
-<<<<<<< HEAD
         <scene sceneID="P3n-5z-oNl">
             <objects>
                 <viewController storyboardIdentifier="CountDown" useStoryboardIdentifierAsRestorationIdentifier="YES" id="dyQ-Cl-1Jo" customClass="CountDownViewController" customModule="Marcelo_WorldCupQatar22" customModuleProvider="target" sceneMemberID="viewController">
@@ -25,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo-world-cup-qatar" translatesAutoresizingMaskIntoConstraints="NO" id="sj2-tW-Nst">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="worldCupQatarIcon" translatesAutoresizingMaskIntoConstraints="NO" id="sj2-tW-Nst">
                                 <rect key="frame" x="5" y="59" width="404" height="357"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="357" id="Cfm-Kr-YZy"/>
@@ -52,7 +44,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dias" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9bC-bf-YUK">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Days" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9bC-bf-YUK">
                                                 <rect key="frame" x="0.0" y="56" width="87.5" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="C9k-so-Nng"/>
@@ -73,7 +65,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Horas" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z1Q-Wm-H4v">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hours" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z1Q-Wm-H4v">
                                                 <rect key="frame" x="0.0" y="56" width="87" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="Pd2-vp-tVP"/>
@@ -94,7 +86,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Minutos" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wx3-kx-Ky8">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Minutes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wx3-kx-Ky8">
                                                 <rect key="frame" x="0.0" y="56" width="87.5" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="mux-IM-Zxp"/>
@@ -115,7 +107,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Segundos" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CFs-mw-2IS">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Seconds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CFs-mw-2IS">
                                                 <rect key="frame" x="0.0" y="56" width="87" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="udP-SR-NKN"/>
@@ -171,8 +163,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="logo-world-cup-qatar" width="328" height="395"/>
         <image name="timer" catalog="system" width="128" height="121"/>
+        <image name="worldCupQatarIcon" width="328" height="395"/>
         <namedColor name="mainColor">
             <color red="0.44705882352941173" green="0.10588235294117647" blue="0.16470588235294117" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
@@ -182,67 +174,5 @@
         <systemColor name="systemGray6Color">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
-=======
-        <scene sceneID="TVN-bK-rkm">
-            <objects>
-                <viewController storyboardIdentifier="CountDown" id="hTm-Pe-vNg" customClass="CountDown" customModule="Marcelo_WorldCupQatar22" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="T4v-lq-YjQ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="worldCupQatarIcon" translatesAutoresizingMaskIntoConstraints="NO" id="R8o-kg-cGu">
-                                <rect key="frame" x="5" y="59" width="404" height="357"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="357" id="TCi-za-m1g"/>
-                                </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="none" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V5k-ZY-AZd">
-                                <rect key="frame" x="20" y="534" width="374" height="39.5"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="39.5" id="oK1-io-M6U"/>
-                                </constraints>
-                                <attributedString key="attributedText">
-                                    <fragment content="196   06   00    58">
-                                        <attributes>
-                                            <color key="NSColor" red="0.44705885649999999" green="0.1058823466" blue="0.1647058874" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                            <font key="NSFont" metaFont="system" size="32"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <color key="highlightedColor" red="0.5647059083" green="0.1607843041" blue="0.14901961389999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <color key="shadowColor" red="0.61176470589999998" green="0.10980392160000001" blue="0.1215686275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </label>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="KkH-G9-mqy"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="R8o-kg-cGu" firstAttribute="top" secondItem="KkH-G9-mqy" secondAttribute="top" constant="15" id="Lcq-vP-cMg"/>
-                            <constraint firstItem="V5k-ZY-AZd" firstAttribute="leading" secondItem="KkH-G9-mqy" secondAttribute="leading" constant="20" id="PxF-GI-g4A"/>
-                            <constraint firstItem="V5k-ZY-AZd" firstAttribute="top" secondItem="R8o-kg-cGu" secondAttribute="bottom" constant="118" id="X9g-Hj-fIa"/>
-                            <constraint firstItem="KkH-G9-mqy" firstAttribute="trailing" secondItem="R8o-kg-cGu" secondAttribute="trailing" constant="5" id="i8r-bi-287"/>
-                            <constraint firstItem="KkH-G9-mqy" firstAttribute="trailing" secondItem="V5k-ZY-AZd" secondAttribute="trailing" constant="20" id="k91-1V-lCd"/>
-                            <constraint firstItem="R8o-kg-cGu" firstAttribute="leading" secondItem="KkH-G9-mqy" secondAttribute="leading" constant="5" id="xpJ-Pp-ztJ"/>
-                        </constraints>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Timer" image="timer" catalog="system" id="hE5-wm-o8z">
-                        <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </tabBarItem>
-                    <connections>
-                        <outlet property="timerLabel" destination="V5k-ZY-AZd" id="HJw-tA-Clw"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="YR9-m1-g9N" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1062" y="919"/>
-        </scene>
-    </scenes>
-    <resources>
-        <image name="timer" catalog="system" width="128" height="121"/>
-        <image name="worldCupQatarIcon" width="328" height="395"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
->>>>>>> develop
     </resources>
 </document>
