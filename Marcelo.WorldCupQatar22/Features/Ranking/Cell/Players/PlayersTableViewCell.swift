@@ -9,6 +9,7 @@ import UIKit
 
 final class PlayersTableViewCell: UITableViewCell {
     
+    @IBOutlet weak var imagePlayer: UIImageView!
     @IBOutlet private weak var namePlayer: UILabel!
     @IBOutlet private weak var agePlayer: UILabel!
     @IBOutlet private weak var natPlayer: UILabel!
@@ -18,6 +19,10 @@ final class PlayersTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        self.imagePlayer.layer.cornerRadius = 15
+        self.imagePlayer.layer.cornerRadius = imagePlayer.frame.size.height / 2
+        self.imagePlayer.clipsToBounds = true
+        self.imagePlayer.contentMode = .scaleAspectFill
     }
 
     static func getNib() -> UINib {

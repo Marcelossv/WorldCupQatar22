@@ -109,7 +109,7 @@ extension RankingViewController: UITableViewDelegate {
         case 1:
             return 86
         case 2:
-            return 46
+            return 70
         default:
             return 53
         }
