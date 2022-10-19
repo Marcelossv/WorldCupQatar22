@@ -132,11 +132,11 @@
 		314871992820367C0021B553 /* Marcelo.WorldCupQatar22 */ = {
 			isa = PBXGroup;
 			children = (
-				BC59BE0228FF7629007DAF0C /* Service */,
 				BC6D6BAC28EA462000C89368 /* AppDelegate */,
 				88B1A07B2862202E008E7D18 /* Features */,
 				314871B328203B5F0021B553 /* MainStoryboard */,
 				BC6D6BAD28EA463F00C89368 /* Resource */,
+				BC59BE0228FF7629007DAF0C /* Service */,
 			);
 			path = Marcelo.WorldCupQatar22;
 			sourceTree = "<group>";
@@ -622,7 +622,7 @@
 				314871B028203AF70021B553 /* RankingViewController.swift in Sources */,
 				31475067282306EB00EB1A48 /* MatchesViewController.swift in Sources */,
 				3148FC11282B0A7600D24AEE /* YTPlayerViewController.swift in Sources */,
-				313BF52528288D0B004CE901 /* CountDown.swift in Sources */,
+				313BF52528288D0B004CE901 /* CountDownViewController.swift in Sources */,
 				3189B9BD28257A9B002BFFD1 /* TopGoalTableViewCell.swift in Sources */,
 				314871BA282051560021B553 /* GroupsTableViewCell.swift in Sources */,
 				31F3B39928219FFE00821127 /* Winner.swift in Sources */,
