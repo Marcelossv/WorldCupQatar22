@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  CountDownViewController.swift
 //  Marcelo.WorldCupSounds
 //
 //  Created by Marcelo Silva on 08/05/22.
@@ -7,9 +7,14 @@
 
 import UIKit
 
-final class CountDown: UIViewController {
+final class CountDownViewController: UIViewController {
 
-    @IBOutlet var timerLabel: UILabel!
+    @IBOutlet weak var welcomeLabel: UILabel!
+    @IBOutlet weak var timerStackView: UIStackView!
+    @IBOutlet weak var dayLabel: UILabel!
+    @IBOutlet weak var hourLabel: UILabel!
+    @IBOutlet weak var minuteLabel: UILabel!
+    @IBOutlet weak var secondLabel: UILabel!
 
     private var timer: Timer?
     private var qatarEventDate: Date {
@@ -56,15 +61,13 @@ final class CountDown: UIViewController {
 
     private func updateTimerLabel(dateDifference: DateComponents) {
         if self.currentDate >= self.qatarEventDate {
-            timerLabel.text = "Welcome to World Cup Qatar 2022!"
+            timerStackView.isHidden = true
             timer?.invalidate()
         } else {
-            let day = String(dateDifference.day ?? 00)
-            let hour = String(dateDifference.hour ?? 00)
-            let minute = String(dateDifference.minute ?? 00)
-            let second = String(dateDifference.second ?? 00)
-            let displayCount = "\(day)D   \(hour)H   \(minute)M   \(second)S "
-            timerLabel.text = displayCount
+            dayLabel.text = String(dateDifference.day ?? 00)
+            hourLabel.text = String(dateDifference.hour ?? 00)
+            minuteLabel.text = String(dateDifference.minute ?? 00)
+            secondLabel.text = String(dateDifference.second ?? 00)
         }
     }
 

@@ -18,7 +18,7 @@
 		313BF4FE28272009004CE901 /* FifaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313BF4FC28272009004CE901 /* FifaTableViewCell.swift */; };
 		313BF501282721F4004CE901 /* FifaRanking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313BF500282721F4004CE901 /* FifaRanking.swift */; };
 		313BF50328274967004CE901 /* TeamInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313BF50228274967004CE901 /* TeamInfoViewController.swift */; };
-		313BF52528288D0B004CE901 /* CountDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313BF52428288D0B004CE901 /* CountDown.swift */; };
+		313BF52528288D0B004CE901 /* CountDownViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313BF52428288D0B004CE901 /* CountDownViewController.swift */; };
 		31475067282306EB00EB1A48 /* MatchesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31475066282306EB00EB1A48 /* MatchesViewController.swift */; };
 		3147506A2823082C00EB1A48 /* MatchesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 314750682823082C00EB1A48 /* MatchesTableViewCell.swift */; };
 		3147506D2824106400EB1A48 /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3147506C2824106400EB1A48 /* Match.swift */; };
@@ -58,7 +58,7 @@
 		313BF4FD28272009004CE901 /* FifaTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FifaTableViewCell.xib; sourceTree = "<group>"; };
 		313BF500282721F4004CE901 /* FifaRanking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FifaRanking.swift; sourceTree = "<group>"; };
 		313BF50228274967004CE901 /* TeamInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamInfoViewController.swift; sourceTree = "<group>"; };
-		313BF52428288D0B004CE901 /* CountDown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountDown.swift; sourceTree = "<group>"; };
+		313BF52428288D0B004CE901 /* CountDownViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountDownViewController.swift; sourceTree = "<group>"; };
 		31475066282306EB00EB1A48 /* MatchesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchesViewController.swift; sourceTree = "<group>"; };
 		314750682823082C00EB1A48 /* MatchesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchesTableViewCell.swift; sourceTree = "<group>"; };
 		314750692823082C00EB1A48 /* MatchesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MatchesTableViewCell.xib; sourceTree = "<group>"; };
@@ -416,7 +416,7 @@
 		88B1A07D28622081008E7D18 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				313BF52428288D0B004CE901 /* CountDown.swift */,
+				313BF52428288D0B004CE901 /* CountDownViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
