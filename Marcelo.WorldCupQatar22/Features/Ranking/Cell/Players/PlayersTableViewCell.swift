@@ -25,6 +25,7 @@ final class PlayersTableViewCell: UITableViewCell {
     }
 
     func setupCell(player: Player) {
+        self.imagePlayer.image = player.image
         self.namePlayer.text = player.name
         self.agePlayer.text = player.age
         self.natPlayer.text = player.nation
