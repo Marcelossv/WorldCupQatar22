@@ -12,9 +12,9 @@ final class RankingViewController: UIViewController {
     @IBOutlet private weak var segControl: UISegmentedControl!
     @IBOutlet private weak var tableView: UITableView!
     
-    lazy var service: FifaRankingAPI = {
-        return FifaRankingService()
-    }()
+//    lazy var service: FifaRankingAPI = {
+//        return FifaRankingService()
+//    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,17 +30,17 @@ final class RankingViewController: UIViewController {
         self.tableView.register(FifaTableViewCell.getNib(), forCellReuseIdentifier: FifaTableViewCell.identifier)
     }
     
-    private func getFifaRanking() {
-        service.getRanking { [weak self] response in
-            switch response {
-            case let .success(data):
-                fifaRanking = data
-                self?.tableView.reloadData()
-            case let .failure(error):
-                print("Erro na chamada da API - \(error.description)")
-            }
-        }
-    }
+//    private func getFifaRanking() {
+//        service.getRanking { [weak self] response in
+//            switch response {
+//            case let .success(data):
+//                fifaRanking = data
+//                self?.tableView.reloadData()
+//            case let .failure(error):
+//                print("Erro na chamada da API - \(error.description)")
+//            }
+//        }
+//    }
     
     private func modelCount() -> Int {
         switch segControl.selectedSegmentIndex {
@@ -51,13 +51,13 @@ final class RankingViewController: UIViewController {
         case 2:
             return player.count
         default:
-            return fifaRanking.data.count
+            return rk.count
         }
     }
 
     @IBAction func tappedSegmentedControl(_ sender: UISegmentedControl) {
-        if segControl.selectedSegmentIndex == 3 {
-            getFifaRanking()
+        if segControl.selectedSegmentIndex == 4 {
+//            getFifaRanking()
         } else {
             self.tableView.reloadData()
         }
