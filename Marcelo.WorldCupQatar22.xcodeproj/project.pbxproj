@@ -48,13 +48,9 @@
 		BC59BE0528FF7629007DAF0C /* FifaRankingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC59BE0328FF7629007DAF0C /* FifaRankingService.swift */; };
 		BC59BE0628FF7629007DAF0C /* FifaRankingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC59BE0428FF7629007DAF0C /* FifaRankingError.swift */; };
 		BC69B2E428CAB0B6007631D1 /* YouTubeiOSPlayerHelper in Frameworks */ = {isa = PBXBuildFile; productRef = BC69B2E328CAB0B6007631D1 /* YouTubeiOSPlayerHelper */; };
-<<<<<<< HEAD
-		BCEB6E2128D15DB90044B699 /* CountDown.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCEB6E2028D15DB90044B699 /* CountDown.storyboard */; };
-=======
 		BC6D6BAA28EA445100C89368 /* Raking.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC6D6BA928EA445100C89368 /* Raking.storyboard */; };
 		BC76DAC328E3DAE900C70271 /* TeamInfo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC76DAC228E3DAE900C70271 /* TeamInfo.storyboard */; };
 		BCB0F9B528FE2D73009F1EA9 /* CountDown.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCB0F9B428FE2D73009F1EA9 /* CountDown.storyboard */; };
->>>>>>> develop
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -93,10 +89,6 @@
 		3189B9C52826298E002BFFD1 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		31F3B39428219EB100821127 /* RankingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingTableViewCell.swift; sourceTree = "<group>"; };
 		31F3B39528219EB100821127 /* RankingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RankingTableViewCell.xib; sourceTree = "<group>"; };
-<<<<<<< HEAD
-		31F3B39828219FFE00821127 /* Winners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Winners.swift; sourceTree = "<group>"; };
-		BCEB6E2028D15DB90044B699 /* CountDown.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CountDown.storyboard; sourceTree = "<group>"; };
-=======
 		31F3B39828219FFE00821127 /* Winner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Winner.swift; sourceTree = "<group>"; };
 		BC3A7CAE28E671CA00EB09F4 /* YTPlayer.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = YTPlayer.storyboard; sourceTree = "<group>"; };
 		BC3A7CB128E6737B00EB09F4 /* Stadium.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Stadium.storyboard; sourceTree = "<group>"; };
@@ -107,7 +99,6 @@
 		BC6D6BA928EA445100C89368 /* Raking.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Raking.storyboard; sourceTree = "<group>"; };
 		BC76DAC228E3DAE900C70271 /* TeamInfo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TeamInfo.storyboard; sourceTree = "<group>"; };
 		BCB0F9B428FE2D73009F1EA9 /* CountDown.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CountDown.storyboard; sourceTree = "<group>"; };
->>>>>>> develop
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,19 +132,11 @@
 		314871992820367C0021B553 /* Marcelo.WorldCupQatar22 */ = {
 			isa = PBXGroup;
 			children = (
-<<<<<<< HEAD
-				BCEB6E2328D15FA40044B699 /* AppDelegate */,
-				31A4764D2846A03F0011999F /* Service */,
-				88B1A07B2862202E008E7D18 /* Features */,
-				314871B328203B5F0021B553 /* View */,
-				BCEB6E2428D15FB70044B699 /* Resources */,
-=======
 				BC59BE0228FF7629007DAF0C /* Service */,
 				BC6D6BAC28EA462000C89368 /* AppDelegate */,
 				88B1A07B2862202E008E7D18 /* Features */,
 				314871B328203B5F0021B553 /* MainStoryboard */,
 				BC6D6BAD28EA463F00C89368 /* Resource */,
->>>>>>> develop
 			);
 			path = Marcelo.WorldCupQatar22;
 			sourceTree = "<group>";
@@ -424,11 +407,7 @@
 		88B1A07C28622040008E7D18 /* Timer */ = {
 			isa = PBXGroup;
 			children = (
-<<<<<<< HEAD
-				BCEB6E2228D15F730044B699 /* Storyboard */,
-=======
 				BCB0F9B328FE2D55009F1EA9 /* Storyboard */,
->>>>>>> develop
 				88B1A07D28622081008E7D18 /* ViewController */,
 			);
 			path = Timer;
@@ -461,24 +440,14 @@
 			path = ViewController;
 			sourceTree = "<group>";
 		};
-<<<<<<< HEAD
-		BCEB6E2228D15F730044B699 /* Storyboard */ = {
-			isa = PBXGroup;
-			children = (
-				BCEB6E2028D15DB90044B699 /* CountDown.storyboard */,
-=======
 		BC3A7CB028E671CE00EB09F4 /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
 				BC3A7CAE28E671CA00EB09F4 /* YTPlayer.storyboard */,
->>>>>>> develop
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
 		};
-<<<<<<< HEAD
-		BCEB6E2328D15FA40044B699 /* AppDelegate */ = {
-=======
 		BC3A7CB328E6744800EB09F4 /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
@@ -521,7 +490,6 @@
 			sourceTree = "<group>";
 		};
 		BC6D6BAC28EA462000C89368 /* AppDelegate */ = {
->>>>>>> develop
 			isa = PBXGroup;
 			children = (
 				3148719A2820367C0021B553 /* AppDelegate.swift */,
@@ -530,16 +498,6 @@
 			path = AppDelegate;
 			sourceTree = "<group>";
 		};
-<<<<<<< HEAD
-		BCEB6E2428D15FB70044B699 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				314871A32820367E0021B553 /* Assets.xcassets */,
-				314871A52820367E0021B553 /* LaunchScreen.storyboard */,
-				314871A82820367E0021B553 /* Info.plist */,
-			);
-			path = Resources;
-=======
 		BC6D6BAD28EA463F00C89368 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
@@ -564,7 +522,6 @@
 				BCB0F9B428FE2D73009F1EA9 /* CountDown.storyboard */,
 			);
 			path = Storyboard;
->>>>>>> develop
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -631,14 +588,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-<<<<<<< HEAD
-				BCEB6E2128D15DB90044B699 /* CountDown.storyboard in Resources */,
-=======
 				BC3A7CB228E6737B00EB09F4 /* Stadium.storyboard in Resources */,
 				BC58FD3B28E516C8003F8D83 /* Groups.storyboard in Resources */,
 				BC3A7CAF28E671CA00EB09F4 /* YTPlayer.storyboard in Resources */,
 				BC6D6BAA28EA445100C89368 /* Raking.storyboard in Resources */,
->>>>>>> develop
 				311A49E9285D1122003E3B0E /* Assets.xcassets in Resources */,
 				BC58FD3E28E51896003F8D83 /* Matches.storyboard in Resources */,
 				BC76DAC328E3DAE900C70271 /* TeamInfo.storyboard in Resources */,
@@ -668,13 +621,8 @@
 				3148719B2820367C0021B553 /* AppDelegate.swift in Sources */,
 				314871B028203AF70021B553 /* RankingViewController.swift in Sources */,
 				31475067282306EB00EB1A48 /* MatchesViewController.swift in Sources */,
-<<<<<<< HEAD
-				3148FC11282B0A7600D24AEE /* ModalStadiumViewController.swift in Sources */,
-				313BF52528288D0B004CE901 /* CountDownViewController.swift in Sources */,
-=======
 				3148FC11282B0A7600D24AEE /* YTPlayerViewController.swift in Sources */,
 				313BF52528288D0B004CE901 /* CountDown.swift in Sources */,
->>>>>>> develop
 				3189B9BD28257A9B002BFFD1 /* TopGoalTableViewCell.swift in Sources */,
 				314871BA282051560021B553 /* GroupsTableViewCell.swift in Sources */,
 				31F3B39928219FFE00821127 /* Winner.swift in Sources */,
@@ -841,11 +789,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = RVDHB2VBB6;
 				GENERATE_INFOPLIST_FILE = YES;
-<<<<<<< HEAD
-				INFOPLIST_FILE = Marcelo.WorldCupQatar22/Resources/Info.plist;
-=======
 				INFOPLIST_FILE = Marcelo.WorldCupQatar22/Resource/Info.plist;
->>>>>>> develop
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -875,11 +819,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = RVDHB2VBB6;
 				GENERATE_INFOPLIST_FILE = YES;
-<<<<<<< HEAD
-				INFOPLIST_FILE = Marcelo.WorldCupQatar22/Resources/Info.plist;
-=======
 				INFOPLIST_FILE = Marcelo.WorldCupQatar22/Resource/Info.plist;
->>>>>>> develop
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
