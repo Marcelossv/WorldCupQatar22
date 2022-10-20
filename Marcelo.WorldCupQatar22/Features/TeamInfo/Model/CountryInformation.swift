@@ -115,7 +115,7 @@ let listGroup = [
                 name: "Australia",
                 flag: UIImage(named: "australiaFlag") ?? UIImage(),
                 teamImage: UIImage(named: "australiaTeam") ?? UIImage(),
-                information: "Australia"
+                information: "Australia's national team doesn't have any great players on the world stage. Because of this, coach Graham Arnold usually uses a 4-1-4-1 formation, always abusing aerial plays. The most important name in the Australian national team is currently midfielder Aaron Mooy, a player who plays for Celtic, from Scotland."
             ),
             CountryInformation(
                 name: "Denmark",
@@ -144,7 +144,7 @@ let listGroup = [
                 name: "Costa Rica",
                 flag: UIImage(named: "costaRicaFlag") ?? UIImage(),
                 teamImage: UIImage(named: "costaRicaTeam") ?? UIImage(),
-                information: "Costa Rica!"
+                information: "A team that suffered a lot to get its place in the Cup, has many problems with the renewal of its players, since the best athletes are still the same ones that competed in the 2014 Cup"
             ),
             CountryInformation(
                 name: "Germany",
