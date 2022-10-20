@@ -42,6 +42,19 @@ final class CountDownViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         startScheduledTimer()
+
+                // 1) Create a DateFormatter() object.
+                let format = DateFormatter()
+
+                // 2) Set the current timezone to .current, or America/Chicago.
+                format.timeZone = .init(identifier: "America/Chicago")
+
+                // 3) Set the format of the altered date.
+                format.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
+
+                // 4) Set the current date, altered by timezone.
+                let dateString = format.string(from: currentDate)
+        print(dateString)
     }
 
     private func startScheduledTimer() {
