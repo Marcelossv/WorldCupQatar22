@@ -16,7 +16,7 @@ struct Goals{
 let topGoal: [Goals] = [
     .init(
         image: UIImage(named: "klosePlayer") ?? UIImage(),
-        namePlayer: "🇧🇷 Miroslav Klose (2002, 2006, 2010, 2014)",
+        namePlayer: "🇩🇪 Miroslav Klose (2002, 2006, 2010, 2014)",
         gols: "⚽️ 16"
     ),
     .init(

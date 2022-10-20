@@ -17,11 +17,8 @@
                 <rect key="frame" x="0.0" y="0.0" width="372" height="53"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="55" translatesAutoresizingMaskIntoConstraints="NO" id="MSj-qL-hcV">
-                        <rect key="frame" x="234" y="6" width="41.5" height="20.5"/>
-                    </stackView>
-                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="5ao-Mz-hoK">
-                        <rect key="frame" x="6" y="5" width="92.5" height="45"/>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="5ao-Mz-hoK">
+                        <rect key="frame" x="5" y="5" width="192" height="45"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iMc-CP-V3u">
                                 <rect key="frame" x="0.0" y="0.0" width="45" height="45"/>
@@ -30,45 +27,47 @@
                                     <constraint firstAttribute="width" constant="45" id="pCo-du-M52"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9OG-fK-zWH">
-                                <rect key="frame" x="53" y="0.0" width="39.5" height="45"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="9OG-fK-zWH">
+                                <rect key="frame" x="53" y="0.0" width="139" height="45"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                     </stackView>
-                    <stackView opaque="NO" contentMode="scaleToFill" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="Oor-YM-KRI">
-                        <rect key="frame" x="134" y="15" width="193" height="23"/>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Oor-YM-KRI">
+                        <rect key="frame" x="207" y="15" width="160" height="23"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iZn-ht-rcm">
-                                <rect key="frame" x="0.0" y="0.0" width="41.5" height="23"/>
+                                <rect key="frame" x="0.0" y="0.0" width="44.5" height="23"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BO5-RX-YwC">
-                                <rect key="frame" x="73.5" y="0.0" width="46" height="23"/>
+                                <rect key="frame" x="54.5" y="0.0" width="49.5" height="23"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t0t-IL-0d5">
-                                <rect key="frame" x="151.5" y="0.0" width="41.5" height="23"/>
+                                <rect key="frame" x="114" y="0.0" width="46" height="23"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" systemColor="linkColor"/>
                                 <nil key="highlightedColor"/>
                                 <color key="shadowColor" systemColor="linkColor"/>
                             </label>
                         </subviews>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="160" id="yOC-0C-yGB"/>
+                        </constraints>
                     </stackView>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="Oor-YM-KRI" firstAttribute="leading" secondItem="5ao-Mz-hoK" secondAttribute="trailing" constant="35.5" id="G5q-fV-ZaV"/>
-                    <constraint firstAttribute="trailing" secondItem="Oor-YM-KRI" secondAttribute="trailing" constant="45" id="RnR-ul-Dux"/>
+                    <constraint firstItem="Oor-YM-KRI" firstAttribute="leading" secondItem="5ao-Mz-hoK" secondAttribute="trailing" constant="10" id="BNV-e2-yle"/>
+                    <constraint firstAttribute="trailing" secondItem="Oor-YM-KRI" secondAttribute="trailing" constant="5" id="RnR-ul-Dux"/>
                     <constraint firstItem="Oor-YM-KRI" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="e2K-Ng-XD7"/>
-                    <constraint firstItem="MSj-qL-hcV" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="iDp-KS-lYl"/>
-                    <constraint firstItem="MSj-qL-hcV" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="ly6-GE-Hwq"/>
+                    <constraint firstItem="5ao-Mz-hoK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="xUi-Zu-v10"/>
                     <constraint firstItem="5ao-Mz-hoK" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="xwW-lr-Lsz"/>
                 </constraints>
             </tableViewCellContentView>
