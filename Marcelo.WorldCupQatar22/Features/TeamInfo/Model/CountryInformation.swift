@@ -69,7 +69,7 @@ let listGroup = [
                 name: "Wales",
                 flag: UIImage(named: "walesFlag") ?? UIImage(),
                 teamImage: UIImage(named: "walesTeam") ?? UIImage(),
-                information: "Wales"
+                information: "The Wales team has achieved a historic ranking after 64 years since the last (and only) participation in the world cup. We are living through what is perhaps the best phase in the history of the country in football, with its star, Gareth Bale, even though he has already passed his peak, with a lot of desire to play for the national team. At Euro 2016, Wales made history and reached the semi-final, in which they were eliminated by Portugal. For some time now, the team has cooled, not qualifying for the 2018 World Cup, but having a great campaign in the qualifiers for the Qatar Cup and passing in the playoffs against Ukraine.In the Nations League, however, Wales ended up at the bottom of the group and was relegated to League B, which is understandable given the difficulty of the group and the “hangover” after qualifying for the Cup. Bale is the backbone of this team, which also has a great goalkeeper in Hennessey, as well as great wingers, especially Brennan Johnson on the right."
             )
         ]
     ),
@@ -115,7 +115,7 @@ let listGroup = [
                 name: "Australia",
                 flag: UIImage(named: "australiaFlag") ?? UIImage(),
                 teamImage: UIImage(named: "australiaTeam") ?? UIImage(),
-                information: "Australia"
+                information: "Australia's national team doesn't have any great players on the world stage. Because of this, coach Graham Arnold usually uses a 4-1-4-1 formation, always abusing aerial plays. The most important name in the Australian national team is currently midfielder Aaron Mooy, a player who plays for Celtic, from Scotland."
             ),
             CountryInformation(
                 name: "Denmark",
@@ -144,7 +144,7 @@ let listGroup = [
                 name: "Costa Rica",
                 flag: UIImage(named: "costaRicaFlag") ?? UIImage(),
                 teamImage: UIImage(named: "costaRicaTeam") ?? UIImage(),
-                information: "Costa Rica!"
+                information: "A team that suffered a lot to get its place in the Cup, has many problems with the renewal of its players, since the best athletes are still the same ones that competed in the 2014 Cup"
             ),
             CountryInformation(
                 name: "Germany",
