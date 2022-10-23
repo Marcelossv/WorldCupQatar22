@@ -23,10 +23,10 @@ final class FifaTableViewCell: UITableViewCell {
         return UINib(nibName: self.identifier, bundle: nil)
     }
 
-    func setupCell(data: Datum) {
-        self.rankLabel.text = String(data.rank)
-        self.teamNameLabel.text = data.teamName
-        self.scoreLabel.text = String(data.score)
+    func setupCell(fifaRanking: FifaRanking) {
+        self.rankLabel.text = String(fifaRanking.position)
+        self.teamNameLabel.text = (fifaRanking.nameTeam)
+        self.scoreLabel.text = String(fifaRanking.points)
     }
     
 }
