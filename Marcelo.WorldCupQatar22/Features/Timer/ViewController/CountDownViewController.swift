@@ -23,8 +23,8 @@ final class CountDownViewController: UIViewController {
             timeZone: TimeZone(identifier: "Asia/Qatar"),
             year: 2022,
             month: 11,
-            day: 21,
-            hour: 13,
+            day: 20,
+            hour: 19,
             minute: 00,
             second: 00
         )

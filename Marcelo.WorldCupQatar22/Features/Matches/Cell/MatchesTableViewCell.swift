@@ -12,7 +12,7 @@ final class MatchesTableViewCell: UITableViewCell {
     @IBOutlet private weak var titleMatchLabel: UILabel!
     @IBOutlet private weak var homeNameTeam: UILabel!
     @IBOutlet private weak var visitNameTeam: UILabel!
-    @IBOutlet private weak var dataTimeMAtch: UILabel!
+    @IBOutlet private weak var dataTimeMatch: UILabel!
     @IBOutlet private weak var imageHome: UIImageView!
     @IBOutlet private weak var imageVisit: UIImageView!
     
@@ -20,7 +20,7 @@ final class MatchesTableViewCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        self.dataTimeMAtch.layer.cornerRadius = 10
+        self.dataTimeMatch.layer.cornerRadius = 10
     }
 
     static func getNib() -> UINib{
@@ -31,10 +31,21 @@ final class MatchesTableViewCell: UITableViewCell {
         self.titleMatchLabel.text = matches.titleMatch
         self.homeNameTeam.text = matches.homeName
         self.visitNameTeam.text = matches.visitName
-        self.dataTimeMAtch.text = matches.dataTimeMatch
+        self.dataTimeMatch.text = setupDataTimeMatch(with: matches.dataTimeMatch)
         self.imageHome.image = matches.imageH
         self.imageVisit.image = matches.imageV
-        
     }
     
+    private func setupDataTimeMatch(with dataTimeMatch: DataTimeMatch) -> String {
+        guard let (gameDate, gameTime) = FormatterDateQatar.convertGameDate(
+            month: dataTimeMatch.month,
+            day: dataTimeMatch.day,
+            hour: dataTimeMatch.hour
+        ) else { return String() }
+        
+        let formatterDate = FormatterDateQatar.formatterDateMatch(gameDate)
+        let formatterTime = FormatterDateQatar.formatterTimeMatch(gameTime)
+        return "\(formatterDate) - \(formatterTime)"
+    }
+
 }

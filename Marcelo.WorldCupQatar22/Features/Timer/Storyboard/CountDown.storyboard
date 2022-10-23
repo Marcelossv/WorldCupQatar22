@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="worldCupQatarIcon" translatesAutoresizingMaskIntoConstraints="NO" id="sj2-tW-Nst">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="sj2-tW-Nst">
                                 <rect key="frame" x="5" y="59" width="404" height="357"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="357" id="Cfm-Kr-YZy"/>
@@ -163,8 +163,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="logo" width="4000" height="4000"/>
         <image name="timer" catalog="system" width="128" height="121"/>
-        <image name="worldCupQatarIcon" width="328" height="395"/>
         <namedColor name="mainColor">
             <color red="0.44705882352941173" green="0.10588235294117647" blue="0.16470588235294117" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

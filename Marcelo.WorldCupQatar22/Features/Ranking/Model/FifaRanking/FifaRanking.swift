@@ -7,13 +7,13 @@
 
 import Foundation
 
-struct FifaRanking{
+struct FifaRanking {
     let position: String
     let nameTeam: String
     let points: String
 }
 
-let rk: [FifaRanking] = [
+let listFifaRanking: [FifaRanking] = [
     .init(position: "1", nameTeam: "🇧🇷 Brazil", points: "1841"),
     .init(position: "2", nameTeam: "🇧🇪 Belgium", points: "1816"),
     .init(position: "3", nameTeam: "🇦🇷 Argentina", points: "1773"),
@@ -47,7 +47,5 @@ let rk: [FifaRanking] = [
     .init(position: "44", nameTeam: "🇪🇨 Ecuador", points: "1464"),
     .init(position: "50", nameTeam: "🇶🇦 Qatar", points: "1439"),
     .init(position: "51", nameTeam: "🇸🇦 Saudi Arabia", points: "1437"),
-    .init(position: "61", nameTeam: "🇬🇭 Ghana", points: "1393"),
-    
+    .init(position: "61", nameTeam: "🇬🇭 Ghana", points: "1393")
 ]
-
