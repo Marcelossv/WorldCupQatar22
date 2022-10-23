@@ -7,18 +7,24 @@
 
 import UIKit
 
+struct GroupGames {
+    let group: String
+    let matches: [Match]
+}
+
 struct Match {
     let titleMatch: String
     let homeName: String
     let visitName: String
-    let dataTimeMatch: String
+    let dataTimeMatch: DataTimeMatch
     let imageH: UIImage
     let imageV: UIImage
 }
 
-struct GroupGames {
-    let group: String
-    let matches: [Match]
+struct DataTimeMatch {
+    let month: Int
+    let day: Int
+    let hour: Int
 }
 
 let cupGames: [GroupGames] = [
@@ -26,42 +32,42 @@ let cupGames: [GroupGames] = [
         group: "A",
         matches: [
             .init(
-                titleMatch: "GROUP A - AL THUMAMA 🏟",
-                homeName: "SEN",
-                visitName: "NLD",
-                dataTimeMatch: "MON 21/11 - 05H00",
-                imageH: UIImage(named: "senegalFlag") ?? UIImage(),
-                imageV: UIImage(named: "netherlandsFlag") ?? UIImage()
-            ),
-            .init(
-                titleMatch: "GROUP A - AL BAYT STADIUM 🏟",
-                homeName: "QTR",
+                titleMatch: "GROUP A - AL BAYT 🏟",
+                homeName: "QAT",
                 visitName: "ECU",
-                dataTimeMatch: "MON 21/11 - 11H00",
+                dataTimeMatch: DataTimeMatch(month: 11, day: 20, hour: 19),
                 imageH: UIImage(named: "qtarFlag") ?? UIImage(),
                 imageV: UIImage(named: "ecuadorFlag") ?? UIImage()
             ),
             .init(
+                titleMatch: "GROUP A - AL THUMAMA STADIUM 🏟",
+                homeName: "SEN",
+                visitName: "NED",
+                dataTimeMatch: DataTimeMatch(month: 11, day: 21, hour: 19),
+                imageH: UIImage(named: "senegalFlag") ?? UIImage(),
+                imageV: UIImage(named: "netherlandsFlag") ?? UIImage()
+            ),
+            .init(
                 titleMatch: "GROUP A - AL THUMAMA 🏟",
-                homeName: "QTR",
+                homeName: "QAT",
                 visitName: "SEN",
-                dataTimeMatch: "FRI 25/11 - 08H00",
+                dataTimeMatch: DataTimeMatch(month: 11, day: 25, hour: 16),
                 imageH: UIImage(named: "qtarFlag") ?? UIImage(),
                 imageV: UIImage(named: "senegalFlag") ?? UIImage()
             ),
             .init(
                 titleMatch: "GROUP A - KHALIFA 🏟",
-                homeName: "NLD",
+                homeName: "NED",
                 visitName: "ECU",
-                dataTimeMatch: "FRI 25/11 - 11H00",
+                dataTimeMatch: DataTimeMatch(month: 11, day: 25, hour: 19),
                 imageH: UIImage(named: "netherlandsFlag") ?? UIImage(),
                 imageV: UIImage(named: "ecuadorFlag") ?? UIImage()
             ),
             .init(
                 titleMatch: "GROUP A - AL BAYT 🏟",
-                homeName: "NLD",
-                visitName: "QTR",
-                dataTimeMatch: "TUE 29/11 - 10H00",
+                homeName: "NED",
+                visitName: "QAT",
+                dataTimeMatch: DataTimeMatch(month: 11, day: 29, hour: 18),
                 imageH: UIImage(named: "netherlandsFlag") ?? UIImage(),
                 imageV: UIImage(named: "qtarFlag") ?? UIImage()
             ),
@@ -69,7 +75,7 @@ let cupGames: [GroupGames] = [
                 titleMatch: "GROUP A - KHALIFA 🏟",
                 homeName: "ECU",
                 visitName: "SEN",
-                dataTimeMatch: "TUE 29/11 - 10H00",
+                dataTimeMatch: DataTimeMatch(month: 11, day: 29, hour: 18),
                 imageH: UIImage(named: "ecuadorFlag") ?? UIImage(),
                 imageV: UIImage(named: "senegalFlag") ?? UIImage()
             )
@@ -82,24 +88,24 @@ let cupGames: [GroupGames] = [
             .init(
                 titleMatch: "GROUP B - KHALIFA 🏟",
                 homeName: "ENG",
-                visitName: "IRA",
-                dataTimeMatch: "MON 21/11 - 08H00",
+                visitName: "IRN",
+                dataTimeMatch: DataTimeMatch(month: 11, day: 21, hour: 16),
                 imageH: UIImage(named: "englandFlag") ?? UIImage(),
                 imageV: UIImage(named: "iranFlag") ?? UIImage()
             ),
             .init(
-                titleMatch: "GROUP B - AHMAD BIN ALI 🏟",
+                titleMatch: "GROUP B - AL RAYYAN 🏟",
                 homeName: "USA",
                 visitName: "WAL",
-                dataTimeMatch: "MON 21/11 - 14H00",
+                dataTimeMatch: DataTimeMatch(month: 11, day: 21, hour: 22),
                 imageH: UIImage(named: "unitedStatesFlag") ?? UIImage(),
                 imageV: UIImage(named: "walesFlag") ?? UIImage()
             ),
             .init(
-                titleMatch: "GROUP B - AHMAD BIN ALI  🏟",
+                titleMatch: "GROUP B - AL RAYYAN  🏟",
                 homeName: "WAL",
-                visitName: "IRA",
-                dataTimeMatch: "FRI 25/11 - 17H00",
+                visitName: "IRN",
+                dataTimeMatch: DataTimeMatch(month: 11, day: 25, hour: 13),
                 imageH: UIImage(named: "walesFlag") ?? UIImage(),
                 imageV: UIImage(named: "iranFlag") ?? UIImage()
             ),
@@ -107,15 +113,15 @@ let cupGames: [GroupGames] = [
                 titleMatch: "GROUP B - AL BAYT STADIUM 🏟",
                 homeName: "ENG",
                 visitName: "USA",
-                dataTimeMatch: "FRI 25/11 - 14H00",
+                dataTimeMatch: DataTimeMatch(month: 11, day: 25, hour: 22),
                 imageH: UIImage(named: "englandFlag") ?? UIImage(),
                 imageV: UIImage(named: "unitedStatesFlag") ?? UIImage()
             ),
             .init(
-                titleMatch: "GROUP B - AHMAD BIN ALI  🏟",
+                titleMatch: "GROUP B - AL RAYYAN  🏟",
                 homeName: "WAL",
                 visitName: "ENG",
-                dataTimeMatch: "TUE 29/11 - 14H00",
+                dataTimeMatch: DataTimeMatch(month: 11, day: 29, hour: 22),
                 imageH: UIImage(named: "walesFlag") ?? UIImage(),
                 imageV: UIImage(named: "englandFlag") ?? UIImage()
             ),
@@ -123,7 +129,7 @@ let cupGames: [GroupGames] = [
                 titleMatch: "GROUP B - AL THUMAMA 🏟",
                 homeName: "IRA",
                 visitName: "USA",
-                dataTimeMatch: "TUE 29/11 - 14H00",
+                dataTimeMatch: DataTimeMatch(month: 11, day: 29, hour: 22),
                 imageH: UIImage(named: "iranFlag") ?? UIImage(),
                 imageV: UIImage(named: "unitedStatesFlag") ?? UIImage()
             )
@@ -136,8 +142,8 @@ let cupGames: [GroupGames] = [
             .init(
                 titleMatch: "GROUP C - LUSAIL 🏟",
                 homeName: "ARG",
-                visitName: "ARA",
-                dataTimeMatch: "TUE 22/11 - 05H00",
+                visitName: "KSA",
+                dataTimeMatch: DataTimeMatch(month: 11, day: 22, hour: 13),
                 imageH: UIImage(named: "argentinaFlag") ?? UIImage(),
                 imageV: UIImage(named: "saudiArabiaFlag") ?? UIImage()
             ),
@@ -145,15 +151,15 @@ let cupGames: [GroupGames] = [
                 titleMatch: "GROUP C - 974 🏟",
                 homeName: "MEX",
                 visitName: "POL",
-                dataTimeMatch: "TUE 22/11 - 11H00",
+                dataTimeMatch: DataTimeMatch(month: 11, day: 22, hour: 19),
                 imageH: UIImage(named: "mexicoFlag") ?? UIImage(),
                 imageV: UIImage(named: "polandFlag") ?? UIImage()
             ),
             .init(
                 titleMatch: "GROUP C - EDUCATION CITY  🏟",
                 homeName: "POL",
-                visitName: "ARA",
-                dataTimeMatch: "SAT 26/11 - 08H00",
+                visitName: "KSA",
+                dataTimeMatch: DataTimeMatch(month: 11, day: 26, hour: 16),
                 imageH: UIImage(named: "polandFlag") ?? UIImage(),
                 imageV: UIImage(named: "saudiArabiaFlag") ?? UIImage()
             ),
@@ -161,7 +167,7 @@ let cupGames: [GroupGames] = [
                 titleMatch: "GROUP C - LUSAIL 🏟",
                 homeName: "ARG",
                 visitName: "MEX",
-                dataTimeMatch: "SAT 26/11 - 14H00",
+                dataTimeMatch: DataTimeMatch(month: 11, day: 26, hour: 22),
                 imageH: UIImage(named: "argentinaFlag") ?? UIImage(),
                 imageV: UIImage(named: "mexicoFlag") ?? UIImage()
             ),
@@ -169,15 +175,15 @@ let cupGames: [GroupGames] = [
                 titleMatch: "GROUP C - 974  🏟",
                 homeName: "POL",
                 visitName: "ARG",
-                dataTimeMatch: "WED 30/11 - 14H00",
+                dataTimeMatch: DataTimeMatch(month: 11, day: 30, hour: 22),
                 imageH: UIImage(named: "polandFlag") ?? UIImage(),
                 imageV: UIImage(named: "argentinaFlag") ?? UIImage()
             ),
             .init(
                 titleMatch: "GROUP C - LUSAIL 🏟",
-                homeName: "ARA",
+                homeName: "KSA",
                 visitName: "MEX",
-                dataTimeMatch: "WED 30/11 - 14H00",
+                dataTimeMatch: DataTimeMatch(month: 11, day: 30, hour: 22),
                 imageH: UIImage(named: "saudiArabiaFlag") ?? UIImage(),
                 imageV: UIImage(named: "mexicoFlag") ?? UIImage()
             )
@@ -191,7 +197,7 @@ let cupGames: [GroupGames] = [
                 titleMatch: "GROUP D - EDUCATION CITY 🏟",
                 homeName: "DEN",
                 visitName: "TUN",
-                dataTimeMatch: "TUE 22/11 - 08H00",
+                dataTimeMatch: DataTimeMatch(month: 11, day: 22, hour: 16),
                 imageH: UIImage(named: "denmarkFlag") ?? UIImage(),
                 imageV: UIImage(named: "tunisiaFlag") ?? UIImage()
             ),
@@ -199,7 +205,7 @@ let cupGames: [GroupGames] = [
                 titleMatch: "GROUP D - AL JANOUB 🏟",
                 homeName: "FRA",
                 visitName: "AUS",
-                dataTimeMatch: "TUE 22/11 - 14H00",
+                dataTimeMatch: DataTimeMatch(month: 11, day: 22, hour: 22),
                 imageH: UIImage(named: "franceFlag") ?? UIImage(),
                 imageV: UIImage(named: "australiaFlag") ?? UIImage()
             ),
@@ -207,7 +213,7 @@ let cupGames: [GroupGames] = [
                 titleMatch: "GROUP D - AL JANOUB  🏟",
                 homeName: "TUN",
                 visitName: "AUS",
-                dataTimeMatch: "SAT 26/11 - 05H00",
+                dataTimeMatch: DataTimeMatch(month: 11, day: 26, hour: 13),
                 imageH: UIImage(named: "tunisiaFlag") ?? UIImage(),
                 imageV: UIImage(named: "australiaFlag") ?? UIImage()
             ),
@@ -215,7 +221,7 @@ let cupGames: [GroupGames] = [
                 titleMatch: "GROUP D - 974 🏟",
                 homeName: "FRA",
                 visitName: "DEN",
-                dataTimeMatch: "SAT 26/11 - 11H00",
+                dataTimeMatch: DataTimeMatch(month: 11, day: 26, hour: 19),
                 imageH: UIImage(named: "franceFlag") ?? UIImage(),
                 imageV: UIImage(named: "denmarkFlag") ?? UIImage()
             ),
@@ -223,7 +229,7 @@ let cupGames: [GroupGames] = [
                 titleMatch: "GROUP D - EDUCATION CITY  🏟",
                 homeName: "TUN",
                 visitName: "FRA",
-                dataTimeMatch: "WED 30/11 - 10H00",
+                dataTimeMatch: DataTimeMatch(month: 11, day: 30, hour: 18),
                 imageH: UIImage(named: "tunisiaFlag") ?? UIImage(),
                 imageV: UIImage(named: "franceFlag") ?? UIImage()
             ),
@@ -231,7 +237,7 @@ let cupGames: [GroupGames] = [
                 titleMatch: "GROUP D - AL JANOUB 🏟",
                 homeName: "AUS",
                 visitName: "DEN",
-                dataTimeMatch: "WED 30/11 - 10H00",
+                dataTimeMatch: DataTimeMatch(month: 11, day: 30, hour: 18),
                 imageH: UIImage(named: "australiaFlag") ?? UIImage(),
                 imageV: UIImage(named: "denmarkFlag") ?? UIImage()
             )
@@ -245,47 +251,47 @@ let cupGames: [GroupGames] = [
                 titleMatch: "GROUP E - KHALIFA 🏟",
                 homeName: "GER",
                 visitName: "JPN",
-                dataTimeMatch: "WED 23/11 - 08H00",
+                dataTimeMatch: DataTimeMatch(month: 11, day: 23, hour: 16),
                 imageH: UIImage(named: "germanyFlag") ?? UIImage(),
                 imageV: UIImage(named: "japanFlag") ?? UIImage()
             ),
             .init(
                 titleMatch: "GROUP E - AL THUMAMA 🏟",
-                homeName: "SPA",
-                visitName: "COR",
-                dataTimeMatch: "WED 23/11 - 11H00",
+                homeName: "ESP",
+                visitName: "CRC",
+                dataTimeMatch: DataTimeMatch(month: 11, day: 23, hour: 19),
                 imageH: UIImage(named: "spainFlag") ?? UIImage(),
                 imageV: UIImage(named: "costaRicaFlag") ?? UIImage()
             ),
             .init(
                 titleMatch: "GROUP E - AHMAD BIN ALI  🏟",
                 homeName: "JPN",
-                visitName: "COR",
-                dataTimeMatch: "SUN 27/11 - 05H00",
+                visitName: "CRC",
+                dataTimeMatch: DataTimeMatch(month: 11, day: 27, hour: 13),
                 imageH: UIImage(named: "japanFlag") ?? UIImage(),
                 imageV: UIImage(named: "costaRicaFlag") ?? UIImage()
             ),
             .init(
                 titleMatch: "GROUP E - AL BAYT 🏟",
-                homeName: "SPA",
+                homeName: "ESP",
                 visitName: "GER",
-                dataTimeMatch: "SUN 27/11 - 14H00",
+                dataTimeMatch: DataTimeMatch(month: 11, day: 27, hour: 22),
                 imageH: UIImage(named: "spainFlag") ?? UIImage(),
                 imageV: UIImage(named: "germanyFlag") ?? UIImage()
             ),
             .init(
                 titleMatch: "GROUP E - KHALIFA 🏟",
                 homeName: "JPN",
-                visitName: "SPA",
-                dataTimeMatch: "THURS 01/12 - 14H00",
+                visitName: "ESP",
+                dataTimeMatch: DataTimeMatch(month: 12, day: 01, hour: 22),
                 imageH: UIImage(named: "japanFlag") ?? UIImage(),
                 imageV: UIImage(named: "spainFlag") ?? UIImage()
             ),
             .init(
                 titleMatch: "GROUP E - AL BAYT 🏟",
-                homeName: "COR",
+                homeName: "CRC",
                 visitName: "GER",
-                dataTimeMatch: "THURS 01/12 - 14H00",
+                dataTimeMatch: DataTimeMatch(month: 12, day: 01, hour: 22),
                 imageH: UIImage(named: "costaRicaFlag") ?? UIImage(),
                 imageV: UIImage(named: "germanyFlag") ?? UIImage()
             )
@@ -297,9 +303,9 @@ let cupGames: [GroupGames] = [
         matches: [
             .init(
                 titleMatch: "GROUP F - AL BAYT 🏟",
-                homeName: "MOC",
+                homeName: "MAR",
                 visitName: "CRO",
-                dataTimeMatch: "WED 23/11 - 05H00",
+                dataTimeMatch: DataTimeMatch(month: 11, day: 23, hour: 13),
                 imageH: UIImage(named: "moroccoFlag") ?? UIImage(),
                 imageV: UIImage(named: "croaciaFlag") ?? UIImage()
             ),
@@ -307,15 +313,15 @@ let cupGames: [GroupGames] = [
                 titleMatch: "GROUP F - AHMAD BIN ALI 🏟",
                 homeName: "BEL",
                 visitName: "CAN",
-                dataTimeMatch: "WED 23/11 - 14H00",
+                dataTimeMatch: DataTimeMatch(month: 11, day: 23, hour: 22),
                 imageH: UIImage(named: "belgiumFlag") ?? UIImage(),
                 imageV: UIImage(named: "canadaFlag") ?? UIImage()
             ),
             .init(
                 titleMatch: "GROUP F - AL THUMAMA  🏟",
                 homeName: "BEL",
-                visitName: "MOC",
-                dataTimeMatch: "SUN 27/11 - 08H00",
+                visitName: "MAR",
+                dataTimeMatch: DataTimeMatch(month: 11, day: 27, hour: 16),
                 imageH: UIImage(named: "belgiumFlag") ?? UIImage(),
                 imageV: UIImage(named: "moroccoFlag") ?? UIImage()
             ),
@@ -323,7 +329,7 @@ let cupGames: [GroupGames] = [
                 titleMatch: "GROUP F - KHALIFA 🏟",
                 homeName: "CRO",
                 visitName: "CAN",
-                dataTimeMatch: "SUN 27/11 - 11H00",
+                dataTimeMatch: DataTimeMatch(month: 11, day: 27, hour: 19),
                 imageH: UIImage(named: "croaciaFlag") ?? UIImage(),
                 imageV: UIImage(named: "canadaFlag") ?? UIImage()
             ),
@@ -331,15 +337,15 @@ let cupGames: [GroupGames] = [
                 titleMatch: "GROUP F - AHMAD BIN ALI 🏟",
                 homeName: "CRO",
                 visitName: "BEL",
-                dataTimeMatch: "THURS 01/12 - 10H00",
+                dataTimeMatch: DataTimeMatch(month: 12, day: 01, hour: 18),
                 imageH: UIImage(named: "croaciaFlag") ?? UIImage(),
                 imageV: UIImage(named: "belgiumFlag") ?? UIImage()
             ),
             .init(
                 titleMatch: "GROUP F - AL THUMAMA 🏟",
                 homeName: "CAN",
-                visitName: "MOC",
-                dataTimeMatch: "THURS 01/12 - 10H00",
+                visitName: "MAR",
+                dataTimeMatch: DataTimeMatch(month: 12, day: 01, hour: 18),
                 imageH: UIImage(named: "canadaFlag") ?? UIImage(),
                 imageV: UIImage(named: "moroccoFlag") ?? UIImage()
             )
@@ -351,49 +357,49 @@ let cupGames: [GroupGames] = [
         matches: [
             .init(
                 titleMatch: "GROUP G - AL JANOUB 🏟",
-                homeName: "SWZ",
-                visitName: "CAM",
-                dataTimeMatch: "THURS 24/11 - 05H00",
+                homeName: "SUI",
+                visitName: "CMR",
+                dataTimeMatch: DataTimeMatch(month: 11, day: 24, hour: 13),
                 imageH: UIImage(named: "switzerlandFlag") ?? UIImage(),
                 imageV: UIImage(named: "cameroonFlag") ?? UIImage()
             ),
             .init(
                 titleMatch: "GROUP G - LUSAIL 🏟",
                 homeName: "BRA",
-                visitName: "SER",
-                dataTimeMatch: "THURS 24/11 - 14H00",
+                visitName: "SRB",
+                dataTimeMatch: DataTimeMatch(month: 11, day: 24, hour: 22),
                 imageH: UIImage(named: "brazilFlag") ?? UIImage(),
                 imageV: UIImage(named: "serbiaFlag") ?? UIImage()
             ),
             .init(
                 titleMatch: "GROUP G - AL JANOUB  🏟",
-                homeName: "CAM",
-                visitName: "SER",
-                dataTimeMatch: "MON 28/11 - 17H00",
+                homeName: "CMR",
+                visitName: "SRB",
+                dataTimeMatch: DataTimeMatch(month: 11, day: 28, hour: 13),
                 imageH: UIImage(named: "cameroonFlag") ?? UIImage(),
                 imageV: UIImage(named: "serbiaFlag") ?? UIImage()
             ),
             .init(
                 titleMatch: "GROUP G - 974 🏟",
                 homeName: "BRA",
-                visitName: "SWZ",
-                dataTimeMatch: "MON 28/11 - 11H00",
+                visitName: "SUI",
+                dataTimeMatch: DataTimeMatch(month: 11, day: 28, hour: 19),
                 imageH: UIImage(named: "brazilFlag") ?? UIImage(),
                 imageV: UIImage(named: "switzerlandFlag") ?? UIImage()
             ),
             .init(
                 titleMatch: "GROUP G - LUSAIL 🏟",
-                homeName: "CAM",
+                homeName: "CMR",
                 visitName: "BRA",
-                dataTimeMatch: "FRI 02/12 - 14H00",
+                dataTimeMatch: DataTimeMatch(month: 12, day: 02, hour: 22),
                 imageH: UIImage(named: "cameroonFlag") ?? UIImage(),
                 imageV: UIImage(named: "brazilFlag") ?? UIImage()
             ),
             .init(
                 titleMatch: "GROUP G - 974 🏟",
-                homeName: "SER",
-                visitName: "SWZ",
-                dataTimeMatch: "FRI 02/12 - 14H00",
+                homeName: "SRB",
+                visitName: "SUI",
+                dataTimeMatch: DataTimeMatch(month: 12, day: 02, hour: 22),
                 imageH: UIImage(named: "serbiaFlag") ?? UIImage(),
                 imageV: UIImage(named: "switzerlandFlag") ?? UIImage()
             )
@@ -406,8 +412,8 @@ let cupGames: [GroupGames] = [
             .init(
                 titleMatch: "GROUP H - EDUCATION CITY 🏟",
                 homeName: "URU",
-                visitName: "SKO",
-                dataTimeMatch: "THURS 24/11 - 08H00",
+                visitName: "KOR",
+                dataTimeMatch: DataTimeMatch(month: 11, day: 24, hour: 16),
                 imageH: UIImage(named: "uruguayFlag") ?? UIImage(),
                 imageV: UIImage(named: "koreaFlag") ?? UIImage()
             ),
@@ -415,15 +421,15 @@ let cupGames: [GroupGames] = [
                 titleMatch: "GROUP H - 974 🏟",
                 homeName: "POR",
                 visitName: "GHA",
-                dataTimeMatch: "THURS 24/11 - 11H00",
+                dataTimeMatch: DataTimeMatch(month: 11, day: 24, hour: 19),
                 imageH: UIImage(named: "portugalFlag") ?? UIImage(),
                 imageV: UIImage(named: "ghanaFlag") ?? UIImage()
             ),
             .init(
                 titleMatch: "GROUP H - EDUCATION CITY  🏟",
-                homeName: "SKO",
+                homeName: "KOR",
                 visitName: "GHA",
-                dataTimeMatch: "MON 28/11 - 08H00",
+                dataTimeMatch: DataTimeMatch(month: 11, day: 28, hour: 16),
                 imageH: UIImage(named: "koreaFlag") ?? UIImage(),
                 imageV: UIImage(named: "ghanaFlag") ?? UIImage()
             ),
@@ -431,15 +437,15 @@ let cupGames: [GroupGames] = [
                 titleMatch: "GROUP H - LUSAIL 🏟",
                 homeName: "POR",
                 visitName: "URU",
-                dataTimeMatch: "MON 28/11 - 14H00",
+                dataTimeMatch: DataTimeMatch(month: 11, day: 28, hour: 22),
                 imageH: UIImage(named: "portugalFlag") ?? UIImage(),
                 imageV: UIImage(named: "uruguayFlag") ?? UIImage()
             ),
             .init(
                 titleMatch: "GROUP H - EEDUCATION CITY 🏟",
-                homeName: "SKO",
+                homeName: "KOR",
                 visitName: "POR",
-                dataTimeMatch: "FRI 02/12 - 10H00",
+                dataTimeMatch: DataTimeMatch(month: 12, day: 02, hour: 18),
                 imageH: UIImage(named: "koreaFlag") ?? UIImage(),
                 imageV: UIImage(named: "portugalFlag") ?? UIImage()
             ),
@@ -447,7 +453,7 @@ let cupGames: [GroupGames] = [
                 titleMatch: "GROUP H - AL JANOUB 🏟",
                 homeName: "GHA",
                 visitName: "URU",
-                dataTimeMatch: "FRI 02/12 - 10H00",
+                dataTimeMatch: DataTimeMatch(month: 12, day: 02, hour: 18),
                 imageH: UIImage(named: "ghanaFlag") ?? UIImage(),
                 imageV: UIImage(named: "uruguayFlag") ?? UIImage()
             )
