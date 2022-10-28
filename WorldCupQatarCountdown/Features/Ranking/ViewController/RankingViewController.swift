@@ -14,6 +14,8 @@ final class RankingViewController: UIViewController {
         
     override func viewDidLoad() {
         super.viewDidLoad()
+        segControl.selectedSegmentIndex = 0
+        
         self.configTableView()
     }
     
