@@ -10,17 +10,17 @@ import UIKit
 final class TopGoalTableViewCell: UITableViewCell {
     
     @IBOutlet private weak var imagePlayer: UIImageView!
-    @IBOutlet private weak var namePLayer: UILabel!
-    @IBOutlet private weak var infoGoalPLayer: UILabel!
+    @IBOutlet private weak var namePlayer: UILabel!
+    @IBOutlet private weak var goalYearPlayer: UILabel!
+    @IBOutlet private weak var infoGoalPlayer: UILabel!
     
     static let identifier: String = "TopGoalTableViewCell"
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        self.namePLayer.layer.cornerRadius = 25
-        self.imagePlayer.layer.cornerRadius = imagePlayer.frame.size.height / 2
-        self.imagePlayer.clipsToBounds = true
-        self.imagePlayer.contentMode = .scaleAspectFit
+        imagePlayer.layer.cornerRadius = imagePlayer.frame.size.height / 2
+        imagePlayer.layer.borderWidth = 0.5
+        imagePlayer.layer.borderColor = UIColor.systemGray.cgColor
     }
     
     static func getNib() -> UINib {
@@ -29,8 +29,9 @@ final class TopGoalTableViewCell: UITableViewCell {
 
     func setupCell(topGoal: Goals) {
         self.imagePlayer.image = topGoal.image
-        self.namePLayer.text = topGoal.namePlayer
-        self.infoGoalPLayer.text = topGoal.gols
+        self.namePlayer.text = topGoal.namePlayer
+        self.goalYearPlayer.text = topGoal.yearCup
+        self.infoGoalPlayer.text = topGoal.gols
     }
     
 }
