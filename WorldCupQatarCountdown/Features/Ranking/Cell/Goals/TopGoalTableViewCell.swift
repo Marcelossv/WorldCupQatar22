@@ -23,6 +23,13 @@ final class TopGoalTableViewCell: UITableViewCell {
         imagePlayer.layer.borderColor = UIColor.systemGray.cgColor
     }
     
+    override func prepareForReuse() {
+        self.imagePlayer.image = nil
+        self.namePlayer.text = nil
+        self.goalYearPlayer.text = nil
+        self.infoGoalPlayer.text = nil
+    }
+    
     static func getNib() -> UINib {
         return UINib(nibName: self.identifier, bundle: nil)
     }
