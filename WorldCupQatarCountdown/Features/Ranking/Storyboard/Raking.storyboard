@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fBc-6B-VoH">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fBc-6B-VoH">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -11,23 +12,23 @@
         <!--Ranking-->
         <scene sceneID="cEA-Nf-K8M">
             <objects>
-                <viewController storyboardIdentifier="Ranking" useStoryboardIdentifierAsRestorationIdentifier="YES" id="fBc-6B-VoH" customClass="RankingViewController" customModule="Marcelo_WorldCupQatar22" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Ranking" useStoryboardIdentifierAsRestorationIdentifier="YES" id="fBc-6B-VoH" customClass="RankingViewController" customModule="WorldCupQatarCountdown" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="bottom" semanticContentAttribute="playback" id="4h3-0k-1x7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="kJi-7W-jxu">
-                                <rect key="frame" x="0.0" y="95" width="414" height="767"/>
+                                <rect key="frame" x="0.0" y="99" width="414" height="763"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="3fb-mr-IWp">
-                                <rect key="frame" x="2" y="54" width="410" height="32"/>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" segmentControlStyle="bar" translatesAutoresizingMaskIntoConstraints="NO" id="3fb-mr-IWp">
+                                <rect key="frame" x="2" y="58" width="410" height="32"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <segments>
-                                    <segment title="WINNERS 🏆"/>
-                                    <segment title=" GOALS ⚽️"/>
-                                    <segment title="PLAYERS 💰"/>
-                                    <segment title="FIFA 🇫🇲"/>
+                                    <segment title="🏆 Winners"/>
+                                    <segment title="⚽️ Goals"/>
+                                    <segment title="💰Players"/>
+                                    <segment title="🏅Ranking"/>
                                 </segments>
                                 <color key="selectedSegmentTintColor" red="0.66666668650000005" green="0.4587355655" blue="0.42615735360000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
