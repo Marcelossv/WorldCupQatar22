@@ -25,15 +25,15 @@ final class RankingTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+    }
+    
+    override func prepareForReuse() {
+        flagCountry.image = nil
         championStackView.isHidden = true
         twoTimeChampionStackView.isHidden = true
         threeTimeChampionStackView.isHidden = true
         fourTimeChampionStackView.isHidden = true
         fiveTimeChampionStackView.isHidden = true
-    }
-    
-    override func prepareForReuse() {
-        flagCountry.image = nil
     }
     
     static func getNib() -> UINib {

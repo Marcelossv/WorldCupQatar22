@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dyQ-Cl-1Jo">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dyQ-Cl-1Jo">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -15,17 +14,18 @@
             <objects>
                 <viewController storyboardIdentifier="CountDown" useStoryboardIdentifierAsRestorationIdentifier="YES" id="dyQ-Cl-1Jo" customClass="CountDownViewController" customModule="WorldCupQatarCountdown" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Vwv-7z-St8">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logov2" translatesAutoresizingMaskIntoConstraints="NO" id="sj2-tW-Nst">
-                                <rect key="frame" x="5" y="63" width="404" height="350"/>
+                                <rect key="frame" x="57" y="223" width="300" height="290"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="350" id="r75-Ml-RvB"/>
+                                    <constraint firstAttribute="height" constant="290" id="r75-Ml-RvB"/>
+                                    <constraint firstAttribute="width" constant="300" id="y7Q-ax-bZC"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to World Cup Qatar 2022!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="j13-BK-hkA">
-                                <rect key="frame" x="25" y="-138" width="364" height="86"/>
+                                <rect key="frame" x="25" y="-186" width="364" height="86"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="86" id="6X6-ki-fi8"/>
                                 </constraints>
@@ -34,19 +34,19 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="mpR-zk-uTu">
-                                <rect key="frame" x="25" y="676" width="364" height="86"/>
+                                <rect key="frame" x="25" y="548" width="364" height="86"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="fCN-Tv-j6r" userLabel="TimerDay">
-                                        <rect key="frame" x="0.0" y="0.0" width="87.5" height="86"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="87.333333333333329" height="86"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nOq-TF-T4g">
-                                                <rect key="frame" x="0.0" y="0.0" width="87.5" height="56"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="87.333333333333329" height="56"/>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Days" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9bC-bf-YUK">
-                                                <rect key="frame" x="0.0" y="56" width="87.5" height="30"/>
+                                                <rect key="frame" x="0.0" y="56" width="87.333333333333329" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="C9k-so-Nng"/>
                                                 </constraints>
@@ -58,16 +58,16 @@
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="LaW-Wz-bGr" userLabel="TimerHour">
-                                        <rect key="frame" x="92.5" y="0.0" width="87" height="86"/>
+                                        <rect key="frame" x="92.333333333333343" y="0.0" width="87.333333333333343" height="86"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ReP-q4-6lo">
-                                                <rect key="frame" x="0.0" y="0.0" width="87" height="56"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="87.333333333333329" height="56"/>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hours" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z1Q-Wm-H4v">
-                                                <rect key="frame" x="0.0" y="56" width="87" height="30"/>
+                                                <rect key="frame" x="0.0" y="56" width="87.333333333333329" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="Pd2-vp-tVP"/>
                                                 </constraints>
@@ -79,16 +79,16 @@
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="iJb-Ma-2EM" userLabel="TimerMinute">
-                                        <rect key="frame" x="184.5" y="0.0" width="87.5" height="86"/>
+                                        <rect key="frame" x="184.66666666666666" y="0.0" width="86.999999999999972" height="86"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0he-WL-VEu">
-                                                <rect key="frame" x="0.0" y="0.0" width="87.5" height="56"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="87" height="56"/>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Minutes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wx3-kx-Ky8">
-                                                <rect key="frame" x="0.0" y="56" width="87.5" height="30"/>
+                                                <rect key="frame" x="0.0" y="56" width="87" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="mux-IM-Zxp"/>
                                                 </constraints>
@@ -100,16 +100,16 @@
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="bEc-XH-Lut" userLabel="TimerSecond">
-                                        <rect key="frame" x="277" y="0.0" width="87" height="86"/>
+                                        <rect key="frame" x="276.66666666666669" y="0.0" width="87.333333333333314" height="86"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6HH-vS-rCC">
-                                                <rect key="frame" x="0.0" y="0.0" width="87" height="56"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="87.333333333333329" height="56"/>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Seconds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CFs-mw-2IS">
-                                                <rect key="frame" x="0.0" y="56" width="87" height="30"/>
+                                                <rect key="frame" x="0.0" y="56" width="87.333333333333329" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="udP-SR-NKN"/>
                                                 </constraints>
@@ -135,13 +135,12 @@
                         <viewLayoutGuide key="safeArea" id="MLS-tM-Gaq"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="MLS-tM-Gaq" firstAttribute="trailing" secondItem="sj2-tW-Nst" secondAttribute="trailing" constant="5" id="7b3-Ul-KwM"/>
                             <constraint firstItem="mpR-zk-uTu" firstAttribute="leading" secondItem="MLS-tM-Gaq" secondAttribute="leading" constant="25" id="CQN-C4-wKs"/>
-                            <constraint firstItem="MLS-tM-Gaq" firstAttribute="bottom" secondItem="mpR-zk-uTu" secondAttribute="bottom" constant="100" id="Urr-1l-6xq"/>
-                            <constraint firstItem="sj2-tW-Nst" firstAttribute="leading" secondItem="Vwv-7z-St8" secondAttribute="leading" constant="5" id="fsw-BY-YEj"/>
-                            <constraint firstItem="sj2-tW-Nst" firstAttribute="top" secondItem="MLS-tM-Gaq" secondAttribute="top" constant="15" id="gPD-qo-ifE"/>
+                            <constraint firstItem="sj2-tW-Nst" firstAttribute="centerX" secondItem="Vwv-7z-St8" secondAttribute="centerX" id="Q09-gI-eYU"/>
+                            <constraint firstItem="mpR-zk-uTu" firstAttribute="top" secondItem="sj2-tW-Nst" secondAttribute="bottom" constant="35" id="bO3-VR-l3U"/>
                             <constraint firstAttribute="trailing" secondItem="j13-BK-hkA" secondAttribute="trailing" constant="25" id="ntD-pL-Wtt"/>
                             <constraint firstItem="MLS-tM-Gaq" firstAttribute="trailing" secondItem="mpR-zk-uTu" secondAttribute="trailing" constant="25" id="o8f-Uf-D77"/>
+                            <constraint firstItem="sj2-tW-Nst" firstAttribute="centerY" secondItem="Vwv-7z-St8" secondAttribute="centerY" id="oBE-mZ-Qre"/>
                             <constraint firstItem="MLS-tM-Gaq" firstAttribute="top" secondItem="j13-BK-hkA" secondAttribute="bottom" constant="100" id="wfF-Y8-idk"/>
                             <constraint firstItem="j13-BK-hkA" firstAttribute="leading" secondItem="MLS-tM-Gaq" secondAttribute="leading" constant="25" id="ysR-nH-Qzf"/>
                         </constraints>
@@ -165,7 +164,7 @@
     </scenes>
     <resources>
         <image name="logov2" width="4000" height="3781"/>
-        <image name="timer" catalog="system" width="128" height="123"/>
+        <image name="timer" catalog="system" width="128" height="121"/>
         <namedColor name="mainColor">
             <color red="0.44705882352941173" green="0.10588235294117647" blue="0.16470588235294117" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
