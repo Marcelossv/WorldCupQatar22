@@ -11,7 +11,7 @@
         <!--Ranking-->
         <scene sceneID="cEA-Nf-K8M">
             <objects>
-                <viewController storyboardIdentifier="Ranking" useStoryboardIdentifierAsRestorationIdentifier="YES" id="fBc-6B-VoH" customClass="RankingViewController" customModule="Marcelo_WorldCupQatar22" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Ranking" useStoryboardIdentifierAsRestorationIdentifier="YES" id="fBc-6B-VoH" customClass="RankingViewController" customModule="WorldCupQatarCountdown" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="bottom" semanticContentAttribute="playback" id="4h3-0k-1x7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -20,14 +20,14 @@
                                 <rect key="frame" x="0.0" y="95" width="414" height="767"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="3fb-mr-IWp">
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" segmentControlStyle="bar" translatesAutoresizingMaskIntoConstraints="NO" id="3fb-mr-IWp">
                                 <rect key="frame" x="2" y="54" width="410" height="32"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <segments>
-                                    <segment title="WINNERS 🏆"/>
-                                    <segment title=" GOALS ⚽️"/>
-                                    <segment title="PLAYERS 💰"/>
-                                    <segment title="FIFA 🇫🇲"/>
+                                    <segment title="🏆 Winners"/>
+                                    <segment title="⚽️ Goals"/>
+                                    <segment title="💰Players"/>
+                                    <segment title="🏅Ranking"/>
                                 </segments>
                                 <color key="selectedSegmentTintColor" red="0.66666668650000005" green="0.4587355655" blue="0.42615735360000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
@@ -48,7 +48,7 @@
                             <constraint firstItem="HuJ-SK-m2S" firstAttribute="trailing" secondItem="3fb-mr-IWp" secondAttribute="trailing" constant="2" id="zDg-tZ-c24"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Ranking" image="worldCupIconTabBar" id="UMR-gL-Xbo">
+                    <tabBarItem key="tabBarItem" title="Ranking" image="trophy-55" id="UMR-gL-Xbo">
                         <inset key="imageInsets" minX="14" minY="0.0" maxX="10" maxY="0.0"/>
                         <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBarItem>
@@ -63,7 +63,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="worldCupIconTabBar" width="64" height="64"/>
+        <image name="trophy-55" width="55" height="55"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
