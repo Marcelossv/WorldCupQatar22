@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -16,30 +16,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.84999999999999998" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="qtarPlayoff" translatesAutoresizingMaskIntoConstraints="NO" id="E2z-ug-7uF">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <color key="backgroundColor" red="0.44705882349999998" green="0.1058823529" blue="0.1647058824" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <imageView autoresizesSubviews="NO" opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo-cup" translatesAutoresizingMaskIntoConstraints="NO" id="GCm-Fp-2lX">
+                                <rect key="frame" x="67" y="303" width="280" height="290"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="KAQ-55-Whv"/>
+                                    <constraint firstAttribute="height" constant="290" id="ugt-l2-tKI"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.47058826679999999" green="0.12549020350000001" blue="0.20392158630000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="E2z-ug-7uF" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="0Dg-VP-Ujv"/>
-                            <constraint firstAttribute="bottom" secondItem="E2z-ug-7uF" secondAttribute="bottom" id="SEc-vg-AAQ"/>
-                            <constraint firstItem="E2z-ug-7uF" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="g1G-nI-NUO"/>
-                            <constraint firstAttribute="trailing" secondItem="E2z-ug-7uF" secondAttribute="trailing" id="nJC-Qa-eZw"/>
+                            <constraint firstItem="GCm-Fp-2lX" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="rfF-cj-aML"/>
+                            <constraint firstItem="GCm-Fp-2lX" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="wfk-b6-flK"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
         </scene>
     </scenes>
     <resources>
-        <image name="qtarPlayoff" width="1200" height="678"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
+        <image name="logo-cup" width="360" height="360"/>
     </resources>
 </document>
