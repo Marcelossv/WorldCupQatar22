@@ -45,7 +45,7 @@ extension GroupsViewController: UITableViewDataSource {
         let country = listGroup[indexPath.section].countries[indexPath.row]
         cell.setupCell(.init(nameCountry: country.name, flag: country.flag))
         
-        cell.accessoryType = .detailButton
+        cell.accessoryType = .disclosureIndicator
         cell.tintColor = .red
         
         return cell
