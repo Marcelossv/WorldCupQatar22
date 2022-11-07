@@ -15,6 +15,7 @@ final class MatchesTableViewCell: UITableViewCell {
     @IBOutlet private weak var dataTimeMatch: UILabel!
     @IBOutlet private weak var imageHome: UIImageView!
     @IBOutlet private weak var imageVisit: UIImageView!
+    @IBOutlet weak var favoriteMatchView: UIView!
     
     static let identifier: String = "MatchesTableViewCell"
 
@@ -27,13 +28,14 @@ final class MatchesTableViewCell: UITableViewCell {
         return UINib(nibName: self.identifier, bundle: nil)
     }
 
-    func setupCell(matches: Match) {
+    func setupCell(matches: Match, color: UIColor) {
         self.titleMatchLabel.text = matches.titleMatch
         self.homeNameTeam.text = matches.homeName
         self.visitNameTeam.text = matches.visitName
         self.dataTimeMatch.text = setupDataTimeMatch(with: matches.dataTimeMatch)
         self.imageHome.image = matches.imageH
         self.imageVisit.image = matches.imageV
+        self.favoriteMatchView.backgroundColor = color
     }
     
     private func setupDataTimeMatch(with dataTimeMatch: DataTimeMatch) -> String {

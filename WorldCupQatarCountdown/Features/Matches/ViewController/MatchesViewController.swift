@@ -42,8 +42,11 @@ extension MatchesViewController: UITableViewDataSource {
             return UITableViewCell ()
         }
         
+        let color = (indexPath.row % 2) == 0 ? UIColor.green : UIColor.systemGray
+        
         let match = cupGames[segControl.selectedSegmentIndex].matches[indexPath.row]
-        cell.setupCell(matches: match)
+        cell.setupCell(matches: match, color: color)
+        cell.accessoryType = .disclosureIndicator
 
         return cell
     }
@@ -56,4 +59,15 @@ extension MatchesViewController: UITableViewDelegate {
         return 133
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let group = cupGames[segControl.selectedSegmentIndex].group
+        let match = cupGames[segControl.selectedSegmentIndex].matches[indexPath.row]
+        
+        guard let detailMatchViewController = UIStoryboard(name: "DetailMatch", bundle: nil)
+            .instantiateViewController(withIdentifier: "DetailMatch")
+                as? DetailMatchViewController else { return }
+        detailMatchViewController.detailMatch = .init(group: group, match: match)
+
+        present(detailMatchViewController, animated: true)
+    }
 }

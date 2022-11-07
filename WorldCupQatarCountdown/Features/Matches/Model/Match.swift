@@ -27,6 +27,111 @@ struct DataTimeMatch {
     let hour: Int
 }
 
+enum NameCountry: String {
+    case arg = "ARG"
+    case aus = "AUS"
+    case bel = "BEL"
+    case bra = "BRA"
+    case cmr = "CMR"
+    case can = "CAN"
+    case crc = "CRC"
+    case cro = "CRO"
+    case den = "DEN"
+    case ecu = "ECU"
+    case eng = "ENG"
+    case fra = "FRA"
+    case ger = "GER"
+    case gha = "GHA"
+    case irn = "IRN"
+    case jpn = "JPN"
+    case kor = "KOR"
+    case mex = "MEX"
+    case mar = "MAR"
+    case ned = "NED"
+    case pol = "POL"
+    case por = "POR"
+    case qat = "QAT"
+    case ksa = "KSA"
+    case sen = "SEN"
+    case srb = "SRB"
+    case esp = "ESP"
+    case sui = "SUI"
+    case tun = "TUN"
+    case uru = "URU"
+    case usa = "USA"
+    case wal = "WAL"
+    
+    var description: String {
+        switch self {
+        case .arg:
+            return "Argentina"
+        case .aus:
+            return "Australia"
+        case .bel:
+            return "Belgium"
+        case .bra:
+            return "Brazil"
+        case .cmr:
+            return "Cameroon"
+        case .can:
+            return "Canada"
+        case .crc:
+            return "Costa Rica"
+        case .cro:
+            return "Croatia"
+        case .den:
+            return "Denmark"
+        case .ecu:
+            return "Ecuador"
+        case .eng:
+            return "England"
+        case .fra:
+            return "France"
+        case .ger:
+            return "Germany"
+        case .gha:
+            return "Ghana"
+        case .irn:
+            return "IR Iran"
+        case .jpn:
+            return "Japan"
+        case .kor:
+            return "Korea Republic"
+        case .mex:
+            return "Mexico"
+        case .mar:
+            return "Morocco"
+        case .ned:
+            return "Netherlands"
+        case .pol:
+            return "Poland"
+        case .por:
+            return "Portugal"
+        case .qat:
+            return "Qatar"
+        case .ksa:
+            return "Saudi Arabia"
+        case .sen:
+            return "Senegal"
+        case .srb:
+            return "Serbia"
+        case .esp:
+            return "Spain"
+        case .sui:
+            return "Switzerland"
+        case .tun:
+            return "Tunisia"
+        case .uru:
+            return "Uruguay"
+        case .usa:
+            return "USA"
+        case .wal:
+            return "Wales"
+        }
+    }
+    
+}
+
 let cupGames: [GroupGames] = [
     .init(
         group: "A",
