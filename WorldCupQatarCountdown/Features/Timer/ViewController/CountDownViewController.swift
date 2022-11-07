@@ -8,36 +8,18 @@
 import UIKit
 
 final class CountDownViewController: UIViewController {
-
+    
+    // MARK: - IBOutlet
     @IBOutlet weak var welcomeLabel: UILabel!
     @IBOutlet weak var timerStackView: UIStackView!
     @IBOutlet weak var dayLabel: UILabel!
     @IBOutlet weak var hourLabel: UILabel!
     @IBOutlet weak var minuteLabel: UILabel!
     @IBOutlet weak var secondLabel: UILabel!
-
+    
+    // MARK: - private
     private var timer: Timer?
-    private var qatarEventDate: Date {
-        let dateComponents = DateComponents(
-            calendar: Calendar.current,
-            timeZone: TimeZone(identifier: "Asia/Qatar"),
-            year: 2022,
-            month: 11,
-            day: 20,
-            hour: 19,
-            minute: 00,
-            second: 00
-        )
-
-        if let date = Calendar.current.date(from: dateComponents) {
-            return date
-        } else {
-            return Date()
-        }
-    }
-    private var currentDate: Date {
-        Date.now
-    }
+    private var calculateDate: CalculateDate?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,29 +27,25 @@ final class CountDownViewController: UIViewController {
     }
 
     private func startScheduledTimer() {
-        timer = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true) { [weak self] _ in
+        calculateDate = CalculateDate(month: 11, day: 20, hour: 19)
+        
+        timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { [weak self] _ in
             guard let `self` = self else { return }
-            self.updateTimerLabel(dateDifference: self.calculateDateDifference())
+            let calculate = self.calculateDate?.calculateDateDifference()
+            self.updateTimerLabel(with: calculate)
         }
     }
 
-    private func calculateDateDifference() -> DateComponents {
-        return Calendar.current.dateComponents(
-            [.day, .hour, .minute, .second],
-            from: self.currentDate,
-            to: self.qatarEventDate
-        )
-    }
-
-    private func updateTimerLabel(dateDifference: DateComponents) {
-        if self.currentDate >= self.qatarEventDate {
-            timerStackView.isHidden = true
-            timer?.invalidate()
+    private func updateTimerLabel(with date: DateComponents?) {
+        if let date = date {
+            dayLabel.text = String(date.day ?? 00)
+            hourLabel.text = String(date.hour ?? 00)
+            minuteLabel.text = String(date.minute ?? 00)
+            secondLabel.text = String(date.second ?? 00)
         } else {
-            dayLabel.text = String(dateDifference.day ?? 00)
-            hourLabel.text = String(dateDifference.hour ?? 00)
-            minuteLabel.text = String(dateDifference.minute ?? 00)
-            secondLabel.text = String(dateDifference.second ?? 00)
+            timerStackView.isHidden = true
+            welcomeLabel.isHidden = false
+            timer?.invalidate()
         }
     }
 
