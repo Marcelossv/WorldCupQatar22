@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -18,17 +17,17 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="acm-8n-Elt">
-                        <rect key="frame" x="0.0" y="0.0" width="368" height="90"/>
+                        <rect key="frame" x="5" y="0.0" width="363" height="106"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9yZ-H4-bQD">
-                                <rect key="frame" x="5" y="5" width="80" height="80"/>
+                                <rect key="frame" x="0.0" y="13" width="80" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="x1n-Nd-VME"/>
                                     <constraint firstAttribute="width" constant="80" id="xhH-kP-bri"/>
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="eYE-cJ-wxC">
-                                <rect key="frame" x="95" y="10" width="273" height="70"/>
+                                <rect key="frame" x="90" y="18" width="273" height="70"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iOl-IB-WJ9">
                                         <rect key="frame" x="0.0" y="0.0" width="48.5" height="23"/>
@@ -52,18 +51,13 @@
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="9yZ-H4-bQD" firstAttribute="leading" secondItem="acm-8n-Elt" secondAttribute="leading" constant="5" id="Wpa-K1-wdQ"/>
-                            <constraint firstItem="9yZ-H4-bQD" firstAttribute="top" secondItem="acm-8n-Elt" secondAttribute="top" constant="5" id="dAH-mw-Ne8"/>
-                            <constraint firstAttribute="bottom" secondItem="9yZ-H4-bQD" secondAttribute="bottom" constant="5" id="ek5-N0-wmF"/>
-                        </constraints>
                     </stackView>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
                     <constraint firstItem="acm-8n-Elt" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="IMN-4g-QUx"/>
                     <constraint firstAttribute="bottom" secondItem="acm-8n-Elt" secondAttribute="bottom" id="jYt-Ok-cv7"/>
-                    <constraint firstItem="acm-8n-Elt" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="kUM-cf-E1c"/>
+                    <constraint firstItem="acm-8n-Elt" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="kUM-cf-E1c"/>
                     <constraint firstAttribute="trailing" secondItem="acm-8n-Elt" secondAttribute="trailing" id="qcV-KV-j2v"/>
                 </constraints>
             </tableViewCellContentView>

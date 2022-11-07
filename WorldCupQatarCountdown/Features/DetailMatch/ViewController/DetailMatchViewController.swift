@@ -42,6 +42,7 @@ class DetailMatchViewController: UIViewController {
     deinit {
         timer = nil
     }
+
     private func updateView() {
         if let detailMatch = detailMatch {
             groupLabel.text = "Group \(detailMatch.group)"
