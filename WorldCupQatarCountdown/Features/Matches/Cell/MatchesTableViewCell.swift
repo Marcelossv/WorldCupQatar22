@@ -28,18 +28,18 @@ final class MatchesTableViewCell: UITableViewCell {
         return UINib(nibName: self.identifier, bundle: nil)
     }
 
-    func setupCell(matches: Match, color: UIColor) {
-        self.titleMatchLabel.text = matches.titleMatch
-        self.homeNameTeam.text = matches.homeName
-        self.visitNameTeam.text = matches.visitName
-        self.dataTimeMatch.text = setupDataTimeMatch(with: matches.dataTimeMatch)
-        self.imageHome.image = matches.imageH
-        self.imageVisit.image = matches.imageV
+    func setupCell(match: Match, color: UIColor) {
+        self.titleMatchLabel.text = match.titleMatch
+        self.homeNameTeam.text = match.homeName
+        self.visitNameTeam.text = match.visitName
+        self.dataTimeMatch.text = setupDataTimeMatch(with: match.dataTimeMatch)
+        self.imageHome.image = match.imageH
+        self.imageVisit.image = match.imageV
         self.favoriteMatchView.backgroundColor = color
     }
     
     private func setupDataTimeMatch(with dataTimeMatch: DataTimeMatch) -> String {
-        guard let (gameDate, gameTime) = FormatterDateQatar.convertGameDate(
+        guard let (gameDate, gameTime, _) = FormatterDateQatar.convertGameDate(
             month: dataTimeMatch.month,
             day: dataTimeMatch.day,
             hour: dataTimeMatch.hour

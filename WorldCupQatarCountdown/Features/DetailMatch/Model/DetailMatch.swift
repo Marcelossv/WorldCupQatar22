@@ -10,4 +10,5 @@ import Foundation
 struct DetailMatch {
     let group: String
     let match: Match
+    let saveDate: Bool
 }

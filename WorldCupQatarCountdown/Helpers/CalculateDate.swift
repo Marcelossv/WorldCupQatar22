@@ -42,16 +42,9 @@ struct CalculateDate {
     }
 
     func calculateDateDifference() -> DateComponents? {
-        //        let dateDifference = Calendar.current.dateComponents(
-        //            [.day, .hour, .minute, .second],
-        //            from: currentDate,
-        //            to: qatarMatchDate
-        //        )
-        
         if currentDate >= qatarMatchDate {
             return nil
         } else {
-            //            return dateDifference
             return Calendar.current.dateComponents(
                 [.day, .hour, .minute, .second],
                 from: currentDate,
