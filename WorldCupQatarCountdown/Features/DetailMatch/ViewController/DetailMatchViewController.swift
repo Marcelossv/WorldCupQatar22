@@ -76,6 +76,9 @@ class DetailMatchViewController: UIViewController {
             visitFlagImageView.image = detailMatch.match.imageV
             homeCountryLabel.text = getNameCountry(detailMatch.match.homeName)
             visitCountryLabel.text = getNameCountry(detailMatch.match.visitName)
+            matchLabel.text = "Match \(detailMatch.match.numberGame)"
+            nameStadiumLabel.text = detailMatch.match.nameStadium
+            capacityLabel.text = detailMatch.match.capacityStadium
             saveDateSwitch.isOn = detailMatch.saveDate
         }
     }
