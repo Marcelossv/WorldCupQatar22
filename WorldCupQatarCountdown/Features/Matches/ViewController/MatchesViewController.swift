@@ -17,6 +17,11 @@ final class MatchesViewController: UIViewController {
         self.configTableView()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        tableView.reloadData()
+    }
+    
     @IBAction func tappedSegControl(_ sender: UISegmentedControl) {
         self.tableView.reloadData()
     }
@@ -43,7 +48,10 @@ extension MatchesViewController: UITableViewDataSource {
         }
         
         let match = cupGames[segControl.selectedSegmentIndex].matches[indexPath.row]
-        cell.setupCell(matches: match)
+        let color = SaveTheDateMatch().getMatch(match.homeName + match.visitName) ? UIColor.green : UIColor.systemGray
+
+        cell.setupCell(match: match, color: color)
+        cell.accessoryType = .disclosureIndicator
 
         return cell
     }
@@ -56,4 +64,24 @@ extension MatchesViewController: UITableViewDelegate {
         return 133
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let group = cupGames[segControl.selectedSegmentIndex].group
+        let match = cupGames[segControl.selectedSegmentIndex].matches[indexPath.row]
+        
+        guard let detailMatchViewController = UIStoryboard(name: "DetailMatch", bundle: nil)
+            .instantiateViewController(withIdentifier: "DetailMatch")
+                as? DetailMatchViewController else { return }
+        
+        let saveDate = SaveTheDateMatch().getMatch(match.homeName + match.visitName)
+        detailMatchViewController.delegate = self
+        detailMatchViewController.detailMatch = .init(group: group, match: match, saveDate: saveDate)
+
+        present(detailMatchViewController, animated: true)
+    }
+}
+
+extension MatchesViewController: DetailMatchViewControllerDelegate {
+    func updateTableView() {
+        tableView.reloadData()
+    }
 }

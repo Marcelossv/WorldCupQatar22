@@ -41,6 +41,7 @@
 		3189B9C62826298E002BFFD1 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3189B9C52826298E002BFFD1 /* Player.swift */; };
 		31F3B39628219EB100821127 /* RankingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F3B39428219EB100821127 /* RankingTableViewCell.swift */; };
 		31F3B39928219FFE00821127 /* Winner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F3B39828219FFE00821127 /* Winner.swift */; };
+		BC39B8FB291DC4F200BDB7B2 /* SaveTheDateMatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC39B8FA291DC4F200BDB7B2 /* SaveTheDateMatch.swift */; };
 		BC3A7CAF28E671CA00EB09F4 /* YTPlayer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC3A7CAE28E671CA00EB09F4 /* YTPlayer.storyboard */; };
 		BC3A7CB228E6737B00EB09F4 /* Stadium.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC3A7CB128E6737B00EB09F4 /* Stadium.storyboard */; };
 		BC58FD3B28E516C8003F8D83 /* Groups.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC58FD3A28E516C8003F8D83 /* Groups.storyboard */; };
@@ -48,8 +49,12 @@
 		BC69B2E428CAB0B6007631D1 /* YouTubeiOSPlayerHelper in Frameworks */ = {isa = PBXBuildFile; productRef = BC69B2E328CAB0B6007631D1 /* YouTubeiOSPlayerHelper */; };
 		BC6D6BAA28EA445100C89368 /* Raking.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC6D6BA928EA445100C89368 /* Raking.storyboard */; };
 		BC76DAC328E3DAE900C70271 /* TeamInfo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC76DAC228E3DAE900C70271 /* TeamInfo.storyboard */; };
+		BCAC4DD62911D86100DC14F8 /* DetailMatch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCAC4DD52911D86100DC14F8 /* DetailMatch.storyboard */; };
+		BCAC4DD92911D97000DC14F8 /* DetailMatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAC4DD82911D97000DC14F8 /* DetailMatchViewController.swift */; };
 		BCB0F9B528FE2D73009F1EA9 /* CountDown.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCB0F9B428FE2D73009F1EA9 /* CountDown.storyboard */; };
 		BCBAF66D29021ECD00325627 /* FormatterDateQatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBAF66C29021ECD00325627 /* FormatterDateQatar.swift */; };
+		BCDBF628291885CC006CE3DC /* DetailMatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDBF627291885CC006CE3DC /* DetailMatch.swift */; };
+		BCDBF62A291887D9006CE3DC /* CalculateDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDBF629291887D9006CE3DC /* CalculateDate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -89,14 +94,19 @@
 		31F3B39428219EB100821127 /* RankingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingTableViewCell.swift; sourceTree = "<group>"; };
 		31F3B39528219EB100821127 /* RankingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RankingTableViewCell.xib; sourceTree = "<group>"; };
 		31F3B39828219FFE00821127 /* Winner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Winner.swift; sourceTree = "<group>"; };
+		BC39B8FA291DC4F200BDB7B2 /* SaveTheDateMatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveTheDateMatch.swift; sourceTree = "<group>"; };
 		BC3A7CAE28E671CA00EB09F4 /* YTPlayer.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = YTPlayer.storyboard; sourceTree = "<group>"; };
 		BC3A7CB128E6737B00EB09F4 /* Stadium.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Stadium.storyboard; sourceTree = "<group>"; };
 		BC58FD3A28E516C8003F8D83 /* Groups.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Groups.storyboard; sourceTree = "<group>"; };
 		BC58FD3D28E51896003F8D83 /* Matches.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Matches.storyboard; sourceTree = "<group>"; };
 		BC6D6BA928EA445100C89368 /* Raking.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Raking.storyboard; sourceTree = "<group>"; };
 		BC76DAC228E3DAE900C70271 /* TeamInfo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TeamInfo.storyboard; sourceTree = "<group>"; };
+		BCAC4DD52911D86100DC14F8 /* DetailMatch.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailMatch.storyboard; sourceTree = "<group>"; };
+		BCAC4DD82911D97000DC14F8 /* DetailMatchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailMatchViewController.swift; sourceTree = "<group>"; };
 		BCB0F9B428FE2D73009F1EA9 /* CountDown.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CountDown.storyboard; sourceTree = "<group>"; };
 		BCBAF66C29021ECD00325627 /* FormatterDateQatar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormatterDateQatar.swift; sourceTree = "<group>"; };
+		BCDBF627291885CC006CE3DC /* DetailMatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailMatch.swift; sourceTree = "<group>"; };
+		BCDBF629291887D9006CE3DC /* CalculateDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateDate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -391,6 +401,7 @@
 		88B1A07B2862202E008E7D18 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				BCAC4DD32911D83F00DC14F8 /* DetailMatch */,
 				88B1A07E286220CC008E7D18 /* Groups */,
 				882D1BE1286221910080CB69 /* Matches */,
 				882D1BE92862228E0080CB69 /* Ranking */,
@@ -505,6 +516,32 @@
 			path = Storyboard;
 			sourceTree = "<group>";
 		};
+		BCAC4DD32911D83F00DC14F8 /* DetailMatch */ = {
+			isa = PBXGroup;
+			children = (
+				BCDBF626291885BF006CE3DC /* Model */,
+				BCAC4DD42911D84C00DC14F8 /* Storyboard */,
+				BCAC4DD72911D95000DC14F8 /* ViewController */,
+			);
+			path = DetailMatch;
+			sourceTree = "<group>";
+		};
+		BCAC4DD42911D84C00DC14F8 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				BCAC4DD52911D86100DC14F8 /* DetailMatch.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		BCAC4DD72911D95000DC14F8 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BCAC4DD82911D97000DC14F8 /* DetailMatchViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 		BCB0F9B328FE2D55009F1EA9 /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
@@ -517,8 +554,18 @@
 			isa = PBXGroup;
 			children = (
 				BCBAF66C29021ECD00325627 /* FormatterDateQatar.swift */,
+				BCDBF629291887D9006CE3DC /* CalculateDate.swift */,
+				BC39B8FA291DC4F200BDB7B2 /* SaveTheDateMatch.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		BCDBF626291885BF006CE3DC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BCDBF627291885CC006CE3DC /* DetailMatch.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -586,6 +633,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC3A7CB228E6737B00EB09F4 /* Stadium.storyboard in Resources */,
+				BCAC4DD62911D86100DC14F8 /* DetailMatch.storyboard in Resources */,
 				BC58FD3B28E516C8003F8D83 /* Groups.storyboard in Resources */,
 				BC3A7CAF28E671CA00EB09F4 /* YTPlayer.storyboard in Resources */,
 				BC6D6BAA28EA445100C89368 /* Raking.storyboard in Resources */,
@@ -617,6 +665,7 @@
 				3148719B2820367C0021B553 /* AppDelegate.swift in Sources */,
 				314871B028203AF70021B553 /* RankingViewController.swift in Sources */,
 				31475067282306EB00EB1A48 /* MatchesViewController.swift in Sources */,
+				BCAC4DD92911D97000DC14F8 /* DetailMatchViewController.swift in Sources */,
 				3148FC11282B0A7600D24AEE /* YTPlayerViewController.swift in Sources */,
 				313BF52528288D0B004CE901 /* CountDownViewController.swift in Sources */,
 				3189B9BD28257A9B002BFFD1 /* TopGoalTableViewCell.swift in Sources */,
@@ -624,16 +673,19 @@
 				31F3B39928219FFE00821127 /* Winner.swift in Sources */,
 				313BF501282721F4004CE901 /* FifaRanking.swift in Sources */,
 				3189B9C1282623AD002BFFD1 /* PlayersTableViewCell.swift in Sources */,
+				BCDBF628291885CC006CE3DC /* DetailMatch.swift in Sources */,
 				3147506A2823082C00EB1A48 /* MatchesTableViewCell.swift in Sources */,
 				314871C72820A9480021B553 /* Stadium.swift in Sources */,
 				313BF4FE28272009004CE901 /* FifaTableViewCell.swift in Sources */,
 				313BF50328274967004CE901 /* TeamInfoViewController.swift in Sources */,
 				314871B228203B3B0021B553 /* GroupsViewController.swift in Sources */,
 				3148719D2820367C0021B553 /* SceneDelegate.swift in Sources */,
+				BCDBF62A291887D9006CE3DC /* CalculateDate.swift in Sources */,
 				3148FC0D282ACBAE00D24AEE /* CountryInformation.swift in Sources */,
 				314871B628203F140021B553 /* Group.swift in Sources */,
 				31F3B39628219EB100821127 /* RankingTableViewCell.swift in Sources */,
 				3147506D2824106400EB1A48 /* Match.swift in Sources */,
+				BC39B8FB291DC4F200BDB7B2 /* SaveTheDateMatch.swift in Sources */,
 				3189B9C62826298E002BFFD1 /* Player.swift in Sources */,
 				3189B9BA282571C6002BFFD1 /* Goals.swift in Sources */,
 				314871C22820A63B0021B553 /* StadiumTableViewCell.swift in Sources */,

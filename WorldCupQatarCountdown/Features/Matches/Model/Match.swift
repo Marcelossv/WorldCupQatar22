@@ -22,14 +22,117 @@ struct Match {
     let nameStadium: String
     let capacityStadium: String
     let numberGame: String
-    
-    
 }
 
 struct DataTimeMatch {
     let month: Int
     let day: Int
     let hour: Int
+}
+
+enum NameCountry: String {
+    case arg = "ARG"
+    case aus = "AUS"
+    case bel = "BEL"
+    case bra = "BRA"
+    case cmr = "CMR"
+    case can = "CAN"
+    case crc = "CRC"
+    case cro = "CRO"
+    case den = "DEN"
+    case ecu = "ECU"
+    case eng = "ENG"
+    case fra = "FRA"
+    case ger = "GER"
+    case gha = "GHA"
+    case irn = "IRN"
+    case jpn = "JPN"
+    case kor = "KOR"
+    case mex = "MEX"
+    case mar = "MAR"
+    case ned = "NED"
+    case pol = "POL"
+    case por = "POR"
+    case qat = "QAT"
+    case ksa = "KSA"
+    case sen = "SEN"
+    case srb = "SRB"
+    case esp = "ESP"
+    case sui = "SUI"
+    case tun = "TUN"
+    case uru = "URU"
+    case usa = "USA"
+    case wal = "WAL"
+    
+    var description: String {
+        switch self {
+        case .arg:
+            return "Argentina"
+        case .aus:
+            return "Australia"
+        case .bel:
+            return "Belgium"
+        case .bra:
+            return "Brazil"
+        case .cmr:
+            return "Cameroon"
+        case .can:
+            return "Canada"
+        case .crc:
+            return "Costa Rica"
+        case .cro:
+            return "Croatia"
+        case .den:
+            return "Denmark"
+        case .ecu:
+            return "Ecuador"
+        case .eng:
+            return "England"
+        case .fra:
+            return "France"
+        case .ger:
+            return "Germany"
+        case .gha:
+            return "Ghana"
+        case .irn:
+            return "IR Iran"
+        case .jpn:
+            return "Japan"
+        case .kor:
+            return "Korea Republic"
+        case .mex:
+            return "Mexico"
+        case .mar:
+            return "Morocco"
+        case .ned:
+            return "Netherlands"
+        case .pol:
+            return "Poland"
+        case .por:
+            return "Portugal"
+        case .qat:
+            return "Qatar"
+        case .ksa:
+            return "Saudi Arabia"
+        case .sen:
+            return "Senegal"
+        case .srb:
+            return "Serbia"
+        case .esp:
+            return "Spain"
+        case .sui:
+            return "Switzerland"
+        case .tun:
+            return "Tunisia"
+        case .uru:
+            return "Uruguay"
+        case .usa:
+            return "USA"
+        case .wal:
+            return "Wales"
+        }
+    }
+    
 }
 
 let cupGames: [GroupGames] = [
@@ -43,8 +146,8 @@ let cupGames: [GroupGames] = [
                 dataTimeMatch: DataTimeMatch(month: 11, day: 20, hour: 19),
                 imageH: UIImage(named: "qtarFlag") ?? UIImage(),
                 imageV: UIImage(named: "ecuadorFlag") ?? UIImage(),
-                nameStadium: "🏟 Al Bayt Stadium",
-                capacityStadium: "👤 60.000",
+                nameStadium: "Al Bayt Stadium",
+                capacityStadium: "60.000",
                 numberGame: "1"
             ),
             .init(
@@ -54,8 +157,8 @@ let cupGames: [GroupGames] = [
                 dataTimeMatch: DataTimeMatch(month: 11, day: 21, hour: 19),
                 imageH: UIImage(named: "senegalFlag") ?? UIImage(),
                 imageV: UIImage(named: "netherlandsFlag") ?? UIImage(),
-                nameStadium: "🏟 Al Thumama Stadium",
-                capacityStadium: "👤 60.000",
+                nameStadium: "Al Thumama Stadium",
+                capacityStadium: "60.000",
                 numberGame: "2"
             ),
             .init(
@@ -65,8 +168,8 @@ let cupGames: [GroupGames] = [
                 dataTimeMatch: DataTimeMatch(month: 11, day: 25, hour: 16),
                 imageH: UIImage(named: "qtarFlag") ?? UIImage(),
                 imageV: UIImage(named: "senegalFlag") ?? UIImage(),
-                nameStadium: "🏟 Al Thumama Stadium",
-                capacityStadium: "👤 60.000",
+                nameStadium: "Al Thumama Stadium",
+                capacityStadium: "60.000",
                 numberGame: "18"
             ),
             
@@ -78,7 +181,7 @@ let cupGames: [GroupGames] = [
                 imageH: UIImage(named: "netherlandsFlag") ?? UIImage(),
                 imageV: UIImage(named: "ecuadorFlag") ?? UIImage(),
                 nameStadium: "Khalifa International Stadium",
-                capacityStadium: "👤 48.000",
+                capacityStadium: "48.000",
                 numberGame: "19"
             ),
             .init(
@@ -89,7 +192,7 @@ let cupGames: [GroupGames] = [
                 imageH: UIImage(named: "netherlandsFlag") ?? UIImage(),
                 imageV: UIImage(named: "qtarFlag") ?? UIImage(),
                 nameStadium: "Al Bayt Stadium",
-                capacityStadium: "👤 60.000",
+                capacityStadium: "60.000",
                 numberGame: "36"
             ),
             .init(
@@ -100,7 +203,7 @@ let cupGames: [GroupGames] = [
                 imageH: UIImage(named: "ecuadorFlag") ?? UIImage(),
                 imageV: UIImage(named: "senegalFlag") ?? UIImage(),
                 nameStadium: "Khalifa International Stadium",
-                capacityStadium: "👤 48.000",
+                capacityStadium: "48.000",
                 numberGame: "35"
             )
             
@@ -117,7 +220,7 @@ let cupGames: [GroupGames] = [
                 imageH: UIImage(named: "englandFlag") ?? UIImage(),
                 imageV: UIImage(named: "iranFlag") ?? UIImage(),
                 nameStadium: "Khalifa International Stadium",
-                capacityStadium: "👤 48.000",
+                capacityStadium: "48.000",
                 numberGame: "3"
             ),
             .init(
@@ -128,7 +231,7 @@ let cupGames: [GroupGames] = [
                 imageH: UIImage(named: "unitedStatesFlag") ?? UIImage(),
                 imageV: UIImage(named: "walesFlag") ?? UIImage(),
                 nameStadium: "Ahmad Bin Ali Stadium",
-                capacityStadium: "👤 40.000",
+                capacityStadium: "40.000",
                 numberGame: "4"
             ),
             .init(
@@ -139,7 +242,7 @@ let cupGames: [GroupGames] = [
                 imageH: UIImage(named: "walesFlag") ?? UIImage(),
                 imageV: UIImage(named: "iranFlag") ?? UIImage(),
                 nameStadium: "Ahmad Bin Ali Stadium",
-                capacityStadium: "👤 40.000",
+                capacityStadium: "40.000",
                 numberGame: "17"
             ),
             .init(
@@ -150,7 +253,7 @@ let cupGames: [GroupGames] = [
                 imageH: UIImage(named: "englandFlag") ?? UIImage(),
                 imageV: UIImage(named: "unitedStatesFlag") ?? UIImage(),
                 nameStadium: "Al Bayt Stadium",
-                capacityStadium: "👤 60.000",
+                capacityStadium: "60.000",
                 numberGame: "20"
             ),
             .init(
@@ -161,7 +264,7 @@ let cupGames: [GroupGames] = [
                 imageH: UIImage(named: "walesFlag") ?? UIImage(),
                 imageV: UIImage(named: "englandFlag") ?? UIImage(),
                 nameStadium: "Ahmad Bin Ali Stadium",
-                capacityStadium: "👤 40.000",
+                capacityStadium: "40.000",
                 numberGame: "33"
             ),
             .init(
@@ -172,7 +275,7 @@ let cupGames: [GroupGames] = [
                 imageH: UIImage(named: "iranFlag") ?? UIImage(),
                 imageV: UIImage(named: "unitedStatesFlag") ?? UIImage(),
                 nameStadium: "Al Thumama Stadium",
-                capacityStadium: "👤 60.000",
+                capacityStadium: "60.000",
                 numberGame: "34"
             )
             
@@ -189,7 +292,7 @@ let cupGames: [GroupGames] = [
                 imageH: UIImage(named: "argentinaFlag") ?? UIImage(),
                 imageV: UIImage(named: "saudiArabiaFlag") ?? UIImage(),
                 nameStadium: "Lusail Stadium",
-                capacityStadium: "👤 86.250",
+                capacityStadium: "86.250",
                 numberGame: "8"
             ),
             .init(
@@ -200,7 +303,7 @@ let cupGames: [GroupGames] = [
                 imageH: UIImage(named: "mexicoFlag") ?? UIImage(),
                 imageV: UIImage(named: "polandFlag") ?? UIImage(),
                 nameStadium: "Stadium 974",
-                capacityStadium: "👤 40.000",
+                capacityStadium: "40.000",
                 numberGame: "7"
             ),
             .init(
@@ -211,7 +314,7 @@ let cupGames: [GroupGames] = [
                 imageH: UIImage(named: "polandFlag") ?? UIImage(),
                 imageV: UIImage(named: "saudiArabiaFlag") ?? UIImage(),
                 nameStadium: "Education City Stadium",
-                capacityStadium: "👤 45.350",
+                capacityStadium: "45.350",
                 numberGame: "22"
             ),
             .init(
@@ -222,7 +325,7 @@ let cupGames: [GroupGames] = [
                 imageH: UIImage(named: "argentinaFlag") ?? UIImage(),
                 imageV: UIImage(named: "mexicoFlag") ?? UIImage(),
                 nameStadium: "Lusail Stadium",
-                capacityStadium: "👤 86.250",
+                capacityStadium: "86.250",
                 numberGame: "24"
             ),
             .init(
@@ -233,7 +336,7 @@ let cupGames: [GroupGames] = [
                 imageH: UIImage(named: "polandFlag") ?? UIImage(),
                 imageV: UIImage(named: "argentinaFlag") ?? UIImage(),
                 nameStadium: "Stadium 974",
-                capacityStadium: "👤 40.000",
+                capacityStadium: "40.000",
                 numberGame: "39"
             ),
             .init(
@@ -244,7 +347,7 @@ let cupGames: [GroupGames] = [
                 imageH: UIImage(named: "saudiArabiaFlag") ?? UIImage(),
                 imageV: UIImage(named: "mexicoFlag") ?? UIImage(),
                 nameStadium: "Lusail Stadium",
-                capacityStadium: "👤 86.250",
+                capacityStadium: "86.250",
                 numberGame: "40"
             )
             
@@ -261,7 +364,7 @@ let cupGames: [GroupGames] = [
                 imageH: UIImage(named: "denmarkFlag") ?? UIImage(),
                 imageV: UIImage(named: "tunisiaFlag") ?? UIImage(),
                 nameStadium: "Education City Stadium",
-                capacityStadium: "👤 45.350",
+                capacityStadium: "45.350",
                 numberGame: "6"
             ),
             .init(
@@ -272,7 +375,7 @@ let cupGames: [GroupGames] = [
                 imageH: UIImage(named: "franceFlag") ?? UIImage(),
                 imageV: UIImage(named: "australiaFlag") ?? UIImage(),
                 nameStadium: "Al Janoub Stadium",
-                capacityStadium: "👤 40.000",
+                capacityStadium: "40.000",
                 numberGame: "5"
             ),
             .init(
@@ -283,7 +386,7 @@ let cupGames: [GroupGames] = [
                 imageH: UIImage(named: "tunisiaFlag") ?? UIImage(),
                 imageV: UIImage(named: "australiaFlag") ?? UIImage(),
                 nameStadium: "Al Janoub Stadium",
-                capacityStadium: "👤 40.000",
+                capacityStadium: "40.000",
                 numberGame: "21"
             ),
             .init(
@@ -294,7 +397,7 @@ let cupGames: [GroupGames] = [
                 imageH: UIImage(named: "franceFlag") ?? UIImage(),
                 imageV: UIImage(named: "denmarkFlag") ?? UIImage(),
                 nameStadium: "Stadium 974",
-                capacityStadium: "👤 40.000",
+                capacityStadium: "40.000",
                 numberGame: "23"
             ),
             .init(
@@ -305,7 +408,7 @@ let cupGames: [GroupGames] = [
                 imageH: UIImage(named: "tunisiaFlag") ?? UIImage(),
                 imageV: UIImage(named: "franceFlag") ?? UIImage(),
                 nameStadium: "Education City",
-                capacityStadium: "👤 45.350",
+                capacityStadium: "45.350",
                 numberGame: "38"
             ),
             .init(
@@ -316,7 +419,7 @@ let cupGames: [GroupGames] = [
                 imageH: UIImage(named: "australiaFlag") ?? UIImage(),
                 imageV: UIImage(named: "denmarkFlag") ?? UIImage(),
                 nameStadium: "Al Janoub Stadium",
-                capacityStadium: "👤 40.000",
+                capacityStadium: "40.000",
                 numberGame: "37"
             )
             
@@ -333,7 +436,7 @@ let cupGames: [GroupGames] = [
                 imageH: UIImage(named: "germanyFlag") ?? UIImage(),
                 imageV: UIImage(named: "japanFlag") ?? UIImage(),
                 nameStadium: "Khalifa International Stadium",
-                capacityStadium: "👤 48.000",
+                capacityStadium: "48.000",
                 numberGame: "11"
             ),
             .init(
@@ -344,7 +447,7 @@ let cupGames: [GroupGames] = [
                 imageH: UIImage(named: "spainFlag") ?? UIImage(),
                 imageV: UIImage(named: "costaRicaFlag") ?? UIImage(),
                 nameStadium: "Al Thumama Stadium",
-                capacityStadium: "👤 40.000",
+                capacityStadium: "40.000",
                 numberGame: "10"
             ),
             .init(
@@ -355,7 +458,7 @@ let cupGames: [GroupGames] = [
                 imageH: UIImage(named: "japanFlag") ?? UIImage(),
                 imageV: UIImage(named: "costaRicaFlag") ?? UIImage(),
                 nameStadium: "Ahmad Bin Ali Stadium",
-                capacityStadium: "👤 40.000",
+                capacityStadium: "40.000",
                 numberGame: "25"
             ),
             .init(
@@ -366,7 +469,7 @@ let cupGames: [GroupGames] = [
                 imageH: UIImage(named: "spainFlag") ?? UIImage(),
                 imageV: UIImage(named: "germanyFlag") ?? UIImage(),
                 nameStadium: "Al Bayt Stadium",
-                capacityStadium: "👤 60.000",
+                capacityStadium: "60.000",
                 numberGame: "28"
             ),
             .init(
@@ -377,7 +480,7 @@ let cupGames: [GroupGames] = [
                 imageH: UIImage(named: "japanFlag") ?? UIImage(),
                 imageV: UIImage(named: "spainFlag") ?? UIImage(),
                 nameStadium: "Khalifa International Stadium",
-                capacityStadium: "👤 48.000",
+                capacityStadium: "48.000",
                 numberGame: "43"
             ),
             .init(
@@ -388,7 +491,7 @@ let cupGames: [GroupGames] = [
                 imageH: UIImage(named: "costaRicaFlag") ?? UIImage(),
                 imageV: UIImage(named: "germanyFlag") ?? UIImage(),
                 nameStadium: "Al Bayt Stadium",
-                capacityStadium: "👤 60.000",
+                capacityStadium: "60.000",
                 numberGame: "44"
             )
             
@@ -405,7 +508,7 @@ let cupGames: [GroupGames] = [
                 imageH: UIImage(named: "moroccoFlag") ?? UIImage(),
                 imageV: UIImage(named: "croaciaFlag") ?? UIImage(),
                 nameStadium: "Al Bayt Stadium",
-                capacityStadium: "👤 60.000",
+                capacityStadium: "60.000",
                 numberGame: "12"
             ),
             .init(
@@ -416,7 +519,7 @@ let cupGames: [GroupGames] = [
                 imageH: UIImage(named: "belgiumFlag") ?? UIImage(),
                 imageV: UIImage(named: "canadaFlag") ?? UIImage(),
                 nameStadium: "Ahmad Bin Ali Stadium",
-                capacityStadium: "👤 60.000",
+                capacityStadium: "60.000",
                 numberGame: "9"
             ),
             .init(
@@ -427,7 +530,7 @@ let cupGames: [GroupGames] = [
                 imageH: UIImage(named: "belgiumFlag") ?? UIImage(),
                 imageV: UIImage(named: "moroccoFlag") ?? UIImage(),
                 nameStadium: "Al Thumama Stadium",
-                capacityStadium: "👤 40.000",
+                capacityStadium: "40.000",
                 numberGame: "26"
             ),
             .init(
@@ -438,7 +541,7 @@ let cupGames: [GroupGames] = [
                 imageH: UIImage(named: "croaciaFlag") ?? UIImage(),
                 imageV: UIImage(named: "canadaFlag") ?? UIImage(),
                 nameStadium: "Khalifa International Stadium",
-                capacityStadium: "👤 48.000",
+                capacityStadium: "48.000",
                 numberGame: "27"
             ),
             .init(
@@ -449,7 +552,7 @@ let cupGames: [GroupGames] = [
                 imageH: UIImage(named: "croaciaFlag") ?? UIImage(),
                 imageV: UIImage(named: "belgiumFlag") ?? UIImage(),
                 nameStadium: "Ahmad Bin Ali Stadium",
-                capacityStadium: "👤 40.000",
+                capacityStadium: "40.000",
                 numberGame: "41"
             ),
             .init(
@@ -460,7 +563,7 @@ let cupGames: [GroupGames] = [
                 imageH: UIImage(named: "canadaFlag") ?? UIImage(),
                 imageV: UIImage(named: "moroccoFlag") ?? UIImage(),
                 nameStadium: "Al Thumama Stadium",
-                capacityStadium: "👤 40.000",
+                capacityStadium: "40.000",
                 numberGame: "42"
             )
             
@@ -477,7 +580,7 @@ let cupGames: [GroupGames] = [
                 imageH: UIImage(named: "switzerlandFlag") ?? UIImage(),
                 imageV: UIImage(named: "cameroonFlag") ?? UIImage(),
                 nameStadium: "Al Janoub Stadium",
-                capacityStadium: "👤 40.000",
+                capacityStadium: "40.000",
                 numberGame: "13"
             ),
             .init(
@@ -488,7 +591,7 @@ let cupGames: [GroupGames] = [
                 imageH: UIImage(named: "brazilFlag") ?? UIImage(),
                 imageV: UIImage(named: "serbiaFlag") ?? UIImage(),
                 nameStadium: "Lusail Stadium",
-                capacityStadium: "👤 86.250",
+                capacityStadium: "86.250",
                 numberGame: "16"
             ),
             .init(
@@ -499,7 +602,7 @@ let cupGames: [GroupGames] = [
                 imageH: UIImage(named: "cameroonFlag") ?? UIImage(),
                 imageV: UIImage(named: "serbiaFlag") ?? UIImage(),
                 nameStadium: "AL Janoub Stadium",
-                capacityStadium: "👤 40.000",
+                capacityStadium: "40.000",
                 numberGame: "29"
             ),
             .init(
@@ -510,7 +613,7 @@ let cupGames: [GroupGames] = [
                 imageH: UIImage(named: "brazilFlag") ?? UIImage(),
                 imageV: UIImage(named: "switzerlandFlag") ?? UIImage(),
                 nameStadium: "974 Stadium",
-                capacityStadium: "👤 40.000",
+                capacityStadium: "40.000",
                 numberGame: "31"
             ),
             .init(
@@ -521,7 +624,7 @@ let cupGames: [GroupGames] = [
                 imageH: UIImage(named: "cameroonFlag") ?? UIImage(),
                 imageV: UIImage(named: "brazilFlag") ?? UIImage(),
                 nameStadium: "Lusail Stadium",
-                capacityStadium: "👤 86.250",
+                capacityStadium: "86.250",
                 numberGame: "48"
             ),
             .init(
@@ -532,7 +635,7 @@ let cupGames: [GroupGames] = [
                 imageH: UIImage(named: "serbiaFlag") ?? UIImage(),
                 imageV: UIImage(named: "switzerlandFlag") ?? UIImage(),
                 nameStadium: "974 Stadium",
-                capacityStadium: "👤 40.000",
+                capacityStadium: "40.000",
                 numberGame: "47"
             )
         ]
@@ -548,7 +651,7 @@ let cupGames: [GroupGames] = [
                 imageH: UIImage(named: "uruguayFlag") ?? UIImage(),
                 imageV: UIImage(named: "koreaFlag") ?? UIImage(),
                 nameStadium: "Education City Stadium",
-                capacityStadium: "👤 45.350",
+                capacityStadium: "45.350",
                 numberGame: "14"
             ),
             .init(
@@ -559,7 +662,7 @@ let cupGames: [GroupGames] = [
                 imageH: UIImage(named: "portugalFlag") ?? UIImage(),
                 imageV: UIImage(named: "ghanaFlag") ?? UIImage(),
                 nameStadium: "974 Stadium",
-                capacityStadium: "👤 40.000",
+                capacityStadium: "40.000",
                 numberGame: "15"
             ),
             .init(
@@ -570,7 +673,7 @@ let cupGames: [GroupGames] = [
                 imageH: UIImage(named: "koreaFlag") ?? UIImage(),
                 imageV: UIImage(named: "ghanaFlag") ?? UIImage(),
                 nameStadium: "Education City Stadium",
-                capacityStadium: "👤 45.350",
+                capacityStadium: "45.350",
                 numberGame: "30"
             ),
             .init(
@@ -581,7 +684,7 @@ let cupGames: [GroupGames] = [
                 imageH: UIImage(named: "portugalFlag") ?? UIImage(),
                 imageV: UIImage(named: "uruguayFlag") ?? UIImage(),
                 nameStadium: "Lusail Stadium",
-                capacityStadium: "👤 86.250",
+                capacityStadium: "86.250",
                 numberGame: "32"
             ),
             .init(
@@ -592,7 +695,7 @@ let cupGames: [GroupGames] = [
                 imageH: UIImage(named: "koreaFlag") ?? UIImage(),
                 imageV: UIImage(named: "portugalFlag") ?? UIImage(),
                 nameStadium: "Education City Stadium",
-                capacityStadium: "👤 45.350",
+                capacityStadium: "45.350",
                 numberGame: "46"
             ),
             .init(
@@ -603,7 +706,7 @@ let cupGames: [GroupGames] = [
                 imageH: UIImage(named: "ghanaFlag") ?? UIImage(),
                 imageV: UIImage(named: "uruguayFlag") ?? UIImage(),
                 nameStadium: "Al Janoub Stadium",
-                capacityStadium: "👤 40.000",
+                capacityStadium: "40.000",
                 numberGame: "45"
             )
             
